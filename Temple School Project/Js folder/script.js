@@ -225,19 +225,18 @@ gsap.from(' #newsContainer .News a', {
 // tour section
 
 const tourImages = [
-  'https://ik.imagekit.io/u9vfp7lad/P8630144.JPG',
-  'https://ik.imagekit.io/u9vfp7lad/P9900630.jpg?updatedAt=1776981870753',
-  '/Temple School Project/Images/P8690992.webp',
-  'https://ik.imagekit.io/u9vfp7lad/DSC_5429.JPG?updatedAt=1776981883273',
-
-  'https://www.templeschoolng.com/wp-content/uploads/2024/02/Untitled-design-1.png',
-  '/Temple School Project/Images/IMG_8330.webp',
-  '/Temple School Project/Images/P8700943.webp',
-  '/Temple School Project/Images/DSC_7572.webp',
-  'https://ik.imagekit.io/u9vfp7lad/DSC_5335.JPG?updatedAt=1776981881580',
-  '/Temple School Project/Images/DSC_3017.webp',
-  '/Temple School Project/Images/P8630173.webp',
-  'https://ik.imagekit.io/u9vfp7lad/P9890791.jpg?updatedAt=1776981877141',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-1-1.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-13.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-4-1.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/DSC_9446_1-scaled.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-14-3-1.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-14-4-1.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-11.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-9-1.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-8-1.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-7-1.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-6-1.jpg',
+  'https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-14-6.jpg',
 ];
 
 const grid = document.getElementById('tourGrid');
