@@ -267,7 +267,7 @@
 
 
     <!-- HEADER -->
-    <header class="bg-[#F8F6F1] shadow-sm relative z-50">
+  <header class="bg-[#F8F6F1] shadow-sm relative z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
       <!-- LOGO -->
@@ -676,15 +676,22 @@
 
 
         <!-- NAV -->
-        <div class="flex flex-wrap justify-center gap-4 mt-20">
-            <a href="#" class="nav-btn">Admissions</a>
-            <a href="#" class="nav-btn">Curriculum</a>
-            <a href="#" class="nav-btn bg-[#0B2C5F] text-white">Clubs</a>
+         <div class="flex flex-wrap justify-center gap-4 mt-20">
 
-            <a href="#"
+          
+            <a href="/Temple School Project/Learning Journey/Secondary/Class Room/Year8.html" class="nav-btn">Year 8</a>
+            <a href="/Temple School Project/Learning Journey/Secondary/Class Room/Year9.html" class="nav-btn">Year 9</a>
+            <a href="/Temple School Project/Learning Journey/Secondary/Class Room/Year10.html" class="nav-btn">Year 10</a>
+            <a href="/Temple School Project/Learning Journey/Secondary/Class Room/Year11.html" class="nav-btn ">Year 11</a>
+            <a href="/Temple School Project/Learning Journey/Secondary/Secondary-clubs-and-co-curricular-aspects-of-learning.html" class="nav-btn bg-[#0B2C5F] text-white">Secondary Clubs</a>
+            <a href="/Temple School Project/Learning Journey/Secondary/Admissions.html" class="nav-btn">Admissions</a>
+            <a href="/Temple School Project/Learning Journey/Secondary/Curriculum.html" class="nav-btn">Curriculum</a>
+
+            <a href="/Temple School Project/Learning Journey/Secondary/Apply online.html"
                 class="px-6 py-3 rounded-full bg-[#D4A017] text-white hover:opacity-90 transition">
                 Apply Online
             </a>
+
         </div>
 
     </div>
@@ -758,100 +765,96 @@
 
    
 
-    <!-- stats section -->
-    <section class="relative py-24 bg-[#F8F6F1] overflow-hidden">
+  <!-- stats section -->
+<section class="relative py-16 sm:py-20 md:py-24 bg-[#F8F6F1] overflow-hidden">
 
-        <!-- FLOATING BACKGROUND PARTICLES -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="particle p1"></div>
-            <div class="particle p2"></div>
-            <div class="particle p3"></div>
-            <div class="particle p4"></div>
-            <div class="particle p5"></div>
-        </div>
+  <!-- Floating particles -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+    <div class="particle p5"></div>
+  </div>
 
-        <div class="relative max-w-7xl mx-auto px-6 text-center">
+  <div class="relative max-w-7xl mx-auto px-6 sm:px-8 text-center">
 
-            <!-- HEADING -->
-            <h2 class="text-3xl md:text-4xl font-semibold text-[#0B1C39] mb-3 font-[Poppins]">
-                Our Legacy in Numbers
-            </h2>
+    <!-- Heading -->
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#0B1C39] mb-3 heading-font">
+      Our Legacy in Numbers
+    </h2>
 
-            <p class="text-base md:text-lg text-gray-600 mb-14 font-[Inter] max-w-xl mx-auto">
-                Building excellence since 2004 with pride, discipline, and innovation.
-            </p>
+    <p class="text-sm sm:text-base md:text-lg text-gray-600 mb-10 md:mb-14 max-w-xl mx-auto leading-7">
+      Building excellence since 2004 with pride, discipline, and innovation.
+    </p>
 
-            <!-- MAIN WRAPPER -->
-            <div class="relative">
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
 
-                <!-- STATS GRID -->
-                <div class="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 relative z-10">
+      <!-- YEAR -->
+      <div class="stat-card bg-white/70 backdrop-blur-md rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+        <i data-lucide="calendar" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none">
+          <span id="yearCounter">2004</span>
+        </h3>
+        <p class="text-[#004A7C] mt-3 text-xs sm:text-sm md:text-base font-medium">Established</p>
+      </div>
 
-                    <!-- YEAR -->
-                    <div class="stat-card bg-white/70 backdrop-blur-md rounded-2xl p-6 shadow-sm text-center">
-                        <i data-lucide="calendar" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-                        <h3 class="text-4xl md:text-5xl font-bold text-[#0B1C39]">
-                            <span id="yearCounter">2004</span>
-                        </h3>
-                        <p class="text-[#004A7C] mt-2 text-sm md:text-base font-medium">Established</p>
-                    </div>
+      <!-- SCHOOLS -->
+      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+        <i data-lucide="building-2" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none">
+          <span class="counter" data-target="5">0</span>
+        </h3>
+        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Schools</p>
+      </div>
 
-                    <!-- SCHOOLS -->
-                    <div class="stat-card bg-white/70 rounded-2xl p-6 shadow-sm text-center">
-                        <i data-lucide="building-2" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-                                    <h3 class="text-4xl md:text-5xl font-bold text-[#0B1C39]">
-              <span class="counter" data-target="5">0</span>
-            </h3>
-                        <p class="text-gray-600 mt-2 text-sm md:text-base">Schools</p>
-                    </div>
+      <!-- ENROLMENT -->
+      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+        <i data-lucide="users" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none whitespace-nowrap">
+          <span class="counter" data-target="8000">0</span><span class="text-[#D48821]">+</span>
+        </h3>
+        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Enrolment</p>
+      </div>
 
-                    <!-- ENROLMENT -->
-                    <div class="stat-card bg-white/70 rounded-2xl p-6 shadow-sm text-center">
-                        <i data-lucide="users" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-                        <h3 class="text-4xl md:text-5xl font-bold text-[#0B1C39]">
-                            <span class="counter" data-target="8000">0</span>+
-                        </h3>
-                        <p class="text-gray-600 mt-2 text-sm md:text-base">Enrolment</p>
-                    </div>
+      <!-- PASS RATE -->
+      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+        <i data-lucide="graduation-cap" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none whitespace-nowrap">
+          <span class="counter" data-target="99">0</span><span>%</span>
+        </h3>
+        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Pass Rate</p>
+      </div>
 
-                    <!-- PASS RATE -->
-                    <div class="stat-card bg-white/70 rounded-2xl p-6 shadow-sm text-center">
-                        <i data-lucide="graduation-cap" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-                        <h3 class="text-4xl md:text-5xl font-bold text-[#0B1C39]">
-                            <span class="counter" data-target="99">0</span>%
-                        </h3>
-                        <p class="text-gray-600 mt-2 text-sm md:text-base">Pass Rate</p>
-                    </div>
+      <!-- PARENTS -->
+      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+        <i data-lucide="smile" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#D48821] leading-none whitespace-nowrap">
+          <span class="counter" data-target="100">0</span><span>%</span>
+        </h3>
+        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Parent Satisfaction</p>
+      </div>
 
-                    <!-- PARENTS -->
-                    <div class="stat-card bg-white/70 rounded-2xl p-6 shadow-sm text-center">
-                        <i data-lucide="smile" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-                        <h3 class="text-4xl md:text-5xl font-bold text-[#D48821]">
-                            <span class="counter" data-target="100">0</span>%
-                        </h3>
-                        <p class="text-gray-600 mt-2 text-sm md:text-base">Parent Satisfaction</p>
-                    </div>
+    </div>
 
-                </div>
+    <!-- Final tagline -->
+    <div class="mt-10 md:mt-14 flex justify-center">
+      <div class="backdrop-blur-md bg-white/30 border border-white/20
+                  shadow-[0_8px_30px_rgba(0,0,0,0.08)]
+                  px-5 py-4 rounded-2xl">
 
-            </div>
+        <p class="text-base sm:text-lg md:text-xl font-semibold text-[#0B1C39] leading-relaxed">
+          Excellence built over
+          <span class="text-[#D48821]">two decades</span>
+        </p>
 
-            <!-- FINAL TAGLINE -->
-            <div class="mt-14 flex justify-start">
-                <div class="backdrop-blur-md bg-white/30 border border-white/20 
-              shadow-[0_8px_30px_rgba(0,0,0,0.08)] 
-              px-6 py-4 rounded-2xl max-w-fit">
+      </div>
+    </div>
 
-                    <p class="text-lg md:text-xl font-semibold text-[#0B1C39] leading-relaxed">
-                        Excellence built over
-                        <span class="text-[#D48821]">two decades</span>
-                    </p>
+  </div>
+</section>
 
-                </div>
-            </div>
-
-        </div>
-    </section>
 
 
 
@@ -1007,130 +1010,129 @@
     <!-- footer -->
 
     <!-- footer -->
-    <footer class="relative bg-[#0B1C39] text-white overflow-hidden">
+  <footer class="relative bg-[#0B1C39] text-white overflow-hidden">
 
-        <!-- BACKGROUND IMAGE OVERLAY -->
-        <div class="absolute inset-0 opacity-10 bg-cover bg-center"
-            style="background-image: url('https://edusko-dev-bucket.s3.eu-north-1.amazonaws.com/1637581682221R-NXH5WoINPL_XLcSlS0kvDg64-nw9pk.png');">
+    <!-- BACKGROUND IMAGE OVERLAY -->
+    <div class="absolute inset-0 opacity-10 bg-cover bg-center"
+      style="background-image: url('https://edusko-dev-bucket.s3.eu-north-1.amazonaws.com/1637581682221R-NXH5WoINPL_XLcSlS0kvDg64-nw9pk.png');">
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 py-16">
+
+      <!-- GRID -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 footer-columns">
+
+        <!-- BRANCH 1 -->
+        <div class="footer-col">
+          <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Early Years</h3>
+          <p class="text-sm text-white/80">213 Ikorodu Road,
+            Ilupeju, Lagos</p>
+
+          <a href="#" class="footer-link">
+            Directions →
+          </a>
+
+          <p class="text-sm mt-2">+234 809 520 0447</p>
+          <p class="text-sm">info@templeschoolng.com
+
+          </p>
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-6 py-16">
+        <!-- BRANCH 2 -->
+        <div class="footer-col">
+          <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Primary School</h3>
+          <p class="text-sm text-white/80">1 Temple Drive, Off Olusoji
+            Idowu St, Ilupeju, Lagos</p>
 
-            <!-- GRID -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 footer-columns">
+          <a href="https://www.google.com/maps/place/1+Temple+Dr,+Ilupeju,+Lagos+102215,+Lagos/@6.5524427,3.3627879,17z/data=!3m1!4b1!4m6!3m5!1s0x103b8d91155fd4bb:0xd08194846eb51769!8m2!3d6.5524374!4d3.3653628!16s%2Fg%2F11dzdw8k15?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" class="footer-link">
+            Directions →
+          </a>
 
-                <!-- BRANCH 1 -->
-                <div class="footer-col">
-                    <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Early Years</h3>
-                    <p class="text-sm text-white/80">213 Ikorodu Road,
-                        Ilupeju, Lagos</p>
+          <p class="text-sm mt-2">+234 807 087 1467</p>
+          <p class="text-sm">info@templeschoolng.com
 
-                    <a href="#" class="footer-link">
-                        Directions →
-                    </a>
+          </p>
+        </div>
 
-                    <p class="text-sm mt-2">+234 809 520 0447</p>
-                    <p class="text-sm">info@templeschoolng.com
+        <!-- BRANCH 3 -->
+        <div class="footer-col">
+          <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Secondary School</h3>
+          <p class="text-sm text-white/80">4-6 Odegbami Street,
+            Off Aba Johnston Street,
+            Adeniyi Jones, Ikeja, Lagos</p>
 
-                    </p>
-                </div>
+          <a href="https://www.google.com/maps/place/Temple+Secondary+School/@6.6160816,3.3464412,17z/data=!3m1!4b1!4m6!3m5!1s0x103b93ce1da6ce97:0x7a3253802525319c!8m2!3d6.6160763!4d3.3490161!16s%2Fg%2F11fxc1sznh?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" class="footer-link">
+            Directions →
+          </a>
 
-                <!-- BRANCH 2 -->
-                <div class="footer-col">
-                    <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Primary School</h3>
-                    <p class="text-sm text-white/80">1 Temple Drive, Off Olusoji
-                        Idowu St, Ilupeju, Lagos</p>
+          <p class="text-sm mt-2">+234 908 155 0288</p> <br>
+          <p class="text-sm mt-2">+234 701 735 9283</p>
+          <p class="text-sm">info@templeschoolng.com
 
-                    <a href="#" class="footer-link">
-                        Directions →
-                    </a>
+          </p>
+        </div>
 
-                    <p class="text-sm mt-2">+234 807 087 1467</p>
-                    <p class="text-sm">info@templeschoolng.com
+        <!-- BRANCH 4 -->
+        <div class="footer-col">
+          <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple College</h3>
+          <p class="text-sm text-white/80">8 Oyediran Close, Opebi, Ikeja, Lagos</p>
 
-                    </p>
-                </div>
+          <a href="https://www.google.com/maps/place/8+Oyediran+Cl,+Allen,+Ikeja+101233,+Lagos/@6.5971487,3.3544541,17z/data=!3m1!4b1!4m6!3m5!1s0x103b923850265f1b:0xd6ffffe8095fb69e!8m2!3d6.5971434!4d3.357029!16s%2Fg%2F11c6vfbzdy?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" class="footer-link">
+            Directions →
+          </a>
 
-                <!-- BRANCH 3 -->
-                <div class="footer-col">
-                    <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Secondary School</h3>
-                    <p class="text-sm text-white/80">4-6 Odegbami Street,
-                        Off Aba Johnston Street,
-                        Adeniyi Jones, Ikeja, Lagos</p>
+          <p class="text-sm mt-2">+234 909 505 6117</p>
+          <p class="text-sm">info@templeschoolng.com
 
-                    <a href="#" class="footer-link">
-                        Directions →
-                    </a>
+          </p>
+        </div>
 
-                    <p class="text-sm mt-2">+234 908 155 0288</p> <br>
-                    <p class="text-sm mt-2">+234 701 735 9283</p>
-                    <p class="text-sm">info@templeschoolng.com
+        <!-- MAP -->
+        <div>
+          <div class="rounded-lg overflow-hidden aspect-video transition duration-500">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.247990612612!2d3.3444026703268923!3d6.616081607471191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93ce1da6ce97%3A0x7a3253802525319c!2sTemple%20Secondary%20School!5e0!3m2!1sen!2sng!4v1778324412324!5m2!1sen!2sng" class="w-full h-full border-0">
+            </iframe>
+          </div>
+        </div>
 
-                    </p>
-                </div>
+      </div>
 
-                <!-- BRANCH 4 -->
-                <div class="footer-col">
-                    <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple College</h3>
-                    <p class="text-sm text-white/80">8 Oyediran Close, Opebi, Ikeja, Lagos</p>
+      <!-- DIVIDER -->
+      <div class="border-t border-white/10 my-10"></div>
 
-                    <a href="#" class="footer-link">
-                        Directions →
-                    </a>
+      <!-- BOTTOM BAR -->
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
 
-                    <p class="text-sm mt-2">+234 909 505 6117</p>
-                    <p class="text-sm">info@templeschoolng.com
-
-                    </p>
-                </div>
-
-                <!-- MAP -->
-                <div>
-                    <div
-                        class="rounded-lg overflow-hidden aspect-video grayscale hover:grayscale-0 transition duration-500">
-                        <iframe src="https://www.google.com/maps?q=Lagos&output=embed" class="w-full h-full border-0">
-                        </iframe>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- DIVIDER -->
-            <div class="border-t border-white/10 my-10"></div>
-
-            <!-- BOTTOM BAR -->
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-
-                <p class="text-sm text-white/70">
-                    © Temple School 2026 | All Rights Reserved | Legal Notice
-                </p>
+        <p class="text-sm text-white/70">
+          © Temple School 2026 | All Rights Reserved | Legal Notice
+        </p>
 
 
-                <!-- SOCIALS -->
-                <div class="flex gap-5 text-xl">
+        <!-- SOCIALS -->
+        <div class="flex gap-5 text-xl">
 
-                    <a href="#" class="social-icon hover:text-[#D48821] transition">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
+          <a href="https://www.facebook.com/TempleSchool"" class="social-icon hover:text-[#D48821] transition">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
 
-                    <a href="#" class="social-icon hover:text-[#D48821] transition">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
+          <a href="twitter.com/TempleSchools" class="social-icon hover:text-[#D48821] transition">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
 
-                    <a href="#" class="social-icon hover:text-[#D48821] transition">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+          <a href="https://www.instagram.com/templeschools/" class="social-icon hover:text-[#D48821] transition">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
 
-                    <a href="#" class="social-icon hover:text-[#D48821] transition">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
-                </div>
-
-            </div>
+          <a href="#" class="social-icon hover:text-[#D48821] transition">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
 
         </div>
-    </footer>
+
+      </div>
+
+    </div>
+  </footer>
 
     <button id="scrollTopBtn"
         class="fixed bottom-6 right-6 z-50 bg-[#D48821] text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300">
