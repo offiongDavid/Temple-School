@@ -1,16 +1,16 @@
-const lenis = new Lenis({
-    duration: 1.2,
-    smoothWheel: true,
-    smoothTouch: true,
-    touchMultiplier: 1.5
-  });
+// const lenis = new Lenis({
+//     duration: 1.2,
+//     smoothWheel: true,
+//     smoothTouch: true,
+//     touchMultiplier: 1.5
+//   });
 
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
+//   function raf(time) {
+//     lenis.raf(time);
+//     requestAnimationFrame(raf);
+//   }
 
-  requestAnimationFrame(raf);
+  // requestAnimationFrame(raf);
 
 const menuBtn = document.getElementById('menuBtn');
 const closeBtn = document.getElementById('closeBtn');

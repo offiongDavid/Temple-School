@@ -415,136 +415,408 @@ nav .submenu {
 
   </section>
 
+
   <section class="relative bg-[#F8F6F1] py-32 overflow-hidden">
 
-  <!-- SOFT BACKGROUND -->
-  <div class="absolute inset-0 pointer-events-none">
-    <div class="w-[500px] h-[500px] bg-[#004A7C]/10 blur-3xl rounded-full absolute -top-40 -left-40"></div>
-    <div class="w-[400px] h-[400px] bg-[#D48821]/10 blur-3xl rounded-full absolute bottom-0 right-0"></div>
+  <!-- BACKGROUND BLURS -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-[#004A7C]/10 blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-[#D48821]/10 blur-3xl"></div>
   </div>
 
-<div class="max-w-7xl mx-auto px-6 relative z-10">
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
 
-  <div class="grid lg:grid-cols-12 gap-16 items-center">
+    <!-- TOP HEADER -->
+    <div class="max-w-3xl mb-20">
 
-    <!-- LEFT: TEXT -->
-    <div class="lg:col-span-6 space-y-8">
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-10 h-[2px] bg-[#D4AF37]"></div>
 
-      <!-- HEADER -->
-      <div>
-        <p class="uppercase tracking-[0.2em] text-xs text-[#D4AF37] mb-3">
+        <p class="uppercase tracking-[0.25em] text-xs font-medium text-[#D4AF37]">
           Our Journey
         </p>
-
-        <h2 class="text-3xl md:text-4xl font-semibold text-[#0B1C39] leading-tight">
-          A Legacy of Growth & Excellence
-        </h2>
       </div>
 
-      <!-- CONTENT -->
-      <div class="space-y-6 text-gray-600 leading-relaxed text-[16px] md:text-[17px]">
+      <h2 class="text-4xl md:text-5xl font-semibold leading-tight text-[#0B1C39]">
+        A Legacy of Growth & Excellence
+      </h2>
 
-        <p>
-          Temple School is more than an institution; it is a
-          <span class="font-semibold text-[#0B1C39]">launching pad for future leaders</span>
-          and a sanctuary for lifelong learners. Since 2004, we have nurtured bright minds
-          within a serene environment on the Lagos Mainland, delivering a world-class education
-          through a unique fusion of the
-          <span class="font-semibold">British National Curriculum</span>,
-          Cambridge Curriculum, and enriched
-          <span class="font-semibold">Nigerian heritage</span>.
-        </p>
-
-        <div>
-          <h3 class="font-semibold text-[#0B1C39] mb-3">
-            From Humble Beginnings to a Thriving Community
-          </h3>
-          <p>
-            Our story began in 2004 with a small, dedicated cohort of just seven students.
-            Driven by an uncompromising passion for academic distinction, that initial spark
-            quickly grew. By 2006, we expanded to accommodate our rapidly growing family of learners,
-            and by 2009,
-            <span class="font-semibold">Temple Secondary School</span>
-            opened its doors boasting dynamic curricula and forward-thinking facilities.
-          </p>
-        </div>
-
-        <div>
-          <h3 class="font-semibold text-[#0B1C39] mb-3">
-            Evolution of Excellence
-          </h3>
-
-          <p class="mb-4">
-            In 2015, we reached a pivotal milestone by transitioning to our
-            <span class="font-semibold">permanent, state-of-the-art campus in Ikeja</span>.
-            Designed to inspire, our campus serves as a modern hub for holistic development, featuring:
-          </p>
-
-          <ul class="space-y-3 list-disc pl-6">
-            <li><span class="font-semibold">Elite Athletics:</span> Full-sized basketball and volleyball courts, a professional sports field, and a swimming pool.</li>
-            <li><span class="font-semibold">Modern Boarding:</span> Safe and comfortable residential facilities that feel like a second home.</li>
-            <li><span class="font-semibold">Innovative Classrooms:</span> Stimulating learning environments equipped with the latest educational technology.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="font-semibold text-[#0B1C39] mb-3">
-            More Than Just Bricks and Mortar
-          </h3>
-
-          <p class="mb-4">
-            At the heart of Temple School is a
-            <span class="font-semibold">safe, inclusive, and welcoming community</span>
-            where every child is seen, heard, and valued. Our dedicated educators foster
-            a nurturing atmosphere that prioritizes:
-          </p>
-
-          <ul class="space-y-3 list-disc pl-6">
-            <li><span class="font-semibold">Curiosity & Exploration:</span> Encouraging students to ask “why” and “how.”</li>
-            <li><span class="font-semibold">Academic Rigor:</span> Pushing the boundaries of excellence in every discipline.</li>
-            <li><span class="font-semibold">Character Development:</span> Building the ethical foundation necessary for global citizenship.</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- CLOSING -->
-      <div class="pt-6 border-t border-gray-200">
-        <p class="text-[#0B1C39] font-medium">
-          <span class="font-semibold">Our Vision:</span> At Temple School, we provide the wings every child needs to soar, ensuring they have the confidence and competence to reach their full potential.
-        </p>
-      </div>
+      <p class="mt-6 text-gray-600 text-[16px] md:text-[17px] leading-relaxed">
+        Discover the inspiring story of Temple School. From humble beginnings
+        to a thriving institution committed to nurturing future leaders through
+        innovation, excellence, and holistic development.
+      </p>
 
     </div>
 
-    <!-- RIGHT: IMAGE STACK -->
-    <div class="lg:col-span-6 relative">
+    <!-- MAIN GRID -->
+    <div class="grid lg:grid-cols-12 gap-16 items-start">
 
-      <!-- IMAGE 1 (MAIN) -->
-      <div class="relative z-10 rounded-[32px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.15)]">
-        <img src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-14-8.jpg"
-          class="w-full h-[420px] md:h-[520px] object-cover" />
+      <!-- LEFT CONTENT -->
+      <div class="lg:col-span-7 space-y-8">
+
+        <!-- INTRO CARD -->
+        <div class="bg-white rounded-[32px] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.06)] border border-gray-100">
+
+          <div class="flex items-start gap-5">
+
+            <div class="w-14 h-14 rounded-2xl bg-[#004A7C]/10 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="graduation-cap" class="w-6 h-6 text-[#004A7C]"></i>
+            </div>
+
+            <div>
+
+              <h3 class="text-2xl font-semibold text-[#0B1C39] mb-5">
+                Our Educational Foundation
+              </h3>
+
+              <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px]">
+                Temple School is more than an institution; it is a
+                <span class="font-semibold text-[#0B1C39]">
+                  launching pad for future leaders
+                </span>
+                and a sanctuary for lifelong learners. Since 2004, we have nurtured bright minds
+                within a serene environment on the Lagos Mainland, delivering a world-class education
+                through a unique fusion of the
+                <span class="font-semibold text-[#0B1C39]">
+                  British National Curriculum
+                </span>,
+                Cambridge Curriculum, and enriched
+                <span class="font-semibold text-[#0B1C39]">
+                  Nigerian heritage
+                </span>.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- HISTORY CARD -->
+        <div class="bg-white rounded-[32px] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.06)] border border-gray-100">
+
+          <div class="flex items-start gap-5">
+
+            <div class="w-14 h-14 rounded-2xl bg-[#D48821]/10 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="history" class="w-6 h-6 text-[#D48821]"></i>
+            </div>
+
+            <div>
+
+              <h3 class="text-2xl font-semibold text-[#0B1C39] mb-5">
+                From Humble Beginnings to a Thriving Community
+              </h3>
+
+              <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px]">
+                Our story began in 2004 with a small, dedicated cohort of just seven students.
+                Driven by an uncompromising passion for academic distinction, that initial spark
+                quickly grew. By 2006, we expanded to accommodate our rapidly growing family of learners,
+                and by 2009,
+                <span class="font-semibold text-[#0B1C39]">
+                  Temple Secondary School
+                </span>
+                opened its doors boasting dynamic curricula and forward-thinking facilities.
+              </p>
+
+              <!-- TIMELINE -->
+              <div class="grid sm:grid-cols-3 gap-4 mt-8">
+
+                <div class="rounded-2xl bg-[#F8F6F1] p-5 border border-gray-100">
+                  <p class="text-2xl font-semibold text-[#0B1C39]">2004</p>
+                  <p class="text-sm text-gray-500 mt-1">Temple School Founded</p>
+                </div>
+
+                <div class="rounded-2xl bg-[#F8F6F1] p-5 border border-gray-100">
+                  <p class="text-2xl font-semibold text-[#0B1C39]">2006</p>
+                  <p class="text-sm text-gray-500 mt-1">School Expansion</p>
+                </div>
+
+                <div class="rounded-2xl bg-[#F8F6F1] p-5 border border-gray-100">
+                  <p class="text-2xl font-semibold text-[#0B1C39]">2009</p>
+                  <p class="text-sm text-gray-500 mt-1">Secondary School Opens</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- EXCELLENCE CARD -->
+        <div class="bg-white rounded-[32px] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.06)] border border-gray-100">
+
+          <div class="flex items-start gap-5">
+
+            <div class="w-14 h-14 rounded-2xl bg-[#004A7C]/10 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="building-2" class="w-6 h-6 text-[#004A7C]"></i>
+            </div>
+
+            <div class="w-full">
+
+              <h3 class="text-2xl font-semibold text-[#0B1C39] mb-5">
+                Evolution of Excellence
+              </h3>
+
+              <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px] mb-8">
+                In 2015, we reached a pivotal milestone by transitioning to our
+                <span class="font-semibold text-[#0B1C39]">
+                  permanent, state-of-the-art campus in Ikeja
+                </span>.
+                Designed to inspire, our campus serves as a modern hub for holistic development, featuring:
+              </p>
+
+              <!-- FEATURES -->
+              <div class="space-y-5">
+
+                <!-- ITEM -->
+                <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6F1] border border-gray-100">
+
+                  <div class="w-12 h-12 rounded-xl bg-[#D48821]/10 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="trophy" class="w-5 h-5 text-[#D48821]"></i>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-[#0B1C39] mb-2">
+                      Elite Athletics
+                    </h4>
+
+                    <p class="text-gray-600 leading-relaxed">
+                      Full-sized basketball and volleyball courts, a professional sports field,
+                      and a swimming pool.
+                    </p>
+                  </div>
+
+                </div>
+
+                <!-- ITEM -->
+                <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6F1] border border-gray-100">
+
+                  <div class="w-12 h-12 rounded-xl bg-[#004A7C]/10 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="bed-double" class="w-5 h-5 text-[#004A7C]"></i>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-[#0B1C39] mb-2">
+                      Modern Boarding
+                    </h4>
+
+                    <p class="text-gray-600 leading-relaxed">
+                      Safe and comfortable residential facilities that feel like a second home.
+                    </p>
+                  </div>
+
+                </div>
+
+                <!-- ITEM -->
+                <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6F1] border border-gray-100">
+
+                  <div class="w-12 h-12 rounded-xl bg-[#D48821]/10 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="monitor-smartphone" class="w-5 h-5 text-[#D48821]"></i>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-[#0B1C39] mb-2">
+                      Innovative Classrooms
+                    </h4>
+
+                    <p class="text-gray-600 leading-relaxed">
+                      Stimulating learning environments equipped with the latest educational technology.
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- COMMUNITY CARD -->
+        <div class="bg-[#0B1C39] rounded-[32px] p-8 md:p-10 text-white relative overflow-hidden">
+
+          <div class="absolute top-0 right-0 w-52 h-52 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
+
+          <div class="relative z-10">
+
+            <div class="flex items-start gap-5 mb-8">
+
+              <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="heart-handshake" class="w-6 h-6 text-[#D4AF37]"></i>
+              </div>
+
+              <div>
+
+                <h3 class="text-2xl font-semibold mb-4">
+                  More Than Just Bricks and Mortar
+                </h3>
+
+                <p class="text-white/80 leading-relaxed text-[16px] md:text-[17px]">
+                  At the heart of Temple School is a
+                  <span class="font-semibold text-white">
+                    safe, inclusive, and welcoming community
+                  </span>
+                  where every child is seen, heard, and valued. Our dedicated educators foster
+                  a nurturing atmosphere that prioritizes:
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- PRIORITIES -->
+            <div class="space-y-5">
+
+              <div class="flex items-start gap-4">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#D4AF37] mt-1"></i>
+
+                <div>
+                  <h4 class="font-semibold text-white mb-1">
+                    Curiosity & Exploration
+                  </h4>
+
+                  <p class="text-white/70">
+                    Encouraging students to ask “why” and “how.”
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#D4AF37] mt-1"></i>
+
+                <div>
+                  <h4 class="font-semibold text-white mb-1">
+                    Academic Rigor
+                  </h4>
+
+                  <p class="text-white/70">
+                    Pushing the boundaries of excellence in every discipline.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#D4AF37] mt-1"></i>
+
+                <div>
+                  <h4 class="font-semibold text-white mb-1">
+                    Character Development
+                  </h4>
+
+                  <p class="text-white/70">
+                    Building the ethical foundation necessary for global citizenship.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- VISION -->
+        <div class="border-t border-gray-200 pt-8">
+
+          <div class="flex items-start gap-4">
+
+            <div class="w-12 h-12 rounded-xl bg-[#D4AF37]/10 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="sparkles" class="w-5 h-5 text-[#D4AF37]"></i>
+            </div>
+
+            <p class="text-[#0B1C39] text-[17px] leading-relaxed">
+              <span class="font-semibold">
+                Our Vision:
+              </span>
+
+              At Temple School, we provide the wings every child needs to soar,
+              ensuring they have the confidence and competence to reach their full potential.
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <!-- IMAGE 2 -->
-      <div class="absolute -bottom-10 -left-10 w-40 md:w-52 rounded-[24px] overflow-hidden shadow-lg border-4 border-white">
-        <img src="/Temple School Project/Images/historyimg.JPG"
-          class="w-full h-40 md:h-52 object-cover" />
-      </div>
+      <!-- RIGHT IMAGES -->
+      <div class="lg:col-span-5 relative lg:sticky top-24">
 
-      <!-- IMAGE 3 -->
-      <div class="absolute -top-10 -right-6 w-36 md:w-44 rounded-[24px] overflow-hidden shadow-lg border-4 border-white">
-        <img src="https://www.templeschoolng.com/wp-content/uploads/2022/01/Fun-Work-2.jpeg"
-          class="w-full h-36 md:h-44 object-cover" />
+        <!-- MAIN IMAGE -->
+        <div class="relative z-10 rounded-[36px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.15)]">
+
+          <img
+            src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-14-8.jpg"
+            class="w-full h-[500px] md:h-[720px] object-cover"
+          />
+
+          <!-- DARK OVERLAY -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B1C39]/70 via-transparent to-transparent"></div>
+
+          <!-- FLOATING CONTENT -->
+          <div class="absolute bottom-6 left-6 right-6 z-30">
+
+            <div class="bg-black/30 backdrop-blur-xl border border-white/20 rounded-[28px] p-5">
+
+              <div class="flex items-center gap-4">
+
+                <div class="w-14 h-14 rounded-2xl bg-[#D4AF37] flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="school" class="w-6 h-6 text-[#0B1C39]"></i>
+                </div>
+
+                <div>
+                  <h4 class="text-white text-lg font-semibold">
+                    Temple School Campus
+                  </h4>
+
+                  <p class="text-white/80 text-sm leading-relaxed mt-1">
+                    Inspiring future leaders through innovation and excellence.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- FLOATING IMAGE -->
+        <div class="absolute -bottom-10 -left-8 w-44 md:w-52 rounded-[28px] overflow-hidden border-[6px] border-white shadow-2xl z-20">
+
+          <img
+            src="/Temple School Project/Images/historyimg.JPG"
+            class="w-full h-44 md:h-52 object-cover"
+          />
+
+        </div>
+
+        <!-- FLOATING IMAGE -->
+        <div class="absolute top-10 -right-8 w-40 md:w-48 rounded-[28px] overflow-hidden border-[6px] border-white shadow-2xl z-20">
+
+          <img
+            src="https://www.templeschoolng.com/wp-content/uploads/2022/01/Fun-Work-2.jpeg"
+            class="w-full h-40 md:h-48 object-cover"
+          />
+
+        </div>
+
       </div>
 
     </div>
 
   </div>
 
-</div>
-
 </section>
+
+
+
 
 
   <!-- stats section -->
