@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple School - Year 9</title>
+    <title>Temple School - Apply Online</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="shortcut icon" href="https://ik.imagekit.io/ddusctmqi/favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="https://ik.imagekit.io/ddusctmqi/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <style>
@@ -239,19 +239,21 @@
         color: white;
     }
 
-    .nav-btn {
-        padding: 10px 22px;
-        border-radius: 999px;
-        border: 1px solid rgba(11, 44, 95, 0.2);
-        color: #0B2C5F;
-        transition: all 0.3s ease;
-    }
+.nav-btn {
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: 1px solid rgba(11, 44, 95, 0.2);
+    color: #0B2C5F;
+    transition: all 0.3s ease;
+}
 
-    .nav-btn:hover {
-        background: #0B2C5F;
-        color: white;
-        transform: translateY(-2px);
-    }
+.nav-btn:hover {
+    background: #0B2C5F;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
 </style>
 
 
@@ -260,14 +262,14 @@
 
     <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0B1C39]">
 
-        <!-- LOGO -->
-        <img src="/Temple School Project/Images/logo.png" id="preloaderLogo" class="w-32 md:w-40 opacity-0">
+    <!-- LOGO -->
+    <img src="/Temple School Project/Images/logo.png" id="preloaderLogo" class="w-32 md:w-40 opacity-0">
 
-    </div>
+  </div>
 
 
     <!-- HEADER -->
-  <header class="bg-[#F8F6F1] shadow-sm relative z-50">
+    <header class="bg-[#F8F6F1] shadow-sm relative z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
       <!-- LOGO -->
@@ -438,7 +440,7 @@
     <div class="relative max-w-4xl mx-auto px-6 text-center">
 
       <h1 class="text-3xl md:text-5xl font-semibold text-white font-[Poppins] mb-6">
-        Year 9 Learning Journey
+        Online Application
       </h1>
 
 
@@ -449,169 +451,83 @@
   </section>
 
 
+  
+ <section class="py-16 px-6 lg:px-20 bg-white">
 
-  <!-- SECONDARY YEAR 9 SECTION -->
-<section class="bg-[#F8F6F1] py-24 px-6">
+  <div class="max-w-4xl mx-auto">
 
-    <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl lg:text-4xl font-bold text-[#0B1F3A] text-center mb-10">
+      Apply Online
+    </h2>
 
-        <!-- INTRO + VISUAL SPLIT -->
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+    <form action="https://formsubmit.co/info@templeschool.com" method="POST" class="space-y-6">
 
-            <!-- TEXT -->
-            <div>
-                <h3 class="text-2xl md:text-3xl font-semibold text-[#0B2C5F] font-[Poppins] mb-4">
-                    Secondary Year 9
-                </h3>
+      <!-- Disable captcha -->
+      <input type="hidden" name="_captcha" value="false">
 
-                <p class="text-gray-600 leading-relaxed mb-6 font-[Inter]">
-                    Year 9 marks the completion of Key Stage 3, also known as the Junior Secondary
-                    School stage. Students undertake an intensive programme of study in preparation
-                    for both internal examinations and the internationally recognised Cambridge
-                    Checkpoint Examination.
-                </p>
+      <!-- Optional success page -->
+      <input type="hidden" name="_next" value="">
 
-                <p class="text-gray-600 leading-relaxed mb-6 font-[Inter]">
-                    At this level, students are challenged to think independently, engage in
-                    practical investigations, and take greater ownership of their academic journey.
-                </p>
+      <!-- Names -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <input type="text" name="Student First Name" placeholder="Student's First Name *" required class="input">
+        <input type="text" name="Student Middle Name" placeholder="Student's Middle Name" class="input">
+      </div>
 
-                <!-- MINI FEATURES -->
-                <div class="space-y-4">
+      <input type="text" name="Student Last Name" placeholder="Student's Last Name/Surname *" required class="input">
 
-                    <div class="flex items-start gap-3">
-                        <i data-lucide="clipboard-check" class="w-5 h-5 text-[#14B8A6] mt-1"></i>
-                        <p class="text-sm text-gray-700">
-                            Preparation for Cambridge Checkpoint and internal examinations
-                        </p>
-                    </div>
+      <!-- Parent Contact -->
+      <input type="tel" name="Parent Phone" placeholder="Parent Mobile Number (One Phone Number is enough): *" required class="input">
 
-                    <div class="flex items-start gap-3">
-                        <i data-lucide="users" class="w-5 h-5 text-[#14B8A6] mt-1"></i>
-                        <p class="text-sm text-gray-700">
-                            Collaboration, teamwork, initiative and learner independence
-                        </p>
-                    </div>
+      <input type="email" name="Parent Email" placeholder="Parent Email Address: *" required class="input">
 
-                    <div class="flex items-start gap-3">
-                        <i data-lucide="briefcase-business" class="w-5 h-5 text-[#14B8A6] mt-1"></i>
-                        <p class="text-sm text-gray-700">
-                            Career preparation through projects, workshops and field experiences
-                        </p>
-                    </div>
+      <!-- Referral -->
+      <div>
+        <label class="block mb-2 font-medium">How did you hear about us?</label>
+        <select name="Referral" class="input">
+          <option>Edusko</option>
+          <option>Online/website</option>
+          <option>Facebook</option>
+          <option>Instagram</option>
+          <option>School Compass</option>
+          <option>Teacher Referral</option>
+          <option>School Event/Visit</option>
+          <option>Parent Referral</option>
+          <option>Attend other arm of the School</option>
+          <option>Others or Referral Name & Mobile Number</option>
+        </select>
+      </div>
 
-                </div>
-            </div>
+      <!-- Submit -->
+      <button type="submit"
+        class="w-full bg-[#0B1F3A] text-white py-3 rounded hover:bg-[#D4AF37] transition">
+        Submit Application
+      </button>
 
-            <!-- IMAGE -->
-            <div class="overflow-hidden rounded-2xl shadow-md">
-                <img src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Year-9B-scaled.jpg"
-                    alt="Temple School Year 9 Students"
-                    class="w-full h-[420px] object-cover hover:scale-105 transition duration-500">
-            </div>
+    </form>
 
-        </div>
-
-
-        <!-- FEATURE CARDS -->
-        <div class="grid md:grid-cols-3 gap-8 mt-20">
-
-            <!-- Card 1 -->
-            <div class="bg-white p-7 rounded-2xl shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#D4A017]/10 mb-4">
-                    <i data-lucide="file-badge" class="w-5 h-5 text-[#D4A017]"></i>
-                </div>
-
-                <h4 class="text-[#0B2C5F] font-semibold font-[Poppins] mb-3">
-                    Cambridge Checkpoint
-                </h4>
-
-                <p class="text-sm text-gray-600">
-                    Students sit the Cambridge Checkpoint examination, receiving an international
-                    benchmark and learner diagnostic report.
-                </p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="bg-white p-7 rounded-2xl shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#D4A017]/10 mb-4">
-                    <i data-lucide="lightbulb" class="w-5 h-5 text-[#D4A017]"></i>
-                </div>
-
-                <h4 class="text-[#0B2C5F] font-semibold font-[Poppins] mb-3">
-                    Independent Learning
-                </h4>
-
-                <p class="text-sm text-gray-600">
-                    Learners develop ownership, critical thinking, initiative and confidence
-                    in academic decision-making.
-                </p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-white p-7 rounded-2xl shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#D4A017]/10 mb-4">
-                    <i data-lucide="rocket" class="w-5 h-5 text-[#D4A017]"></i>
-                </div>
-
-                <h4 class="text-[#0B2C5F] font-semibold font-[Poppins] mb-3">
-                    Transition to Key Stage 4
-                </h4>
-
-                <p class="text-sm text-gray-600">
-                    Structured preparation for senior secondary through workshops,
-                    projects, field trips and career guidance.
-                </p>
-            </div>
-
-        </div>
-
-
-        <!-- INFORMATION BLOCK -->
-        <div class="bg-white mt-20 rounded-2xl p-8 shadow-sm">
-
-            <h3 class="text-xl font-semibold text-[#0B2C5F] font-[Poppins] mb-6">
-                Academic & Career Preparation
-            </h3>
-
-            <p class="text-gray-600 leading-relaxed mb-4">
-                The Cambridge Checkpoint Examination is taken early in the Summer Term
-                (Term Three) and is sponsored and marked by Cambridge University in England.
-                It provides Temple School with an external international benchmark for learner performance.
-            </p>
-
-            <p class="text-gray-600 leading-relaxed">
-                Each student receives a Statement of Achievement and a diagnostic feedback report
-                containing detailed performance analysis to support continued academic growth.
-            </p>
-
-        </div>
-
-
-        <!-- NAVIGATION -->
-         <div class="flex flex-wrap justify-center gap-4 mt-20">
-
-          
-            <a href="/Temple School Project/Learning Journey/Secondary/Class Room/Year8.html" class="nav-btn">Year 8</a>
-            <a href="/Temple School Project/Learning Journey/Secondary/Class Room/Year9.html" class="nav-btn bg-[#0B2C5F] text-white">Year 9</a>
-            <a href="/Temple School Project/Learning Journey/Secondary/Class Room/Year10.html" class="nav-btn">Year 10</a>
-            <a href="/Temple School Project/Learning Journey/Secondary/Class Room/Year11.html" class="nav-btn">Year 11</a>
-            <a href="/Temple School Project/Learning Journey/Secondary/Secondary-clubs-and-co-curricular-aspects-of-learning.html" class="nav-btn">Secondary clubs</a>
-            <a href="/Temple School Project/Learning Journey/Secondary/Admissions.html" class="nav-btn">Admissions</a>
-            <a href="/Temple School Project/Learning Journey/Secondary/Curriculum.html" class="nav-btn">Curriculum</a>
-
-            <a href="/Temple School Project/Learning Journey/Secondary/Apply online.html"
-                class="px-6 py-3 rounded-full bg-[#D4A017] text-white hover:opacity-90 transition">
-                Apply Online
-            </a>
-
-        </div>
-
-    </div>
+  </div>
 </section>
 
 
-  <!-- stats section -->
+
+
+<style>
+  .input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+  }
+  .input:focus {
+    border-color: #0B1F3A;
+    box-shadow: 0 0 0 2px rgba(11,31,58,0.1);
+  }
+</style>
+ 
+ <!-- stats section -->
 <section class="relative py-16 sm:py-20 md:py-24 bg-[#F8F6F1] overflow-hidden">
 
   <!-- Floating particles -->
@@ -700,7 +616,6 @@
 
   </div>
 </section>
-
 
 
 
@@ -994,7 +909,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://unpkg.com/@studio-freight/lenis"></script>
 
-    <script src="/Temple School Project/Js folder/years.js"></script>
+    <script src="/Temple School Project/Js folder/applyonline.js"></script>
 
 </body>
 
