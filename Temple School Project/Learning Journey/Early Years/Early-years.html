@@ -260,326 +260,342 @@
 
     <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0B1C39]">
 
-    <!-- LOGO -->
-    <img src="https://ik.imagekit.io/u9vfp7lad/tplogo.png?updatedAt=1777413437710" id="preloaderLogo" class="w-32 md:w-40 opacity-0">
+        <!-- LOGO -->
+        <img src="https://ik.imagekit.io/u9vfp7lad/tplogo.png?updatedAt=1777413437710" id="preloaderLogo"
+            class="w-32 md:w-40 opacity-0">
 
-  </div>
-
-    <!-- HEADER -->
-  <header class="bg-[#F8F6F1] shadow-sm relative z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-
-      <!-- LOGO -->
-      <a href="/index.html">
-        <div class="flex items-center px-13 gap-4">
-          <img src="https://ik.imagekit.io/u9vfp7lad/tplogo.png" class="w-20 h-20" alt="logo">
-          <div>
-            <h1 class="text-2xl font-semibold text-[#0A1F44]">TEMPLE</h1>
-            <p class="text-xs tracking-[0.4em] text-gray-500">SCHOOL</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- MOBILE BUTTON -->
-      <button id="menuBtn" class="lg:hidden text-3xl text-[#0A1F44] transition active:scale-90">
-        ☰
-      </button>
-
-      <!-- OVERLAY -->
-      <div id="overlay"
-        class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition duration-300 lg:hidden"></div>
-
-      <!-- NAV -->
-      <nav id="navMenu" class="fixed lg:static top-0 left-0 h-full lg:h-auto w-[85%] sm:w-80 lg:w-auto
-      bg-white lg:bg-transparent
-      shadow-2xl lg:shadow-none
-      transform -translate-x-full lg:translate-x-0
-      flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8
-      text-[#0A1F44] font-medium p-6 lg:p-0 z-50">
-
-        <!-- CLOSE BUTTON (MOBILE ONLY) -->
-        <div class="lg:hidden flex justify-between items-center mb-4">
-          <span class="font-semibold text-lg">Menu</span>
-          <button id="closeBtn" class="text-3xl">×</button>
-        </div>
-
-        <!-- LINKS (UNCHANGED EXACTLY) -->
-        <a href="/index.html" class="hover:text-[#2E8B7D] transition">Home</a>
-
-        <!-- ABOUT -->
-        <div class="relative group">
-          <button class="dropdown-toggle flex items-center gap-1 hover:text-[#2E8B7D] w-full justify-between">
-            About Us
-            <i data-lucide="chevron-down" class="w-3 h-3"></i>
-          </button>
-
-          <div class="submenu absolute top-full left-0 pt-3 w-64 bg-white rounded-xl shadow-xl
-        opacity-0 invisible pointer-events-none
-        group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition
-        max-w-[90vw]">
-
-            <ul class="py-2 text-sm">
-
-              <li><a href="/Temple School Project/About Us/Dir.html"
-                  class="block px-4 py-2 hover:bg-gray-100">Director’s Message</a></li>
-              <li><a href="/Temple School Project/About Us/values.html" class="block px-4 py-2 hover:bg-gray-100">Our
-                  Values</a></li>
-              <li><a href="/Temple School Project/About Us/history.html" class="block px-4 py-2 hover:bg-gray-100">Our
-                  History</a></li>
-              <li><a href="/Temple School Project/About Us/ethos.html" class="block px-4 py-2 hover:bg-gray-100">Our
-                  Ethos</a></li>
-              <li><a href="/Temple School Project/About Us/facilities.html"
-                  class="block px-4 py-2 hover:bg-gray-100">Facilities</a></li>
-              <li><a href="/Temple School Project/About Us/management.html"
-                  class="block px-4 py-2 hover:bg-gray-100">Management</a></li>
-
-              <li class="relative">
-                <div class="dropdown-toggle flex justify-between px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Temple School Policies
-                  <i data-lucide="chevron-right" class="w-3 h-3"></i>
-                </div>
-
-                <div class="submenu absolute top-0 left-full ml-1 w-64 bg-white rounded-xl shadow-xl
-              opacity-0 invisible pointer-events-none
-              group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:pointer-events-auto transition
-              max-w-[90vw]">
-
-                  <a href="/Temple School Project/About Us/Temple School policies/Safeguarding Statement.html"
-                    class="block px-4 py-2 hover:bg-gray-100">Safeguarding Statement</a>
-                  <a href="/Temple School Project/About Us/Temple School policies/Safeguarding and child protection policy.html"
-                    class="block px-4 py-2 hover:bg-gray-100">Child Protection Policy</a>
-
-                </div>
-              </li>
-
-              <li class="relative submenu-item">
-                <div class="dropdown-toggle flex justify-between px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  Gallery
-                  <i data-lucide="chevron-right" class="w-3 h-3"></i>
-                </div>
-
-                <div class="submenu absolute top-0 left-full ml-1 w-56 bg-white rounded-xl shadow-xl
-              opacity-0 invisible pointer-events-none
-              group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:pointer-events-auto transition
-              max-w-[90vw]">
-
-                  <a href="/Temple School Project/About Us/Gallery/image gallery.html"
-                    class="block px-4 py-2 hover:bg-gray-100">Image Gallery</a>
-                  <a href="/Temple School Project/About Us/Gallery/video gallery.html"
-                    class="block px-4 py-2 hover:bg-gray-100">Video Gallery</a>
-
-                </div>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-
-
-        <!-- LEARNING JOURNEY -->
-        <div class="relative group">
-          <button class="dropdown-toggle flex items-center gap-1 hover:text-[#2E8B7D] w-full justify-between">
-            Learning Journey
-            <i data-lucide="chevron-down" class="w-3 h-3"></i>
-          </button>
-
-          <!-- LEVEL 1 DROPDOWN -->
-          <div class="submenu absolute top-full left-0 pt-3 w-64 bg-white rounded-xl shadow-xl
-  opacity-0 invisible pointer-events-none
-  group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition
-  max-w-[90vw]">
-
-            <ul class="py-2 text-sm">
-
-              <!-- EARLY YEARS -->
-              <li>
-                <a href="/Temple School Project/Learning Journey/Early Years/Early-years.html" class="block px-4 py-2 hover:bg-gray-100">Early Years</a>
-              </li>
-
-              <!-- PRIMARY -->
-              <li>
-                <a href="/Temple School Project/Learning Journey/Primary/Primary.html" class="block px-4 py-2 hover:bg-gray-100">Primary</a>
-              </li>
-
-              <!-- SECONDARY -->
-              <li>
-                <a href="/Temple School Project/Learning Journey/Secondary/secondary.html" class="block px-4 py-2 hover:bg-gray-100">Secondary</a>
-              </li>
-
-              <!-- COLLEGE -->
-              <li>
-                <a href="/Temple School Project/Learning Journey/College/college.html" class="block px-4 py-2 hover:bg-gray-100">College</a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-
-        <a href="/Temple School Project/Events/Events.html" class="hover:text-[#2E8B7D]">Event</a>
-        <a href="" class="hover:text-[#2E8B7D]">Boarding House</a>
-        <a href="/Temple School Project/ELD/ELD.html" class="hover:text-[#2E8B7D]">ELD</a>
-        <a href="/Temple School Project/Contact Page/Contact.html" class="hover:text-[#2E8B7D]">Contact Us</a>
-
-      </nav>
     </div>
-  </header>
 
+    <!-- PREMIUM HEADER -->
     <!-- HEADER -->
-    <section class="bg-[#F9F8F3] py-20 pb-10">
-
-        <div class="max-w-5xl mx-auto text-center px-6 mb-10">
-
-            <p class="text-sm text-[#D4A017] font-[Inter] mb-2">
-                Welcome to
-            </p>
-
-            <h2 class="text-2xl md:text-3xl font-semibold text-[#0B2C5F] font-[Poppins]">
-                Early Years and Foundation Stage
-            </h2>
-
-            <div class="w-16 h-[3px] bg-[#D4A017] mx-auto mt-3"></div>
-
-        </div>
-    </section>
-
-
-    <!-- VIDEO -->
-    <section class="bg-[#F9F8F3] pb-0">
-        <div class="w-full overflow-hidden">
-            <video autoplay muted loop playsinline class="w-full h-[420px] md:h-[520px] object-cover">
-                <source
-                    src="https://ik.imagekit.io/ddusctmqi/At%20Temple%20Schools%20EYFS%20Section,%20we%20believe%20that%20every%20child%20is%20worthy%20and%20capable%20of%20greatness..mp4"
-                    type="video/mp4">
-            </video>
-        </div>
-    </section>
-
-
-    <!-- INTRO + VISUAL SPLIT -->
-    <section class="bg-[#EAF2F2] py-24 px-6">
-
-        <div class="max-w-6xl mx-auto">
-
-            <!-- SPLIT SECTION -->
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-
-                <!-- TEXT -->
-                <div>
-                    <h3 class="text-xl font-semibold text-[#0B2C5F] font-[Poppins] mb-4">
-                        A Joyful Start to Learning
-                    </h3>
-
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Our Early Years Foundation Stage nurtures curiosity, confidence, and independence
-                        through a balanced approach to play and structured learning. Every child is supported
-                        in a calm and engaging environment designed to inspire growth.
-                    </p>
-
-                    <!-- MINI FEATURES WITH ICONS -->
-                    <div class="space-y-4">
-
-                        <div class="flex items-start gap-3">
-                            <i data-lucide="sparkles" class="w-5 h-5 text-[#D4A017] mt-1"></i>
-                            <p class="text-sm text-gray-700">Creative and play-based learning experiences</p>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <i data-lucide="shield-check" class="w-5 h-5 text-[#D4A017] mt-1"></i>
-                            <p class="text-sm text-gray-700">Safe, nurturing, and structured environment</p>
-                        </div>
-
-                        <div class="flex items-start gap-3">
-                            <i data-lucide="brain" class="w-5 h-5 text-[#D4A017] mt-1"></i>
-                            <p class="text-sm text-gray-700">Focus on emotional and cognitive development</p>
-                        </div>
-
+    <header class="bg-[#F8F6F1] shadow-sm relative z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"> <!-- LOGO --> <a href="/index.html">
+                <div class="flex items-center px-13 gap-4"> <img src="https://ik.imagekit.io/u9vfp7lad/tplogo.png"
+                        class="w-20 h-20" alt="logo">
+                    <div>
+                        <h1 class="text-2xl font-semibold text-[#0A1F44]">TEMPLE</h1>
+                        <p class="text-xs tracking-[0.4em] text-gray-500">SCHOOL</p>
                     </div>
                 </div>
+            </a> <!-- MOBILE BUTTON --> <button id="menuBtn"
+                class="lg:hidden text-3xl text-[#0A1F44] transition active:scale-90"> ☰ </button> <!-- OVERLAY -->
+            <div id="overlay"
+                class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition duration-300 lg:hidden"></div>
+            <!-- NAV -->
+            <nav id="navMenu"
+                class="fixed lg:static top-0 left-0 h-full lg:h-auto w-[85%] sm:w-80 lg:w-auto bg-white lg:bg-transparent shadow-2xl lg:shadow-none transform -translate-x-full lg:translate-x-0 flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8 text-[#0A1F44] font-medium p-6 lg:p-0 z-50">
+                <!-- CLOSE BUTTON (MOBILE ONLY) -->
+                <div class="lg:hidden flex justify-between items-center mb-4"> <span
+                        class="font-semibold text-lg">Menu</span> <button id="closeBtn" class="text-3xl">×</button>
+                </div> <!-- LINKS (UNCHANGED EXACTLY) --> <a href="/index.html"
+                    class="hover:text-[#2E8B7D] transition">Home</a> <!-- ABOUT -->
+                <div class="relative group"> <button
+                        class="dropdown-toggle flex items-center gap-1 hover:text-[#2E8B7D] w-full justify-between">
+                        About Us <i data-lucide="chevron-down" class="w-3 h-3"></i> </button>
+                    <div
+                        class="submenu absolute top-full left-0 pt-3 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition max-w-[90vw]">
+                        <ul class="py-2 text-sm">
+                            <li><a href="/Temple School Project/About Us/Dir.html"
+                                    class="block px-4 py-2 hover:bg-gray-100">Director’s Message</a></li>
+                            <li><a href="/Temple School Project/About Us/values.html"
+                                    class="block px-4 py-2 hover:bg-gray-100">Our Values</a></li>
+                            <li><a href="/Temple School Project/About Us/history.html"
+                                    class="block px-4 py-2 hover:bg-gray-100">Our History</a></li>
+                            <li><a href="/Temple School Project/About Us/ethos.html"
+                                    class="block px-4 py-2 hover:bg-gray-100">Our Ethos</a></li>
+                            <li><a href="/Temple School Project/About Us/facilities.html"
+                                    class="block px-4 py-2 hover:bg-gray-100">Facilities</a></li>
+                            <li><a href="/Temple School Project/About Us/management.html"
+                                    class="block px-4 py-2 hover:bg-gray-100">Management</a></li>
+                            <li class="relative">
+                                <div
+                                    class="dropdown-toggle flex justify-between px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                    Temple School Policies <i data-lucide="chevron-right" class="w-3 h-3"></i> </div>
+                                <div
+                                    class="submenu absolute top-0 left-full ml-1 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible pointer-events-none group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:pointer-events-auto transition max-w-[90vw]">
+                                    <a href="/Temple School Project/About Us/Temple School policies/Safeguarding Statement.html"
+                                        class="block px-4 py-2 hover:bg-gray-100">Safeguarding Statement</a> <a
+                                        href="/Temple School Project/About Us/Temple School policies/Safeguarding and child protection policy.html"
+                                        class="block px-4 py-2 hover:bg-gray-100">Child Protection Policy</a> </div>
+                            </li>
+                            <li class="relative submenu-item">
+                                <div
+                                    class="dropdown-toggle flex justify-between px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                                    Gallery <i data-lucide="chevron-right" class="w-3 h-3"></i> </div>
+                                <div
+                                    class="submenu absolute top-0 left-full ml-1 w-56 bg-white rounded-xl shadow-xl opacity-0 invisible pointer-events-none group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:pointer-events-auto transition max-w-[90vw]">
+                                    <a href="/Temple School Project/About Us/Gallery/image gallery.html"
+                                        class="block px-4 py-2 hover:bg-gray-100">Image Gallery</a> <a
+                                        href="/Temple School Project/About Us/Gallery/video gallery.html"
+                                        class="block px-4 py-2 hover:bg-gray-100">Video Gallery</a> </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- LEARNING JOURNEY -->
+                <div class="relative group"> <button
+                        class="dropdown-toggle flex items-center gap-1 hover:text-[#2E8B7D] w-full justify-between">
+                        Learning Journey <i data-lucide="chevron-down" class="w-3 h-3"></i> </button>
+                    <!-- LEVEL 1 DROPDOWN -->
+                    <div
+                        class="submenu absolute top-full left-0 pt-3 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition max-w-[90vw]">
+                        <ul class="py-2 text-sm"> <!-- EARLY YEARS -->
+                            <li> <a href="/Temple School Project/Learning Journey/Early Years/Early-years.html"
+                                    class="block px-4 py-2 hover:bg-gray-100">Early Years</a> </li> <!-- PRIMARY -->
+                            <li> <a href="/Temple School Project/Learning Journey/Primary/Primary.html"
+                                    class="block px-4 py-2 hover:bg-gray-100">Primary</a> </li> <!-- SECONDARY -->
+                            <li> <a href="/Temple School Project/Learning Journey/Secondary/secondary.html"
+                                    class="block px-4 py-2 hover:bg-gray-100">Secondary</a> </li> <!-- COLLEGE -->
+                            <li> <a href="/Temple School Project/Learning Journey/College/college.html"
+                                    class="block px-4 py-2 hover:bg-gray-100">College</a> </li>
+                        </ul>
+                    </div>
+                </div> <a href="/Temple School Project/Events/Events.html" class="hover:text-[#2E8B7D]">Event</a> <a
+                    href="" class="hover:text-[#2E8B7D]">Boarding House</a> <a
+                    href="/Temple School Project/ELD/ELD.html" class="hover:text-[#2E8B7D]">ELD</a> <a
+                    href="/Temple School Project/Contact Page/Contact.html" class="hover:text-[#2E8B7D]">Contact Us</a>
+            </nav>
+        </div>
+    </header>
 
-                <!-- IMAGE (CHILDREN) -->
-                <div class="overflow-hidden rounded-xl">
-                    <img src="https://www.templeschoolng.com/wp-content/uploads/2026/04/Joel-Nwaoha-1-scaled.jpg"
-                        class="w-full h-[350px] object-cover transition duration-500 hover:scale-105">
+
+    <!-- HERO -->
+    <section class="relative bg-[#F9F8F3] overflow-hidden">
+
+        <!-- BACKGROUND -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-[#D4A017]/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#0B2C5F]/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-20 md:py-28 relative z-10">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                <!-- TEXT -->
+                <div class="max-w-2xl">
+
+                    <p
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#D4A017]/10 text-[#D4A017] text-xs font-semibold tracking-[0.2em] uppercase mb-6">
+                        Welcome To Temple School
+                    </p>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-[#0B2C5F] heading-font">
+                        Early Years & <br>
+                        Foundation Stage
+                    </h1>
+
+                    <p class="mt-6 text-base sm:text-lg text-gray-600 leading-8 max-w-xl">
+                        A nurturing environment where children learn through creativity,
+                        exploration, confidence building, and joyful discovery.
+                    </p>
+
+                    <!-- CTA -->
+                    <div class="flex flex-wrap gap-4 mt-8">
+
+                        <a href="/Temple School Project/Learning Journey/Early Years/Apply online.html"
+                            class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#0B2C5F] text-white font-medium hover:bg-[#D4A017] transition-all duration-300 hover:-translate-y-1">
+                            Apply Online
+                        </a>
+
+                        <a href="/Temple School Project/Learning Journey/Early Years/Admission Policy.html"
+                            class="inline-flex items-center justify-center px-6 py-3 rounded-xl border border-[#0B2C5F]/10 bg-white text-[#0B2C5F] font-medium hover:bg-[#0B2C5F] hover:text-white transition-all duration-300">
+                            Admissions
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- IMAGE -->
+                <div class="relative">
+
+                    <div class="absolute -bottom-6 -left-6 w-full h-full border border-[#D4A017]/20 rounded-[2rem]">
+                    </div>
+
+                    <div class="relative overflow-hidden rounded-[2rem] shadow-[0_25px_80px_rgba(0,0,0,0.12)]">
+
+                        <video autoplay muted loop playsinline class="w-full h-[420px] sm:h-[520px] object-cover">
+                            <source
+                                src="https://ik.imagekit.io/ddusctmqi/At%20Temple%20Schools%20EYFS%20Section,%20we%20believe%20that%20every%20child%20is%20worthy%20and%20capable%20of%20greatness..mp4"
+                                type="video/mp4">
+                        </video>
+
+                    </div>
+
                 </div>
 
             </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INTRO SECTION -->
+    <section class="relative bg-[#EEF4F4] py-20 sm:py-24 overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                <!-- IMAGE -->
+                <div class="relative">
+
+                    <div class="absolute inset-0 bg-[#0B2C5F]/5 rounded-[2rem] rotate-3"></div>
+
+                    <div class="relative overflow-hidden rounded-[2rem] shadow-xl">
+
+                        <img src="https://www.templeschoolng.com/wp-content/uploads/2026/04/Joel-Nwaoha-1-scaled.jpg"
+                            class="w-full h-[350px] sm:h-[450px] lg:h-[550px] object-cover hover:scale-105 transition duration-700">
+
+                    </div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div>
+
+                    <p class="uppercase tracking-[0.25em] text-xs font-semibold text-[#D4A017] mb-4">
+                        Early Learning Experience
+                    </p>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-[#0B2C5F] leading-tight heading-font mb-6">
+                        A Joyful Start <br>
+                        to Lifelong Learning
+                    </h2>
+
+                    <p class="text-gray-600 leading-8 mb-8">
+                        Our Early Years Foundation Stage nurtures curiosity, confidence,
+                        and independence through a balanced blend of structured learning
+                        and creative play.
+                    </p>
+
+                    <!-- FEATURES -->
+                    <div class="space-y-5">
+
+                        <div class="feature-card">
+                            <i data-lucide="sparkles" class="feature-icon"></i>
+
+                            <div>
+                                <h4 class="feature-title">
+                                    Play-Based Learning
+                                </h4>
+
+                                <p class="feature-text">
+                                    Creative exploration designed to inspire imagination and discovery.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="feature-card">
+                            <i data-lucide="shield-check" class="feature-icon"></i>
+
+                            <div>
+                                <h4 class="feature-title">
+                                    Safe & Nurturing Environment
+                                </h4>
+
+                                <p class="feature-text">
+                                    Every child grows in a calm, secure, and supportive atmosphere.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="feature-card">
+                            <i data-lucide="brain" class="feature-icon"></i>
+
+                            <div>
+                                <h4 class="feature-title">
+                                    Cognitive Development
+                                </h4>
+
+                                <p class="feature-text">
+                                    Encouraging independent thinking and emotional growth.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
 
 
             <!-- FEATURE CARDS -->
-            <div class="grid md:grid-cols-3 gap-8 mt-20">
+            <div class="grid md:grid-cols-3 gap-6 mt-20">
 
-                <div class="bg-white p-7 rounded-xl shadow-sm hover:-translate-y-1 hover:shadow-md transition">
-
-                    <div class="w-10 h-10 flex items-center justify-center bg-[#D4A017]/10 rounded-full mb-4">
-                        <i data-lucide="puzzle" class="w-5 h-5 text-[#D4A017]"></i>
+                <div class="eyfs-card">
+                    <div class="icon-box">
+                        <i data-lucide="puzzle"></i>
                     </div>
 
-                    <h3 class="text-[#0B2C5F] font-semibold mb-2 font-[Poppins]">
-                        Play-Based Learning
-                    </h3>
+                    <h3>Play-Based Learning</h3>
 
-                    <p class="text-sm text-gray-600">
+                    <p>
                         Encouraging creativity and curiosity through guided exploration.
                     </p>
-
                 </div>
 
-
-                <div class="bg-white p-7 rounded-xl shadow-sm hover:-translate-y-1 hover:shadow-md transition">
-
-                    <div class="w-10 h-10 flex items-center justify-center bg-[#D4A017]/10 rounded-full mb-4">
-                        <i data-lucide="heart-handshake" class="w-5 h-5 text-[#D4A017]"></i>
+                <div class="eyfs-card">
+                    <div class="icon-box">
+                        <i data-lucide="heart-handshake"></i>
                     </div>
 
-                    <h3 class="text-[#0B2C5F] font-semibold mb-2 font-[Poppins]">
-                        Supportive Care
-                    </h3>
+                    <h3>Supportive Care</h3>
 
-                    <p class="text-sm text-gray-600">
+                    <p>
                         Building strong emotional connections and confidence.
                     </p>
-
                 </div>
 
-
-                <div class="bg-white p-7 rounded-xl shadow-sm hover:-translate-y-1 hover:shadow-md transition">
-
-                    <div class="w-10 h-10 flex items-center justify-center bg-[#D4A017]/10 rounded-full mb-4">
-                        <i data-lucide="book-open" class="w-5 h-5 text-[#D4A017]"></i>
+                <div class="eyfs-card">
+                    <div class="icon-box">
+                        <i data-lucide="book-open"></i>
                     </div>
 
-                    <h3 class="text-[#0B2C5F] font-semibold mb-2 font-[Poppins]">
-                        Strong Foundations
-                    </h3>
+                    <h3>Strong Foundations</h3>
 
-                    <p class="text-sm text-gray-600">
+                    <p>
                         Preparing children for future academic success.
                     </p>
-
                 </div>
 
             </div>
 
 
-            <!-- NAVIGATION -->
+
+            <!-- NAV -->
             <div class="flex flex-wrap justify-center gap-4 mt-20">
 
-                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/Creche.html"
-                    class="nav-btn">Creche</a>
+                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/Creche.html" class="nav-btn">
+                    Creche
+                </a>
+
                 <a href="/Temple School Project/Learning Journey/Early Years/Classroom/pre-school1.html"
-                    class="nav-btn">Pre School 1</a>
+                    class="nav-btn">
+                    Pre School 1
+                </a>
+
                 <a href="/Temple School Project/Learning Journey/Early Years/Classroom/pre-school2.html"
-                    class="nav-btn">Pre School 2</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/reception.html"
-                    class="nav-btn">Reception</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/Admission Policy.html"
-                    class="nav-btn">Admissions</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/curriculum.html"
-                    class="nav-btn">Curriculum</a>
+                    class="nav-btn">
+                    Pre School 2
+                </a>
 
+                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/reception.html" class="nav-btn">
+                    Reception
+                </a>
 
-                <a href="/Temple School Project/Learning Journey/Early Years/Apply online.html"
-                    class="px-6 py-2.5 rounded-full bg-[#D4A017] text-white hover:opacity-90 transition">
+                <a href="/Temple School Project/Learning Journey/Early Years/curriculum.html" class="nav-btn">
+                    Curriculum
+                </a>
+
+                <a href="/Temple School Project/Learning Journey/Early Years/Apply online.html" class="apply-btn">
                     Apply Online
                 </a>
 
@@ -591,96 +607,258 @@
 
 
 
+    <style>
+        .nav-link {
+            position: relative;
+            transition: 0.3s ease;
+        }
 
-  <!-- stats section -->
-<section class="relative py-16 sm:py-20 md:py-24 bg-[#F8F6F1] overflow-hidden">
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #D4A017;
+            transition: 0.3s ease;
+        }
 
-  <!-- Floating particles -->
-  <div class="absolute inset-0 pointer-events-none">
-    <div class="particle p1"></div>
-    <div class="particle p2"></div>
-    <div class="particle p3"></div>
-    <div class="particle p4"></div>
-    <div class="particle p5"></div>
-  </div>
+        .nav-link:hover {
+            color: #2E8B7D;
+        }
 
-  <div class="relative max-w-7xl mx-auto px-6 sm:px-8 text-center">
+        .nav-link:hover::after {
+            width: 100%;
+        }
 
-    <!-- Heading -->
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#0B1C39] mb-3 heading-font">
-      Our Legacy in Numbers
-    </h2>
+        .dropdown-item {
+            display: block;
+            padding: 12px 14px;
+            border-radius: 12px;
+            font-size: 14px;
+            color: #0A1F44;
+            transition: 0.3s ease;
+        }
 
-    <p class="text-sm sm:text-base md:text-lg text-gray-600 mb-10 md:mb-14 max-w-xl mx-auto leading-7">
-      Building excellence since 2004 with pride, discipline, and innovation.
-    </p>
+        .dropdown-item:hover {
+            background: #F8F6F1;
+            color: #2E8B7D;
+            transform: translateX(4px);
+        }
 
-    <!-- Stats Grid -->
-    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+        .mobile-link {
+            display: block;
+            padding: 14px 16px;
+            border-radius: 14px;
+            color: #0A1F44;
+            transition: 0.3s ease;
+        }
 
-      <!-- YEAR -->
-      <div class="stat-card bg-white/70 backdrop-blur-md rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
-        <i data-lucide="calendar" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none">
-          <span id="yearCounter">2004</span>
-        </h3>
-        <p class="text-[#004A7C] mt-3 text-xs sm:text-sm md:text-base font-medium">Established</p>
-      </div>
+        .mobile-link:hover {
+            background: #F8F6F1;
+            color: #2E8B7D;
+            transform: translateX(4px);
+        }
 
-      <!-- SCHOOLS -->
-      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
-        <i data-lucide="building-2" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none">
-          <span class="counter" data-target="5">0</span>
-        </h3>
-        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Schools</p>
-      </div>
+        .feature-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
 
-      <!-- ENROLMENT -->
-      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
-        <i data-lucide="users" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none whitespace-nowrap">
-          <span class="counter" data-target="8000">0</span><span class="text-[#D48821]">+</span>
-        </h3>
-        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Enrolment</p>
-      </div>
+        .feature-icon {
+            width: 22px;
+            height: 22px;
+            color: #D4A017;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
 
-      <!-- PASS RATE -->
-      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
-        <i data-lucide="graduation-cap" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none whitespace-nowrap">
-          <span class="counter" data-target="99">0</span><span>%</span>
-        </h3>
-        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Pass Rate</p>
-      </div>
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #0B2C5F;
+            margin-bottom: 4px;
+        }
 
-      <!-- PARENTS -->
-      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
-        <i data-lucide="smile" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#D48821] leading-none whitespace-nowrap">
-          <span class="counter" data-target="100">0</span><span>%</span>
-        </h3>
-        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Parent Satisfaction</p>
-      </div>
+        .feature-text {
+            font-size: 14px;
+            color: #6B7280;
+            line-height: 1.7;
+        }
 
-    </div>
+        .eyfs-card {
+            background: white;
+            border-radius: 28px;
+            padding: 32px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            transition: 0.4s ease;
+        }
 
-    <!-- Final tagline -->
-    <div class="mt-10 md:mt-14 flex justify-center">
-      <div class="backdrop-blur-md bg-white/30 border border-white/20
+        .eyfs-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+        }
+
+        .icon-box {
+            width: 56px;
+            height: 56px;
+            border-radius: 18px;
+            background: #D4A01715;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .icon-box i {
+            width: 24px;
+            height: 24px;
+            color: #D4A017;
+        }
+
+        .eyfs-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0B2C5F;
+            margin-bottom: 12px;
+        }
+
+        .eyfs-card p {
+            color: #6B7280;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+
+        .nav-btn:hover {
+            background: #0B2C5F;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .apply-btn {
+            padding: 12px 28px;
+            border-radius: 999px;
+            background: #D4A017;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .apply-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.92;
+        }
+    </style>
+
+
+
+
+    <!-- stats section -->
+    <section class="relative py-16 sm:py-20 md:py-24 bg-[#F8F6F1] overflow-hidden">
+
+        <!-- Floating particles -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="particle p1"></div>
+            <div class="particle p2"></div>
+            <div class="particle p3"></div>
+            <div class="particle p4"></div>
+            <div class="particle p5"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 sm:px-8 text-center">
+
+            <!-- Heading -->
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#0B1C39] mb-3 heading-font">
+                Our Legacy in Numbers
+            </h2>
+
+            <p class="text-sm sm:text-base md:text-lg text-gray-600 mb-10 md:mb-14 max-w-xl mx-auto leading-7">
+                Building excellence since 2004 with pride, discipline, and innovation.
+            </p>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+
+                <!-- YEAR -->
+                <div
+                    class="stat-card bg-white/70 backdrop-blur-md rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+                    <i data-lucide="calendar" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+                    <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none">
+                        <span id="yearCounter">2004</span>
+                    </h3>
+                    <p class="text-[#004A7C] mt-3 text-xs sm:text-sm md:text-base font-medium">Established</p>
+                </div>
+
+                <!-- SCHOOLS -->
+                <div
+                    class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+                    <i data-lucide="building-2" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+                    <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none">
+                        <span class="counter" data-target="5">0</span>
+                    </h3>
+                    <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Schools</p>
+                </div>
+
+                <!-- ENROLMENT -->
+                <div
+                    class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+                    <i data-lucide="users" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+                    <h3
+                        class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none whitespace-nowrap">
+                        <span class="counter" data-target="8000">0</span><span class="text-[#D48821]">+</span>
+                    </h3>
+                    <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Enrolment</p>
+                </div>
+
+                <!-- PASS RATE -->
+                <div
+                    class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+                    <i data-lucide="graduation-cap" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+                    <h3
+                        class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none whitespace-nowrap">
+                        <span class="counter" data-target="99">0</span><span>%</span>
+                    </h3>
+                    <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Pass Rate</p>
+                </div>
+
+                <!-- PARENTS -->
+                <div
+                    class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+                    <i data-lucide="smile" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+                    <h3
+                        class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#D48821] leading-none whitespace-nowrap">
+                        <span class="counter" data-target="100">0</span><span>%</span>
+                    </h3>
+                    <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Parent Satisfaction</p>
+                </div>
+
+            </div>
+
+            <!-- Final tagline -->
+            <div class="mt-10 md:mt-14 flex justify-center">
+                <div class="backdrop-blur-md bg-white/30 border border-white/20
                   shadow-[0_8px_30px_rgba(0,0,0,0.08)]
                   px-5 py-4 rounded-2xl">
 
-        <p class="text-base sm:text-lg md:text-xl font-semibold text-[#0B1C39] leading-relaxed">
-          Excellence built over
-          <span class="text-[#D48821]">two decades</span>
-        </p>
+                    <p class="text-base sm:text-lg md:text-xl font-semibold text-[#0B1C39] leading-relaxed">
+                        Excellence built over
+                        <span class="text-[#D48821]">two decades</span>
+                    </p>
 
-      </div>
-    </div>
+                </div>
+            </div>
 
-  </div>
-</section>
+        </div>
+    </section>
 
 
 
@@ -837,129 +1015,136 @@
     <!-- footer -->
 
     <!-- footer -->
-  <footer class="relative bg-[#0B1C39] text-white overflow-hidden">
+    <footer class="relative bg-[#0B1C39] text-white overflow-hidden">
 
-    <!-- BACKGROUND IMAGE OVERLAY -->
-    <div class="absolute inset-0 opacity-10 bg-cover bg-center"
-      style="background-image: url('https://edusko-dev-bucket.s3.eu-north-1.amazonaws.com/1637581682221R-NXH5WoINPL_XLcSlS0kvDg64-nw9pk.png');">
-    </div>
-
-    <div class="relative max-w-7xl mx-auto px-6 py-16">
-
-      <!-- GRID -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 footer-columns">
-
-        <!-- BRANCH 1 -->
-        <div class="footer-col">
-          <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Early Years</h3>
-          <p class="text-sm text-white/80">213 Ikorodu Road,
-            Ilupeju, Lagos</p>
-
-          <a href="#" class="footer-link">
-            Directions →
-          </a>
-
-          <p class="text-sm mt-2">+234 809 520 0447</p>
-          <p class="text-sm">info@templeschoolng.com
-
-          </p>
+        <!-- BACKGROUND IMAGE OVERLAY -->
+        <div class="absolute inset-0 opacity-10 bg-cover bg-center"
+            style="background-image: url('https://edusko-dev-bucket.s3.eu-north-1.amazonaws.com/1637581682221R-NXH5WoINPL_XLcSlS0kvDg64-nw9pk.png');">
         </div>
 
-        <!-- BRANCH 2 -->
-        <div class="footer-col">
-          <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Primary School</h3>
-          <p class="text-sm text-white/80">1 Temple Drive, Off Olusoji
-            Idowu St, Ilupeju, Lagos</p>
+        <div class="relative max-w-7xl mx-auto px-6 py-16">
 
-          <a href="https://www.google.com/maps/place/1+Temple+Dr,+Ilupeju,+Lagos+102215,+Lagos/@6.5524427,3.3627879,17z/data=!3m1!4b1!4m6!3m5!1s0x103b8d91155fd4bb:0xd08194846eb51769!8m2!3d6.5524374!4d3.3653628!16s%2Fg%2F11dzdw8k15?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" class="footer-link">
-            Directions →
-          </a>
+            <!-- GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 footer-columns">
 
-          <p class="text-sm mt-2">+234 807 087 1467</p>
-          <p class="text-sm">info@templeschoolng.com
+                <!-- BRANCH 1 -->
+                <div class="footer-col">
+                    <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Early Years</h3>
+                    <p class="text-sm text-white/80">213 Ikorodu Road,
+                        Ilupeju, Lagos</p>
 
-          </p>
+                    <a href="#" class="footer-link">
+                        Directions →
+                    </a>
+
+                    <p class="text-sm mt-2">+234 809 520 0447</p>
+                    <p class="text-sm">info@templeschoolng.com
+
+                    </p>
+                </div>
+
+                <!-- BRANCH 2 -->
+                <div class="footer-col">
+                    <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Primary School</h3>
+                    <p class="text-sm text-white/80">1 Temple Drive, Off Olusoji
+                        Idowu St, Ilupeju, Lagos</p>
+
+                    <a href="https://www.google.com/maps/place/1+Temple+Dr,+Ilupeju,+Lagos+102215,+Lagos/@6.5524427,3.3627879,17z/data=!3m1!4b1!4m6!3m5!1s0x103b8d91155fd4bb:0xd08194846eb51769!8m2!3d6.5524374!4d3.3653628!16s%2Fg%2F11dzdw8k15?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+                        class="footer-link">
+                        Directions →
+                    </a>
+
+                    <p class="text-sm mt-2">+234 807 087 1467</p>
+                    <p class="text-sm">info@templeschoolng.com
+
+                    </p>
+                </div>
+
+                <!-- BRANCH 3 -->
+                <div class="footer-col">
+                    <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Secondary School</h3>
+                    <p class="text-sm text-white/80">4-6 Odegbami Street,
+                        Off Aba Johnston Street,
+                        Adeniyi Jones, Ikeja, Lagos</p>
+
+                    <a href="https://www.google.com/maps/place/Temple+Secondary+School/@6.6160816,3.3464412,17z/data=!3m1!4b1!4m6!3m5!1s0x103b93ce1da6ce97:0x7a3253802525319c!8m2!3d6.6160763!4d3.3490161!16s%2Fg%2F11fxc1sznh?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+                        class="footer-link">
+                        Directions →
+                    </a>
+
+                    <p class="text-sm mt-2">+234 908 155 0288</p> <br>
+                    <p class="text-sm mt-2">+234 701 735 9283</p>
+                    <p class="text-sm">info@templeschoolng.com
+
+                    </p>
+                </div>
+
+                <!-- BRANCH 4 -->
+                <div class="footer-col">
+                    <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple College</h3>
+                    <p class="text-sm text-white/80">8 Oyediran Close, Opebi, Ikeja, Lagos</p>
+
+                    <a href="https://www.google.com/maps/place/8+Oyediran+Cl,+Allen,+Ikeja+101233,+Lagos/@6.5971487,3.3544541,17z/data=!3m1!4b1!4m6!3m5!1s0x103b923850265f1b:0xd6ffffe8095fb69e!8m2!3d6.5971434!4d3.357029!16s%2Fg%2F11c6vfbzdy?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+                        class="footer-link">
+                        Directions →
+                    </a>
+
+                    <p class="text-sm mt-2">+234 909 505 6117</p>
+                    <p class="text-sm">info@templeschoolng.com
+
+                    </p>
+                </div>
+
+                <!-- MAP -->
+                <div>
+                    <div class="rounded-lg overflow-hidden aspect-video transition duration-500">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.247990612612!2d3.3444026703268923!3d6.616081607471191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93ce1da6ce97%3A0x7a3253802525319c!2sTemple%20Secondary%20School!5e0!3m2!1sen!2sng!4v1778324412324!5m2!1sen!2sng"
+                            class="w-full h-full border-0">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- DIVIDER -->
+            <div class="border-t border-white/10 my-10"></div>
+
+            <!-- BOTTOM BAR -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+                <p class="text-sm text-white/70">
+                    © Temple School 2026 | All Rights Reserved | Legal Notice
+                </p>
+
+
+                <!-- SOCIALS -->
+                <div class="flex gap-5 text-xl">
+
+                    <a href="https://www.facebook.com/TempleSchool"" class=" social-icon hover:text-[#D48821]
+                        transition">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="twitter.com/TempleSchools" class="social-icon hover:text-[#D48821] transition">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/templeschools/"
+                        class="social-icon hover:text-[#D48821] transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="social-icon hover:text-[#D48821] transition">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-
-        <!-- BRANCH 3 -->
-        <div class="footer-col">
-          <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple Secondary School</h3>
-          <p class="text-sm text-white/80">4-6 Odegbami Street,
-            Off Aba Johnston Street,
-            Adeniyi Jones, Ikeja, Lagos</p>
-
-          <a href="https://www.google.com/maps/place/Temple+Secondary+School/@6.6160816,3.3464412,17z/data=!3m1!4b1!4m6!3m5!1s0x103b93ce1da6ce97:0x7a3253802525319c!8m2!3d6.6160763!4d3.3490161!16s%2Fg%2F11fxc1sznh?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" class="footer-link">
-            Directions →
-          </a>
-
-          <p class="text-sm mt-2">+234 908 155 0288</p> <br>
-          <p class="text-sm mt-2">+234 701 735 9283</p>
-          <p class="text-sm">info@templeschoolng.com
-
-          </p>
-        </div>
-
-        <!-- BRANCH 4 -->
-        <div class="footer-col">
-          <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple College</h3>
-          <p class="text-sm text-white/80">8 Oyediran Close, Opebi, Ikeja, Lagos</p>
-
-          <a href="https://www.google.com/maps/place/8+Oyediran+Cl,+Allen,+Ikeja+101233,+Lagos/@6.5971487,3.3544541,17z/data=!3m1!4b1!4m6!3m5!1s0x103b923850265f1b:0xd6ffffe8095fb69e!8m2!3d6.5971434!4d3.357029!16s%2Fg%2F11c6vfbzdy?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" class="footer-link">
-            Directions →
-          </a>
-
-          <p class="text-sm mt-2">+234 909 505 6117</p>
-          <p class="text-sm">info@templeschoolng.com
-
-          </p>
-        </div>
-
-        <!-- MAP -->
-        <div>
-          <div class="rounded-lg overflow-hidden aspect-video transition duration-500">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.247990612612!2d3.3444026703268923!3d6.616081607471191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93ce1da6ce97%3A0x7a3253802525319c!2sTemple%20Secondary%20School!5e0!3m2!1sen!2sng!4v1778324412324!5m2!1sen!2sng" class="w-full h-full border-0">
-            </iframe>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- DIVIDER -->
-      <div class="border-t border-white/10 my-10"></div>
-
-      <!-- BOTTOM BAR -->
-      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-
-        <p class="text-sm text-white/70">
-          © Temple School 2026 | All Rights Reserved | Legal Notice
-        </p>
-
-
-        <!-- SOCIALS -->
-        <div class="flex gap-5 text-xl">
-
-          <a href="https://www.facebook.com/TempleSchool"" class="social-icon hover:text-[#D48821] transition">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-
-          <a href="twitter.com/TempleSchools" class="social-icon hover:text-[#D48821] transition">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-
-          <a href="https://www.instagram.com/templeschools/" class="social-icon hover:text-[#D48821] transition">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-
-          <a href="#" class="social-icon hover:text-[#D48821] transition">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-  </footer>
+    </footer>
 
     <button id="scrollTopBtn"
         class="fixed bottom-6 right-6 z-50 bg-[#D48821] text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300">
