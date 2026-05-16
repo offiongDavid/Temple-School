@@ -301,7 +301,7 @@ nav .submenu {
 .facility-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   transition: transform 0.5s ease;
 }
 
@@ -359,14 +359,12 @@ nav .submenu {
 <body>
     
 <!-- PRELOADER V4 -->
-<div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0B1C39]">
+  <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0B1C39]">
 
-  <!-- LOGO -->
-  <img src="/Temple School Project/Images/logo.png"
-       id="preloaderLogo"
-       class="w-32 md:w-40 opacity-0">
+    <!-- LOGO -->
+    <img src="https://ik.imagekit.io/u9vfp7lad/tplogo.png?updatedAt=1777413437710" id="preloaderLogo" class="w-32 md:w-40 opacity-0">
 
-</div>
+  </div>
 
  
   <!-- HEADER -->
@@ -518,6 +516,7 @@ nav .submenu {
         </div>
 
         <a href="/Temple School Project/Events/Events.html" class="hover:text-[#2E8B7D]">Event</a>
+        <a href="" class="hover:text-[#2E8B7D]">Boarding House</a>
         <a href="/Temple School Project/ELD/ELD.html" class="hover:text-[#2E8B7D]">ELD</a>
         <a href="/Temple School Project/Contact Page/Contact.html" class="hover:text-[#2E8B7D]">Contact Us</a>
 
@@ -553,215 +552,440 @@ nav .submenu {
 </section>
 
 
-<section class="bg-[#F8F6F1] py-24">
+<section class="bg-[#F8F6F1] py-24 overflow-hidden font-[Open_Sans]">
 
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+  <div class="max-w-7xl mx-auto px-6">
 
-    <!-- LEFT IMAGE (NON-BASIC SHAPE) -->
-    <div class="relative">
+    <!-- SECTION HEADER -->
+    <div class="max-w-3xl mb-20">
 
-      <div class="rounded-[40px_10px_40px_10px] overflow-hidden shadow-xl">
-        <img src="/Temple School Project/Images/schoolfront.JPG"
-             class="w-full h-[420px] object-fit-contain">
+      <span class="inline-block px-4 py-2 rounded-full bg-[#1FA4A9]/10 text-[#1FA4A9] text-sm font-semibold tracking-wide mb-6">
+        TEMPLE SCHOOL FACILITIES
+      </span>
+
+      <h2 class="text-4xl md:text-6xl leading-tight text-[#0B1C39] font-[Poppins] font-semibold">
+        Beyond the Classroom: Where Learning Thrives at Temple School
+      </h2>
+
+      <p class="mt-6 text-lg text-[#004A7C] leading-relaxed font-medium font-[Inter]">
+        Inspiring environments designed to spark curiosity, ignite potential, and fuel student success.
+      </p>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="grid lg:grid-cols-12 gap-12 items-start">
+
+      <!-- IMAGE SIDE -->
+      <div class="lg:col-span-5 relative">
+
+        <!-- SOFT BACKGROUND SHAPE -->
+        <div class="absolute -top-10 -left-10 w-44 h-44 bg-[#D48821]/10 rounded-full blur-3xl"></div>
+
+        <!-- MAIN IMAGE CARD -->
+        <div class="relative rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgba(11,28,57,0.12)] border border-white/40">
+
+          <img src="/Temple School Project/Images/schoolfront.JPG"
+               class="w-full h-[560px] object-cover">
+
+          <!-- IMAGE OVERLAY -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B1C39]/70 via-transparent to-transparent"></div>
+
+          <!-- FLOATING INFO CARD -->
+          <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-gray-100">
+
+            <div class="flex items-start gap-4">
+
+              <div class="w-12 h-12 rounded-xl bg-[#0B1C39] flex items-center justify-center text-white text-lg shrink-0">
+                ✦
+              </div>
+
+              <div>
+                <h4 class="text-[#0B1C39] font-semibold text-lg font-[Poppins] mb-2">
+                  Inspiring environments designed for excellence
+                </h4>
+
+                <p class="text-gray-600 text-sm leading-relaxed font-[Inter]">
+                  A future-focused campus built to nurture innovation, creativity, leadership, and lifelong learning.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <!-- FLOAT CARD -->
-      <div class="absolute -bottom-8 -right-6 bg-white p-6 rounded-xl shadow-lg w-[220px]">
-        <p class="text-sm text-gray-600">
-          Inspiring environments designed for excellence
-        </p>
+      <!-- TEXT SIDE -->
+      <div class="lg:col-span-7 space-y-10">
+
+        <!-- INTRO TEXT -->
+        <div class="space-y-6">
+
+          <p class="text-gray-700 leading-relaxed text-lg font-[Inter]">
+            At Temple School, we believe that an exceptional education blossoms far beyond the pages of textbooks.
+            Our philosophy is rooted in cultivating inspiring environments that spark curiosity, ignite potential,
+            and fuel the individual success of every student.
+          </p>
+
+          <p class="text-gray-700 leading-relaxed text-lg font-[Inter]">
+            We view our campus not merely as bricks and mortar, but as a
+            <span class="text-[#1FA4A9] font-semibold">
+              dynamic launchpad for discovery
+            </span>.
+            By investing in world-class facilities, we ensure our students have the tools they need to transition
+            from learners to leaders.
+          </p>
+
+        </div>
+
+        <!-- LEARNING ENVIRONMENTS -->
+        <div class="bg-white rounded-[28px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-gray-100">
+
+          <!-- TITLE -->
+          <div class="flex items-center gap-4 mb-10">
+
+            <div class="w-14 h-14 rounded-2xl bg-[#0B1C39] flex items-center justify-center text-white text-xl shadow-lg">
+              ✦
+            </div>
+
+            <div>
+              <h3 class="text-2xl text-[#0B1C39] font-semibold font-[Poppins]">
+                Our Learning Environments
+              </h3>
+
+              <p class="text-sm text-gray-500 font-[Inter] mt-1">
+                Purposefully designed spaces for holistic learning.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- GRID -->
+          <div class="grid md:grid-cols-2 gap-6">
+
+            <!-- CARD -->
+            <div class="bg-[#F8F6F1] rounded-2xl p-6 border border-[#D48821]/10 hover:-translate-y-1 transition-all duration-300">
+
+              <div class="w-11 h-11 rounded-xl bg-[#D48821]/10 flex items-center justify-center text-[#D48821] text-lg mb-5">
+                ✦
+              </div>
+
+              <h4 class="text-[#004A7C] font-semibold text-lg font-[Poppins] mb-3">
+                Modern Classrooms
+              </h4>
+
+              <p class="text-gray-700 text-sm leading-relaxed font-[Inter]">
+                Bright, airy, and equipped with integrated technology, our learning spaces are designed
+                to engage young minds and foster collaborative thinking.
+              </p>
+
+            </div>
+
+            <!-- CARD -->
+            <div class="bg-[#F8F6F1] rounded-2xl p-6 border border-[#D48821]/10 hover:-translate-y-1 transition-all duration-300">
+
+              <div class="w-11 h-11 rounded-xl bg-[#1FA4A9]/10 flex items-center justify-center text-[#1FA4A9] text-lg mb-5">
+                ✦
+              </div>
+
+              <h4 class="text-[#004A7C] font-semibold text-lg font-[Poppins] mb-3">
+                Specialized Studios
+              </h4>
+
+              <p class="text-gray-700 text-sm leading-relaxed font-[Inter]">
+                Creativity takes center stage in our dedicated art studios and music rooms, allowing
+                students to explore their passions under expert guidance.
+              </p>
+
+            </div>
+
+            <!-- CARD -->
+            <div class="bg-[#F8F6F1] rounded-2xl p-6 border border-[#D48821]/10 hover:-translate-y-1 transition-all duration-300">
+
+              <div class="w-11 h-11 rounded-xl bg-[#0B1C39]/10 flex items-center justify-center text-[#0B1C39] text-lg mb-5">
+                ✦
+              </div>
+
+              <h4 class="text-[#004A7C] font-semibold text-lg font-[Poppins] mb-3">
+                Advanced Science Labs
+              </h4>
+
+              <p class="text-gray-700 text-sm leading-relaxed font-[Inter]">
+                We encourage hands-on inquiry and scientific rigor through well-equipped laboratories
+                that bring theory to life.
+              </p>
+
+            </div>
+
+            <!-- CARD -->
+            <div class="bg-[#F8F6F1] rounded-2xl p-6 border border-[#D48821]/10 hover:-translate-y-1 transition-all duration-300">
+
+              <div class="w-11 h-11 rounded-xl bg-[#D48821]/10 flex items-center justify-center text-[#D48821] text-lg mb-5">
+                ✦
+              </div>
+
+              <h4 class="text-[#004A7C] font-semibold text-lg font-[Poppins] mb-3">
+                Athletic & Recreational Spaces
+              </h4>
+
+              <p class="text-gray-700 text-sm leading-relaxed font-[Inter]">
+                We provide expansive areas for physical development, teamwork, and well-being, ensuring
+                a balanced approach to student growth.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- COMMITMENT SECTION -->
+        <div class="relative bg-[#0B1C39] rounded-[28px] p-8 overflow-hidden">
+
+          <!-- DECOR -->
+          <div class="absolute top-0 right-0 w-40 h-40 bg-[#D48821]/10 rounded-full blur-3xl"></div>
+
+          <div class="relative z-10 space-y-5">
+
+            <span class="inline-block text-sm tracking-[3px] uppercase text-[#D48821] font-semibold">
+              Excellence & Innovation
+            </span>
+
+            <h3 class="text-3xl text-white font-semibold leading-snug font-[Poppins]">
+              A Commitment to Excellence
+            </h3>
+
+            <p class="text-gray-300 leading-relaxed font-[Inter]">
+              Our facilities are a physical manifestation of our commitment to your child’s future.
+              Every square inch of Temple School is purposefully designed and meticulously maintained
+              to support a rigorous academic journey.
+            </p>
+
+            <p class="text-gray-300 leading-relaxed font-[Inter]">
+              We invite you to explore a campus where
+              <span class="text-[#D48821] font-semibold">
+                innovation meets inspiration
+              </span>,
+              and where every facility is built with your child’s limitless potential in mind.
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
 
     </div>
 
-    <!-- RIGHT TEXT -->
-<div class="space-y-6">
-
-  <h2 class="text-3xl md:text-5xl font-semibold text-[#0B1C39] font-[Poppins] leading-tight">
-    Beyond the Classroom: Where Learning Thrives at Temple School
-  </h2>
-
-  <p class="text-[#004A7C] font-medium text-lg">
-    Inspiring environments designed to spark curiosity, ignite potential, and fuel student success.
-  </p>
-
-  <p class="text-gray-700 leading-relaxed">
-    At Temple School, we believe that an exceptional education blossoms far beyond the pages of textbooks.
-    Our philosophy is rooted in cultivating inspiring environments that spark curiosity, ignite potential,
-    and fuel the individual success of every student.
-  </p>
-
-  <p class="text-gray-700 leading-relaxed">
-    We view our campus not merely as bricks and mortar, but as a
-    <span class="text-[#1FA4A9] font-medium">dynamic launchpad for discovery</span>.
-    By investing in world-class facilities, we ensure our students have the tools they need to transition
-    from learners to leaders.
-  </p>
-
-  <div class="space-y-4">
-    <h3 class="text-xl font-semibold text-[#0B1C39]">
-      Our Learning Environments
-    </h3>
-
-    <ul class="space-y-3 text-gray-700 leading-relaxed list-disc pl-6">
-      <li>
-        <span class="font-semibold text-[#004A7C]">Modern Classrooms:</span>
-        Bright, airy, and equipped with integrated technology, our learning spaces are designed
-        to engage young minds and foster collaborative thinking.
-      </li>
-
-      <li>
-        <span class="font-semibold text-[#004A7C]">Specialized Studios:</span>
-        Creativity takes center stage in our dedicated art studios and music rooms, allowing
-        students to explore their passions under expert guidance.
-      </li>
-
-      <li>
-        <span class="font-semibold text-[#004A7C]">Advanced Science Labs:</span>
-        We encourage hands-on inquiry and scientific rigor through well-equipped laboratories
-        that bring theory to life.
-      </li>
-
-      <li>
-        <span class="font-semibold text-[#004A7C]">Athletic & Recreational Spaces:</span>
-        We provide expansive areas for physical development, teamwork, and well-being, ensuring
-        a balanced approach to student growth.
-      </li>
-    </ul>
   </div>
-
-  <div class="space-y-4">
-    <h3 class="text-xl font-semibold text-[#0B1C39]">
-      A Commitment to Excellence
-    </h3>
-
-    <p class="text-gray-700 leading-relaxed">
-      Our facilities are a physical manifestation of our commitment to your child’s future.
-      Every square inch of Temple School is purposefully designed and meticulously maintained
-      to support a rigorous academic journey.
-    </p>
-
-    <p class="text-gray-700 leading-relaxed">
-      We invite you to explore a campus where
-      <span class="underline decoration-[#D48821] underline-offset-4 font-medium">
-        innovation meets inspiration
-      </span>,
-      and where every facility is built with your child’s limitless potential in mind.
-    </p>
-  </div>
-
-</div>
-
-  </div>    
 
 </section>
 
+<section class="bg-[#F8F6F1] py-20 md:py-28 overflow-hidden">
 
-<section class="bg-white py-24">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
 
-  <div class="max-w-7xl mx-auto px-6">
+    <!-- HEADER -->
+    <div class="text-center mb-14">
+
+      <p class="uppercase tracking-[0.25em] text-[11px] sm:text-xs text-[#D4AF37] font-semibold mb-4">
+        Our Facilities
+      </p>
+
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0B1C39] heading-font leading-tight">
+        Explore Our Learning Spaces
+      </h2>
+
+    </div>
 
     <!-- FILTER BUTTONS -->
-<div class="flex flex-wrap justify-center gap-4 mb-12">
+    <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mb-14">
 
-  <button class="filter-btn active" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="early">Early Years</button>
-  <button class="filter-btn" data-filter="primary">Primary</button>
-  <button class="filter-btn" data-filter="secondary">Secondary</button>
-  <button class="filter-btn" data-filter="college">College</button>
+      <button class="filter-btn active" data-filter="all">
+        All
+      </button>
 
-</div>
+      <button class="filter-btn" data-filter="early">
+        Early Years
+      </button>
+
+      <button class="filter-btn" data-filter="primary">
+        Primary
+      </button>
+
+      <button class="filter-btn" data-filter="secondary">
+        Secondary
+      </button>
+
+      <button class="filter-btn" data-filter="college">
+        College
+      </button>
+
+    </div>
 
     <!-- GRID -->
-     <!-- GRID -->
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="facility-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
 
-  <div class="facility-card group" data-category="secondary college">
-    <img src="https://ik.imagekit.io/u9vfp7lad/DSC_3017%20(1).JPG">
-    <div class="overlay"><p>Computer Labs</p></div>
-  </div>
+      <!-- CARD -->
+      <div class="facility-card" data-category="secondary college">
 
-  <div class="facility-card group" data-category="early primary">
-    <img src="https://ik.imagekit.io/u9vfp7lad/IMG_9689.JPG">
-    <div class="overlay"><p>Swimming Pools</p></div>
-  </div>
+        <div class="facility-inner">
 
-  <div class="facility-card group" data-category="secondary college">
-    <img src="https://ik.imagekit.io/ddusctmqi/DSC_7694.JPG">
-    <div class="overlay"><p>Cisco Teleconferencing Lab</p></div>
-  </div>
+          <img
+            src="https://ik.imagekit.io/u9vfp7lad/DSC_3017%20(1).JPG"
+            alt="Computer Labs"
+            loading="lazy"
+            decoding="async">
 
-  <div class="facility-card group" data-category="secondary ">
-    <img src="https://www.templeschoolng.com/wp-content/uploads/2026/04/IMG_2511-scaled.jpg">
-    <div class="overlay"><p>Girls Hostel</p></div>
-  </div>
+          <div class="overlay">
+            <p>Computer Labs</p>
+          </div>
 
-  <div class="facility-card group" data-category="all">
-    <img src="https://www.templeschoolng.com/wp-content/uploads/2026/04/P8630201-scaled.jpg">
-    <div class="overlay"><p>Internet Access</p></div>
-  </div>
+        </div>
 
-  <div class="facility-card group" data-category="secondary">
-    <img src="https://www.templeschoolng.com/wp-content/uploads/2026/04/IMG_2643-scaled.jpg">
-    <div class="overlay"><p>School Software</p></div>
-  </div>
+      </div>
 
-  <div class="facility-card group" data-category="secondary college">
-    <img src="https://ik.imagekit.io/u9vfp7lad/P8630173%20(1).JPG">
-    <div class="overlay"><p>Science Labs</p></div>
-  </div>
+      <!-- CARD -->
+      <div class="facility-card" data-category="early primary">
 
-  <div class="facility-card group" data-category="primary secondary">
-    <img src="https://ik.imagekit.io/ddusctmqi/P8630144.JPG">
-    <div class="overlay"><p>Smart Boards</p></div>
-  </div>
+        <div class="facility-inner">
 
-  <div class="facility-card group" data-category="all">
-    <img src="https://ik.imagekit.io/ddusctmqi/P8690018.JPG">
-    <div class="overlay"><p>Wonderland</p></div>
-  </div>
+          <img
+            src="https://ik.imagekit.io/u9vfp7lad/IMG_9689.JPG"
+            alt="Swimming Pools"
+            loading="lazy"
+            decoding="async">
 
-  <div class="facility-card group" data-category="primary secondary">
-    <img src="https://ik.imagekit.io/ddusctmqi/P8740555.JPG">
-    <div class="overlay"><p>Music Rooms</p></div>
-  </div>
+          <div class="overlay">
+            <p>Swimming Pools</p>
+          </div>
 
-  <div class="facility-card group" data-category="secondary college">
-    <img src="https://www.templeschoolng.com/wp-content/uploads/2024/02/Untitled-design-1.png">
-    <div class="overlay"><p>Design Tech Labs</p></div>
-  </div>
+        </div>
 
-  <div class="facility-card group" data-category="primary secondary">
-    <img src="https://ik.imagekit.io/ddusctmqi/P8740469.JPG">
-    <div class="overlay"><p>Art Studios</p></div>
-  </div>
+      </div>
 
-  <div class="facility-card group" data-category="all">
-    <img src="https://ik.imagekit.io/u9vfp7lad/IMG_3477.JPG">
-    <div class="overlay"><p>Sports Facilities</p></div>
-  </div>
+      <!-- CARD -->
+      <div class="facility-card" data-category="secondary college">
 
-  <div class="facility-card group" data-category="secondary college">
-    <img src="https://ik.imagekit.io/ddusctmqi/P8700943.JPG">
-    <div class="overlay"><p>Boarding School</p></div>
-  </div>
+        <div class="facility-inner">
 
-  <div class="facility-card group" data-category="all">
-    <img src="https://ik.imagekit.io/u9vfp7lad/DSC_3023.JPG">
-    <div class="overlay"><p>Multipurpose Halls</p></div>
-  </div>
+          <img
+            src="https://ik.imagekit.io/ddusctmqi/DSC_7694.JPG"
+            alt="Cisco Teleconferencing Lab"
+            loading="lazy"
+            decoding="async">
 
-  <div class="facility-card group" data-category="all early primary">
-    <img src="https://ik.imagekit.io/u9vfp7lad/P8630144.JPG">
-    <div class="overlay"><p>Library</p></div>
-  </div>
+          <div class="overlay">
+            <p>Cisco Teleconferencing Lab</p>
+          </div>
 
-</div>
-  
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="facility-card" data-category="secondary">
+
+        <div class="facility-inner">
+
+          <img
+            src="https://www.templeschoolng.com/wp-content/uploads/2026/04/IMG_2511-scaled.jpg"
+            alt="Girls Hostel"
+            loading="lazy"
+            decoding="async">
+
+          <div class="overlay">
+            <p>Girls Hostel</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="facility-card" data-category="all">
+
+        <div class="facility-inner">
+
+          <img
+            src="https://www.templeschoolng.com/wp-content/uploads/2026/04/P8630201-scaled.jpg"
+            alt="Internet Access"
+            loading="lazy"
+            decoding="async">
+
+          <div class="overlay">
+            <p>Internet Access</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="facility-card" data-category="secondary">
+
+        <div class="facility-inner">
+
+          <img
+            src="https://www.templeschoolng.com/wp-content/uploads/2026/04/IMG_2643-scaled.jpg"
+            alt="School Software"
+            loading="lazy"
+            decoding="async">
+
+          <div class="overlay">
+            <p>School Software</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="facility-card" data-category="secondary college">
+
+        <div class="facility-inner">
+
+          <img
+            src="https://ik.imagekit.io/u9vfp7lad/P8630173%20(1).JPG"
+            alt="Science Labs"
+            loading="lazy"
+            decoding="async">
+
+          <div class="overlay">
+            <p>Science Labs</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="facility-card" data-category="primary secondary">
+
+        <div class="facility-inner">
+
+          <img
+            src="https://ik.imagekit.io/ddusctmqi/P8630144.JPG"
+            alt="Smart Boards"
+            loading="lazy"
+            decoding="async">
+
+          <div class="overlay">
+            <p>Smart Boards</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
 </section>
-
 
 
     <!-- stats section -->

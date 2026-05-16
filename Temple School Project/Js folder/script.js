@@ -67,59 +67,157 @@ document.querySelectorAll('.dropdown-toggle').forEach((toggle) => {
 
 //ENDING
 
-const images = document.querySelectorAll(".hero-img");
-let current = 0;
+// ======================
+// HERO IMAGE SLIDER
+// ======================
 
+const images = document.querySelectorAll(".hero-img");
+
+let current = 0;
+let isAnimating = false;
+
+
+// INITIAL IMAGE STATES
+gsap.set(images, {
+  opacity: 0,
+  scale: 1.05,
+  willChange: "opacity, transform"
+});
+
+// SHOW FIRST IMAGE
+gsap.set(images[0], {
+  opacity: 1,
+  scale: 1
+});
+
+
+// IMAGE CHANGE FUNCTION
 function showNextImage() {
+
+  if (isAnimating) return;
+
+  isAnimating = true;
+
   const next = (current + 1) % images.length;
 
-gsap.to(images[current], {
-  opacity: 0,
-  duration: 1.2,
-  ease: "power2.out"
-});
- gsap.fromTo(images[next],
-  { opacity: 0 },
-  {
-    opacity: 1,
-    duration: 1.2,
-    ease: "power2.out"
-  }
-);
+  // PREP NEXT IMAGE
+  gsap.set(images[next], {
+    zIndex: 2,
+    opacity: 0,
+    scale: 1.08
+  });
 
-  current = next;
+  gsap.set(images[current], {
+    zIndex: 1
+  });
+
+  const tl = gsap.timeline({
+
+    onComplete: () => {
+
+      current = next;
+      isAnimating = false;
+
+    }
+
+  });
+
+  // CURRENT IMAGE OUT
+  tl.to(images[current], {
+
+    opacity: 0,
+    scale: 1.03,
+    duration: 1.8,
+    ease: "power2.out"
+
+  });
+
+  // NEXT IMAGE IN
+  tl.to(images[next], {
+
+    opacity: 1,
+    scale: 1,
+    duration: 1.8,
+    ease: "power3.out"
+
+  }, 0);
+
 }
 
-// CHANGE EVERY 7 SECONDS
-setInterval(showNextImage, 10000);
 
+// AUTO SLIDE
+setInterval(showNextImage, 8000);
+
+
+// ======================
+// PAGE LOAD ANIMATIONS
+// ======================
 
 window.addEventListener("load", () => {
 
-  gsap.from('.hero-section h1', {
-    y: 60,
-    opacity: 0,
-    duration: 1,
-    delay: 0.3,
-  });
+  const tl = gsap.timeline();
 
-  gsap.from('.hero-section p', {
+  tl.from(".mini-text", {
+
     y: 30,
     opacity: 0,
-    duration: 1,
-    delay: 0.6,
-    stagger: 0.2,
-  });
+    duration: 0.8,
+    ease: "power3.out"
 
-  gsap.from('.hero-section button', {
-    y: 20,
+  })
+
+  .from(".hero-title", {
+
+    y: 70,
     opacity: 0,
     duration: 1,
-    delay: 1,
+    ease: "power4.out"
+
+  }, "-=0.4")
+
+  .from(".hero-subtext", {
+
+    y: 30,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power3.out"
+
+  }, "-=0.6")
+
+  .from(".hero-description", {
+
+    y: 20,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "power2.out"
+
+  }, "-=0.5")
+
+  // BUTTONS FIXED
+  .from(".hero-btn", {
+
+    y: 25,
+    opacity: 0,
+    scale: 0.95,
+    duration: 0.8,
     stagger: 0.15,
-  });
+    ease: "back.out(1.7)",
+    clearProps: "all"
+
+  }, "-=0.4")
+
+  .from(".hero-card", {
+
+    x: 40,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+
+  }, "-=0.7");
 
 });
+
 // Enroll section
 
 gsap.registerPlugin(ScrollTrigger);

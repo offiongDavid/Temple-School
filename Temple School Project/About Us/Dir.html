@@ -13,10 +13,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="shortcut icon" href="https://ik.imagekit.io/ddusctmqi/favicon-32x32.png" type="image/x-icon">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <style>
+
+   .director-card-shadow {
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(14px);
+  }
+  
   body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
@@ -211,10 +222,10 @@
 
 
   <!-- PRELOADER V4 -->
-    <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0B1C39]">
+      <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0B1C39]">
 
     <!-- LOGO -->
-    <img src="/Temple School Project/Images/logo.png" id="preloaderLogo" class="w-32 md:w-40 opacity-0">
+    <img src="https://ik.imagekit.io/u9vfp7lad/tplogo.png?updatedAt=1777413437710" id="preloaderLogo" class="w-32 md:w-40 opacity-0">
 
   </div>
 
@@ -368,6 +379,7 @@
         </div>
 
         <a href="/Temple School Project/Events/Events.html" class="hover:text-[#2E8B7D]">Event</a>
+        <a href="" class="hover:text-[#2E8B7D]">Boarding House</a>
         <a href="/Temple School Project/ELD/ELD.html" class="hover:text-[#2E8B7D]">ELD</a>
         <a href="/Temple School Project/Contact Page/Contact.html" class="hover:text-[#2E8B7D]">Contact Us</a>
 
@@ -375,56 +387,110 @@
     </div>
   </header>
 
-  <section class="relative bg-[#F8F6F1] py-28 overflow-hidden">
+<section class="relative bg-[#F8F6F1] py-20 md:py-28 overflow-hidden">
 
-    <div class="max-w-7xl mx-auto px-6">
+  <!-- BACKGROUND ACCENTS -->
+  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#D4AF37]/5 blur-3xl rounded-full"></div>
+  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#0B1C39]/5 blur-3xl rounded-full"></div>
 
-      <div class="grid lg:grid-cols-12 gap-12 items-center">
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
-        <!-- IMAGE SIDE -->
-        <div class="lg:col-span-7 relative">
+    <div class="grid lg:grid-cols-12 gap-14 lg:gap-10 items-center">
 
-          <!-- subtle background layer -->
-          <div class="absolute -left-10 top-10 w-full h-full bg-[#0B1C39]/5 rounded-[40px]"></div>
+      <!-- IMAGE SIDE -->
+      <div class="lg:col-span-7 relative group">
 
-          <!-- main image frame -->
-          <div class="relative overflow-hidden rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.15)] director-image">
+        <!-- DECORATIVE FRAME -->
+        <div
+          class="absolute -left-5 md:-left-8 top-6 w-full h-full rounded-[32px] border border-[#D4AF37]/20 bg-[#0B1C39]/5 backdrop-blur-sm">
+        </div>
 
-            <img src="https://www.templeschoolng.com/wp-content/uploads/2026/05/DSC_8215_squared-scaled.jpg"
-              alt="Mrs Shirley Okharedia" class="w-full h-[420px] md:h-[520px] lg:h-[600px] object-cover object-top" />
+        <!-- IMAGE CARD -->
+        <div
+          class="relative overflow-hidden rounded-[32px] shadow-[0_25px_70px_rgba(0,0,0,0.12)] bg-white">
 
+          <!-- IMAGE -->
+          <img
+            src="https://www.templeschoolng.com/wp-content/uploads/2026/05/DSC_8215_squared-scaled.jpg"
+            alt="Mrs Shirley Okharedia"
+            class="w-full h-[420px] sm:h-[500px] lg:h-[620px] object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]" />
+
+          <!-- SOFT OVERLAY -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-[#0B1C39]/20 via-transparent to-transparent pointer-events-none">
           </div>
 
         </div>
 
-        <!-- TEXT SIDE -->
-        <div class="lg:col-span-5 director-text">
+        <!-- FLOATING LABEL -->
+        <div
+          class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-xl border border-white/20 rounded-2xl px-5 py-4 shadow-xl hidden sm:block">
 
-          <p class="uppercase  tracking-[0.2em] text-xs text-[#D4AF37] mb-4">
+          <p class="text-xs uppercase tracking-[0.18em] text-[#D4AF37] font-semibold mb-1">
+            Temple School
+          </p>
+
+          <p class="text-[#0B1C39] font-semibold">
+            Excellence Through Leadership
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- TEXT SIDE -->
+      <div class="lg:col-span-5 director-text relative z-10">
+
+        <!-- TOP LABEL -->
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/20 mb-6">
+
+          <div class="w-2 h-2 rounded-full bg-[#D4AF37]"></div>
+
+          <p class="uppercase tracking-[0.18em] text-[11px] font-semibold text-[#D4AF37]">
             Leadership
           </p>
 
-          <h2 class="text-4xl md:text-5xl font-semibold text-[#0B1C39] leading-tight mb-6">
-            Meet Our Founding Director
-          </h2>
+        </div>
 
-          <p class="text-[#004A7C] text-lg font-medium mb-6">
-            Welcome to Temple School | Lagos, Nigeria
-          </p>
+        <!-- HEADING -->
+        <h2
+          class="text-4xl sm:text-5xl lg:text-[3.4rem] font-semibold text-[#0B1C39] leading-[1.05] tracking-tight mb-6">
 
-          <p class="text-gray-600 text-lg leading-relaxed mb-8">
-            “Cultivate curiosity, achieve excellence. <br> We are committed to nurturing every child’s intellectual, social,
-            and emotional growth through world-class education.”
-          </p>
+          Meet Our <br>
+          <span class="text-[#D4AF37]">
+            Founding Director
+          </span>
 
-          <!-- signature block -->
-          <div class="border-l-2 border-[#D4AF37] pl-4">
+        </h2>
 
-            <p class="text-[#0B1C39] font-semibold text-lg">
+        <!-- SUBTEXT -->
+        <p class="text-[#004A7C] text-lg font-medium mb-6 leading-relaxed">
+          Welcome to Temple School | Lagos, Nigeria
+        </p>
+
+        <!-- MESSAGE -->
+        <p class="text-gray-600 text-base sm:text-lg leading-8 mb-8 max-w-xl">
+          “Cultivate curiosity, achieve excellence. We are committed to nurturing every child’s
+          intellectual, social, and emotional growth through world-class education while shaping
+          confident future leaders.”
+        </p>
+
+        <!-- SIGNATURE BLOCK -->
+        <div
+          class="flex items-start gap-4 border-t border-[#0B1C39]/10 pt-6">
+
+          <!-- LINE -->
+          <div class="w-1 h-16 rounded-full bg-[#D4AF37]"></div>
+
+          <!-- TEXT -->
+          <div>
+
+            <p class="text-[#0B1C39] font-semibold text-xl">
               Mrs. Shirley Okharedia
             </p>
 
-            <p class="text-sm text-gray-500">
+            <p class="text-sm text-gray-500 mt-1">
               Director, Temple School
             </p>
 
@@ -435,112 +501,150 @@
       </div>
 
     </div>
-  </section>
 
-  <section class="py-16 sm:py-24 md:py-32 bg-[#F8F6F1] relative overflow-hidden">
-
-  <!-- Soft Background -->
-  <div class="absolute inset-0 pointer-events-none">
-    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#0B1C39]/5 rounded-full blur-3xl">
-    </div>
   </div>
 
-  <div class="max-w-5xl mx-auto px-6 sm:px-8 relative z-10">
+</section>
 
-    <!-- Header -->
-    <div class="text-center mb-12 md:mb-16">
-      <p class="uppercase tracking-widest text-xs sm:text-sm text-[#D4AF37] mb-3">
-        Director’s Address
-      </p>
+<section class="py-16 sm:py-24 md:py-32 bg-[#F8F6F1] relative overflow-hidden">
+  <!-- Subtle Abstract Geometric Backgrounds -->
+  <div class="absolute inset-0 pointer-events-none opacity-40">
+    <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-[#0B1C39]/5 rounded-full blur-3xl"></div>
+  </div>
 
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#0B1C39] heading-font leading-tight">
-        A Message from the Director
-      </h2>
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
+    <!-- Remodeled Layout: Grid system on large screens -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      
+      <!-- Left Column: Sticky Image Profile & Header (4 Cols) -->
+      <div class="lg:col-span-5 lg:sticky lg:top-8 space-y-8">
+        <div>
+          <p class="uppercase tracking-widest text-xs sm:text-sm font-semibold text-[#D4AF37] mb-3">
+            Director’s Address
+          </p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-[#0B1C39] tracking-tight leading-tight">
+            A Message from <br class="hidden sm:inline"/>the Director
+          </h2>
+        </div>
+
+        <!-- Premium Image Frame Placeholder -->
+
+        <div class="relative bg-[#0B1C39] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl group">
+
+  <!-- IMAGE -->
+  <img
+    src="https://www.templeschoolng.com/wp-content/uploads/2026/05/DSC_8215_squared-scaled.jpg"
+    alt="Mrs Shirley Okharedia"
+    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+  />
+
+  <!-- DARK OVERLAY -->
+  <div class="absolute inset-0 bg-gradient-to-t from-[#0B1C39]/60 via-transparent to-transparent"></div>
+
+  <!-- LABEL -->
+  <div class="absolute bottom-5 left-5">
+
+    <p class="text-[#D4AF37] uppercase tracking-[0.2em] text-[10px] mb-2">
+      Founding Director
+    </p>
+
+    <p class="text-white text-lg font-semibold">
+      Mrs Shirley Okharedia
+    </p>
+
+  </div>
+
+</div>
+
+      </div>
+
+      <!-- Right Column: The Letter Content (7 Cols) -->
+      <div class="lg:col-span-7 bg-white border border-gray-100/80 shadow-xl rounded-3xl p-8 sm:p-12">
+        <!-- Floating Quote Mark Decoration -->
+        <span class="text-8xl font-serif text-[#D4AF37]/20 absolute right-12 top-6 select-none pointer-events-none">“</span>
+
+        <div id="directorText" class="space-y-6 text-[16px] sm:text-[17px] leading-8 text-[#4B5563] text-justify">
+          <p>
+            At <span class="font-semibold text-[#0B1C39]">Temple School</span>, we believe that education is far more than the simple transmission of knowledge; it is the deliberate cultivation of curiosity, discipline, and excellence in every child entrusted to our care.
+          </p>
+
+          <p>
+            For over two decades, our institution has remained steadfast in its commitment to providing a premier co-educational experience. From the nurturing foundational years at our <span class="font-semibold text-[#0B1C39]">Ilupeju</span> campus to the advanced learning environments in <span class="font-semibold text-[#0B1C39]">Ikeja</span>, we guide our students through a carefully structured journey designed to unlock their full potential.
+          </p>
+
+          <p class="font-bold text-[#0B1C39] text-lg pt-2 border-b border-gray-100 pb-1">
+            Our Educational Philosophy
+          </p>
+
+          <p>
+            We recognize that every child is unique. Our approach is built upon three core pillars:
+          </p>
+
+          <ul class="space-y-4 list-none pl-0">
+            <li class="flex items-start gap-3">
+              <span class="text-[#D4AF37] mt-1.5 text-xs">◆</span>
+              <span><span class="font-semibold text-[#0B1C39]">Personalized Learning:</span> Tailoring our teaching to meet individual student needs.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#D4AF37] mt-1.5 text-xs">◆</span>
+              <span><span class="font-semibold text-[#0B1C39]">Rigorous Assessment:</span> Utilizing continuous feedback to ensure consistent progress.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#D4AF37] mt-1.5 text-xs">◆</span>
+              <span><span class="font-semibold text-[#0B1C39]">Global Curriculum:</span> Aligning our academics with international standards to ensure our learners thrive in an ever-evolving world.</span>
+            </li>
+          </ul>
+
+          <p class="font-bold text-[#0B1C39] text-lg pt-4 border-b border-gray-100 pb-1">
+            Beyond the Classroom
+          </p>
+
+          <p>
+            Our mission extends well beyond academic markers. We are dedicated to raising <span class="font-semibold text-[#0B1C39]">confident, morally grounded, and forward-thinking individuals</span> who are prepared to contribute meaningfully to global society.
+          </p>
+
+          <p>
+            At Temple School, the learning journey transcends the classroom walls. Through diverse enrichment programs, collaborative projects, and robust community engagement, our students develop the essential life skills required for leadership and lifelong success.
+          </p>
+
+          <p class="font-bold text-[#0B1C39] text-lg pt-4 border-b border-gray-100 pb-1">
+            Looking Forward
+          </p>
+
+          <p>
+            As we continue to grow, our vision remains steadfast: to uphold a proud tradition of excellence while embracing the innovations of the future. We ensure that every child who walks through our doors leaves equipped, empowered, and inspired.
+          </p>
+
+          <p class="text-[#0B1C39] font-semibold text-lg pt-2">
+            Together, we are not just educating students; we are shaping the leaders of tomorrow.
+          </p>
+        </div>
+
+        <!-- Remodeled Signature -->
+        <div class="mt-10 pt-8 border-t border-gray-100 flex items-center justify-between">
+          <div>
+            <p class="text-[#0B1C39] font-bold text-lg sm:text-xl">
+              Mrs Shirley Okharedia
+            </p>
+            <p class="text-sm font-medium text-gray-500">
+              Founding Director
+            </p>
+            <p class="text-xs text-gray-400 uppercase tracking-widest mt-1 font-semibold">
+              Temple School
+            </p>
+          </div>
+          
+          <!-- Elegant Crest/Design Accents Placeholder -->
+          <div class="hidden sm:block text-[#D4AF37]/20">
+            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-    <!-- Letter Card -->
-    <div class="relative bg-white/70 backdrop-blur-xl rounded-2xl shadow-xl p-6 sm:p-8 md:p-12">
-
-      <!-- Icon -->
-      <div class="absolute -top-5 left-6 sm:left-8 bg-[#0B1C39] text-white p-3 rounded-xl shadow-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-            d="M3 8l9 6 9-6M4 6h16a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1z" />
-        </svg>
-      </div>
-
-      <!-- Content -->
-      <div
-        id="directorText"
-        class="space-y-6 md:space-y-8 text-[15px] sm:text-[16px] md:text-[17px] leading-8 md:leading-[1.9] text-[#374151] text-justify max-w-3xl mx-auto">
-
-        <p>
-          At <span class="font-semibold text-[#0B1C39]">Temple School</span>, we believe that education is far more than the simple transmission of knowledge; it is the deliberate cultivation of curiosity, discipline, and excellence in every child entrusted to our care.
-        </p>
-
-        <p>
-          For over two decades, our institution has remained steadfast in its commitment to providing a premier co-educational experience. From the nurturing foundational years at our <span class="font-semibold">Ilupeju</span> campus to the advanced learning environments in <span class="font-semibold">Ikeja</span>, we guide our students through a carefully structured journey designed to unlock their full potential.
-        </p>
-
-        <p class="font-semibold text-[#0B1C39]">
-          Our Educational Philosophy
-        </p>
-
-        <p>
-          We recognize that every child is unique. Our approach is built upon three core pillars:
-        </p>
-
-        <ul class="space-y-3 list-disc pl-6">
-          <li><span class="font-semibold">Personalized Learning:</span> Tailoring our teaching to meet individual student needs.</li>
-          <li><span class="font-semibold">Rigorous Assessment:</span> Utilizing continuous feedback to ensure consistent progress.</li>
-          <li><span class="font-semibold">Global Curriculum:</span> Aligning our academics with international standards to ensure our learners thrive in an ever-evolving world.</li>
-        </ul>
-
-        <p class="font-semibold text-[#0B1C39]">
-          Beyond the Classroom
-        </p>
-
-        <p>
-          Our mission extends well beyond academic markers. We are dedicated to raising <span class="font-semibold">confident, morally grounded, and forward-thinking individuals</span> who are prepared to contribute meaningfully to global society.
-        </p>
-
-        <p>
-          At Temple School, the learning journey transcends the classroom walls. Through diverse enrichment programs, collaborative projects, and robust community engagement, our students develop the essential life skills required for leadership and lifelong success.
-        </p>
-
-        <p class="font-semibold text-[#0B1C39]">
-          Looking Forward
-        </p>
-
-        <p>
-          As we continue to grow, our vision remains steadfast: to uphold a proud tradition of excellence while embracing the innovations of the future. We ensure that every child who walks through our doors leaves equipped, empowered, and inspired.
-        </p>
-
-        <p class="text-[#0B1C39] font-semibold">
-          Together, we are not just educating students; we are shaping the leaders of tomorrow.
-        </p>
-
-      </div>
-
-      <!-- Signature -->
-      <div class="mt-12 md:mt-16 pt-6 border-t border-gray-200 max-w-3xl mx-auto">
-
-        <p class="text-[#0B1C39] font-semibold text-base sm:text-lg">
-          Mrs Shirley Okharedia
-        </p>
-
-        <p class="text-sm text-gray-500">
-          Founding Director
-        </p>
-
-        <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">
-          Temple School
-        </p>
-
-      </div>
-
-    </div>
-
   </div>
 </section>
 

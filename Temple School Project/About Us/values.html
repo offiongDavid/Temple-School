@@ -209,10 +209,10 @@ nav .submenu {
 
 
   <!-- PRELOADER V4 -->
-    <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0B1C39]">
+      <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0B1C39]">
 
     <!-- LOGO -->
-    <img src="/Temple School Project/Images/logo.png" id="preloaderLogo" class="w-32 md:w-40 opacity-0">
+    <img src="https://ik.imagekit.io/u9vfp7lad/tplogo.png?updatedAt=1777413437710" id="preloaderLogo" class="w-32 md:w-40 opacity-0">
 
   </div>
 
@@ -366,6 +366,7 @@ nav .submenu {
         </div>
 
         <a href="/Temple School Project/Events/Events.html" class="hover:text-[#2E8B7D]">Event</a>
+        <a href="" class="hover:text-[#2E8B7D]">Boarding House</a>
         <a href="/Temple School Project/ELD/ELD.html" class="hover:text-[#2E8B7D]">ELD</a>
         <a href="/Temple School Project/Contact Page/Contact.html" class="hover:text-[#2E8B7D]">Contact Us</a>
 
@@ -402,133 +403,312 @@ nav .submenu {
 
 </section>
 
-<section class="relative bg-[#F8F6F1] py-24 overflow-hidden">
+<section class="relative bg-[#F8F6F1] py-28 overflow-hidden font-[Open_Sans]">
 
-  <!-- SOFT BACKGROUND -->
+  <!-- BACKGROUND EFFECTS -->
   <div class="absolute inset-0 pointer-events-none">
-    <div class="absolute top-10 left-10 w-72 h-72 bg-[#D48821]/10 blur-3xl rounded-full"></div>
-    <div class="absolute bottom-10 right-10 w-80 h-80 bg-[#004A7C]/10 blur-3xl rounded-full"></div>
+
+    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-[#D4AF37]/10 blur-3xl rounded-full"></div>
+
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#1FA4A9]/10 blur-3xl rounded-full"></div>
+
   </div>
 
   <div class="max-w-7xl mx-auto px-6 relative z-10">
 
-    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    <div class="grid lg:grid-cols-12 gap-16 items-center">
 
-      <!-- IMAGE -->
+      <!-- IMAGE SIDE -->
       <div class="lg:col-span-5 relative">
 
-        <div class="absolute -top-5 -left-5 w-full h-full border border-[#D4AF37]/30 rounded-[28px]"></div>
+        <!-- DECORATIVE CARD -->
+        <div class="absolute -top-6 -left-6 w-full h-full border border-[#D4AF37]/20 rounded-[34px]"></div>
 
-        <div class="relative overflow-hidden rounded-[28px] shadow-[0_20px_60px_rgba(0,0,0,0.1)]">
+        <!-- MAIN IMAGE -->
+        <div class="relative rounded-[34px] overflow-hidden shadow-[0_25px_80px_rgba(11,28,57,0.12)]">
+
           <img src="/Temple School Project/Images/DSC_0760.JPG"
-            class="w-full h-[420px] md:h-[500px] object-cover object-center" />
+               class="w-full h-[620px] object-cover object-center">
+
+          <!-- IMAGE OVERLAY -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B1C39]/70 via-transparent to-transparent"></div>
+
+          <!-- FLOATING INFO -->
+          <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/40">
+
+            <div class="flex items-start gap-4">
+
+              <div class="w-12 h-12 rounded-2xl bg-[#0B1C39] flex items-center justify-center text-white shrink-0">
+                ✦
+              </div>
+
+              <div>
+
+                <h4 class="text-[#0B1C39] font-semibold text-lg font-[Poppins] mb-2">
+                  Empowering Future Leaders
+                </h4>
+
+                <p class="text-sm text-gray-600 leading-relaxed font-[Inter]">
+                  A values-driven educational experience focused on character, confidence, and global impact.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>
 
-<!-- TEXT -->
-<div class="lg:col-span-7">
+      <!-- CONTENT SIDE -->
+      <div class="lg:col-span-7">
 
-  <div class="max-w-2xl space-y-6">
+        <!-- HEADING -->
+        <div class="max-w-3xl">
 
-    <!-- HEADER -->
-    <div>
-      <p class="uppercase tracking-[0.2em] text-xs text-[#D4AF37] mb-2">
-        Our Philosophy
-      </p>
+          <span class="inline-block px-4 py-2 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] text-xs tracking-[0.2em] uppercase font-semibold mb-6">
+            Our Philosophy
+          </span>
 
-      <h2 class="text-3xl md:text-4xl font-semibold text-[#0B1C39] leading-tight">
-        Building Character Through Purpose
-      </h2>
+          <h2 class="text-4xl md:text-6xl leading-tight text-[#0B1C39] font-semibold font-[Poppins]">
+            Building Character Through Purpose
+          </h2>
+
+        </div>
+
+        <!-- TEXT CONTENT -->
+        <div class="mt-8 space-y-6 max-w-3xl">
+
+          <p class="text-gray-700 text-[17px] leading-relaxed font-[Inter]">
+            At Temple School, we believe that a truly transformative education extends far beyond the walls of the classroom.
+            Our mission is to nurture academically accomplished, well-rounded individuals who possess the agility and confidence
+            to thrive in an ever-evolving global landscape.
+          </p>
+
+          <p class="text-gray-700 text-[17px] leading-relaxed font-[Inter]">
+            We provide an inclusive, vibrant learning environment designed to serve as a springboard for personal achievement.
+            By expanding our students' horizons and fostering a global perspective, we ignite a lifelong passion for learning
+            and equip our graduates to become informed, responsible citizens of the world.
+          </p>
+
+        </div>
+
+        <!-- VALUES SECTION -->
+        <div class="mt-14">
+
+          <div class="flex items-center justify-between flex-wrap gap-4 mb-8">
+
+            <div>
+
+              <p class="uppercase tracking-[0.2em] text-xs text-[#1FA4A9] font-semibold mb-2">
+                Our Core Values
+              </p>
+
+              <h3 class="text-2xl text-[#0B1C39] font-semibold font-[Poppins]">
+                Principles That Shape Our Community
+              </h3>
+
+            </div>
+
+          </div>
+
+          <!-- VALUES GRID -->
+          <div class="grid md:grid-cols-2 gap-5">
+
+            <!-- VALUE CARD -->
+            <div class="group bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+
+              <div class="flex items-start gap-4">
+
+                <div class="w-12 h-12 rounded-2xl bg-[#D4AF37]/10 flex items-center justify-center shrink-0">
+                  <i data-lucide="heart" class="w-5 h-5 text-[#D4AF37]"></i>
+                </div>
+
+                <div>
+                  <h4 class="text-[#004A7C] font-semibold font-[Poppins] mb-2">
+                    Love
+                  </h4>
+
+                  <p class="text-sm text-gray-600 leading-relaxed font-[Inter]">
+                    Providing a nurturing foundation of care and belonging.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- VALUE CARD -->
+            <div class="group bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+
+              <div class="flex items-start gap-4">
+
+                <div class="w-12 h-12 rounded-2xl bg-[#1FA4A9]/10 flex items-center justify-center shrink-0">
+                  <i data-lucide="users" class="w-5 h-5 text-[#1FA4A9]"></i>
+                </div>
+
+                <div>
+                  <h4 class="text-[#004A7C] font-semibold font-[Poppins] mb-2">
+                    Respect
+                  </h4>
+
+                  <p class="text-sm text-gray-600 leading-relaxed font-[Inter]">
+                    Embracing the inherent dignity and diversity of every individual.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- VALUE CARD -->
+            <div class="group bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+
+              <div class="flex items-start gap-4">
+
+                <div class="w-12 h-12 rounded-2xl bg-[#0B1C39]/10 flex items-center justify-center shrink-0">
+                  <i data-lucide="globe" class="w-5 h-5 text-[#0B1C39]"></i>
+                </div>
+
+                <div>
+                  <h4 class="text-[#004A7C] font-semibold font-[Poppins] mb-2">
+                    Tolerance
+                  </h4>
+
+                  <p class="text-sm text-gray-600 leading-relaxed font-[Inter]">
+                    Cultivating empathy and open-minded understanding.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- VALUE CARD -->
+            <div class="group bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+
+              <div class="flex items-start gap-4">
+
+                <div class="w-12 h-12 rounded-2xl bg-[#D4AF37]/10 flex items-center justify-center shrink-0">
+                  <i data-lucide="shield-check" class="w-5 h-5 text-[#D4AF37]"></i>
+                </div>
+
+                <div>
+                  <h4 class="text-[#004A7C] font-semibold font-[Poppins] mb-2">
+                    Integrity
+                  </h4>
+
+                  <p class="text-sm text-gray-600 leading-relaxed font-[Inter]">
+                    Promoting unwavering honesty and personal responsibility.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- VALUE CARD -->
+            <div class="group bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+
+              <div class="flex items-start gap-4">
+
+                <div class="w-12 h-12 rounded-2xl bg-[#1FA4A9]/10 flex items-center justify-center shrink-0">
+                  <i data-lucide="leaf" class="w-5 h-5 text-[#1FA4A9]"></i>
+                </div>
+
+                <div>
+                  <h4 class="text-[#004A7C] font-semibold font-[Poppins] mb-2">
+                    Humility
+                  </h4>
+
+                  <p class="text-sm text-gray-600 leading-relaxed font-[Inter]">
+                    Embracing a growth mindset and the courage to learn from others.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- VALUE CARD -->
+            <div class="group bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+
+              <div class="flex items-start gap-4">
+
+                <div class="w-12 h-12 rounded-2xl bg-[#0B1C39]/10 flex items-center justify-center shrink-0">
+                  <i data-lucide="target" class="w-5 h-5 text-[#0B1C39]"></i>
+                </div>
+
+                <div>
+                  <h4 class="text-[#004A7C] font-semibold font-[Poppins] mb-2">
+                    Discipline
+                  </h4>
+
+                  <p class="text-sm text-gray-600 leading-relaxed font-[Inter]">
+                    Building the focus and consistency required for excellence.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- VALUE CARD -->
+            <div class="group bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1 md:col-span-2">
+
+              <div class="flex items-start gap-4">
+
+                <div class="w-12 h-12 rounded-2xl bg-[#D4AF37]/10 flex items-center justify-center shrink-0">
+                  <i data-lucide="refresh-ccw" class="w-5 h-5 text-[#D4AF37]"></i>
+                </div>
+
+                <div>
+                  <h4 class="text-[#004A7C] font-semibold font-[Poppins] mb-2">
+                    Resilience
+                  </h4>
+
+                  <p class="text-sm text-gray-600 leading-relaxed font-[Inter]">
+                    Developing the inner strength to persevere through challenges.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- CLOSING STATEMENT -->
+        <div class="mt-12 relative overflow-hidden rounded-[28px] bg-[#0B1C39] p-8">
+
+          <!-- DECOR -->
+          <div class="absolute top-0 right-0 w-40 h-40 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
+
+          <div class="relative z-10">
+
+            <span class="inline-block text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-semibold mb-4">
+              The Temple Promise
+            </span>
+
+            <p class="text-lg text-gray-200 leading-relaxed font-[Inter]">
+              We provide the nurturing environment necessary for children
+              to grow into confident, capable leaders prepared to shape the future.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <!-- INTRO -->
-    <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px]">
-      At Temple School, we believe that a truly transformative education extends far beyond the walls of the classroom.
-      Our mission is to nurture academically accomplished, well-rounded individuals who possess the agility and confidence
-      to thrive in an ever-evolving global landscape.
-    </p>
-
-    <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px]">
-      We provide an inclusive, vibrant learning environment designed to serve as a springboard for personal achievement.
-      By expanding our students' horizons and fostering a global perspective, we ignite a lifelong passion for learning
-      and equip our graduates to become informed, responsible citizens of the world.
-    </p>
-
   </div>
 
-  <!-- VALUES -->
-  <div class="mt-10">
-    <p class="uppercase tracking-[0.2em] text-xs text-[#D4AF37] mb-6">
-      Our Core Values
-    </p>
-
-    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6 max-w-3xl">
-
-      <div class="flex items-start gap-3">
-        <i data-lucide="heart" class="w-5 h-5 text-[#D4AF37]"></i>
-        <p class="text-sm text-gray-700 leading-relaxed">
-          <span class="font-semibold text-[#004A7C]">Love:</span> Providing a nurturing foundation of care and belonging.
-        </p>
-      </div>
-
-      <div class="flex items-start gap-3">
-        <i data-lucide="users" class="w-5 h-5 text-[#D4AF37]"></i>
-        <p class="text-sm text-gray-700 leading-relaxed">
-          <span class="font-semibold text-[#004A7C]">Respect:</span> Embracing the inherent dignity and diversity of every individual.
-        </p>
-      </div>
-
-      <div class="flex items-start gap-3">
-        <i data-lucide="globe" class="w-5 h-5 text-[#D4AF37]"></i>
-        <p class="text-sm text-gray-700 leading-relaxed">
-          <span class="font-semibold text-[#004A7C]">Tolerance:</span> Cultivating empathy and open-minded understanding.
-        </p>
-      </div>
-
-      <div class="flex items-start gap-3">
-        <i data-lucide="shield-check" class="w-5 h-5 text-[#D4AF37]"></i>
-        <p class="text-sm text-gray-700 leading-relaxed">
-          <span class="font-semibold text-[#004A7C]">Integrity:</span> Promoting unwavering honesty and personal responsibility.
-        </p>
-      </div>
-
-      <div class="flex items-start gap-3">
-        <i data-lucide="leaf" class="w-5 h-5 text-[#D4AF37]"></i>
-        <p class="text-sm text-gray-700 leading-relaxed">
-          <span class="font-semibold text-[#004A7C]">Humility:</span> Embracing a growth mindset and the courage to learn from others.
-        </p>
-      </div>
-
-      <div class="flex items-start gap-3">
-        <i data-lucide="target" class="w-5 h-5 text-[#D4AF37]"></i>
-        <p class="text-sm text-gray-700 leading-relaxed">
-          <span class="font-semibold text-[#004A7C]">Discipline:</span> Building the focus and consistency required for excellence.
-        </p>
-      </div>
-
-      <div class="flex items-start gap-3">
-        <i data-lucide="refresh-ccw" class="w-5 h-5 text-[#D4AF37]"></i>
-        <p class="text-sm text-gray-700 leading-relaxed">
-          <span class="font-semibold text-[#004A7C]">Resilience:</span> Developing the inner strength to persevere through challenges.
-        </p>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- CLOSING -->
-  <div class="mt-10 pt-6 border-t border-gray-200 max-w-2xl">
-    <p class="text-[#0B1C39] font-medium leading-relaxed">
-      <span class="font-semibold">The Temple Promise:</span> We provide the nurturing environment necessary for children
-      to grow into confident, capable leaders prepared to shape the future.
-    </p>
-  </div>
-
-</div>
-    </div>
-
-  </div>
 </section>
 
  <!-- stats section -->

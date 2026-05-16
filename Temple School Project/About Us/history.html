@@ -49,39 +49,39 @@
     max-width: calc(100vw - 2rem);
   }
 
- /* 🔥 DESKTOP DROPDOWN FIX (ADD THIS) */
+  /* 🔥 DESKTOP DROPDOWN FIX (ADD THIS) */
 
-/* default hidden state */
-nav .submenu {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: 0.2s ease;
-}
+  /* default hidden state */
+  nav .submenu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 0.2s ease;
+  }
 
-/* first-level hover dropdown */
-.group:hover > .submenu {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
+  /* first-level hover dropdown */
+  .group:hover>.submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 
-/* nested dropdowns (Gallery + Policies fix) */
-.submenu li {
-  position: relative;
-}
+  /* nested dropdowns (Gallery + Policies fix) */
+  .submenu li {
+    position: relative;
+  }
 
-.submenu li > .submenu {
-  top: 0;
-  left: 100%;
-}
+  .submenu li>.submenu {
+    top: 0;
+    left: 100%;
+  }
 
-/* open nested on hover */
-.submenu li:hover > .submenu {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
+  /* open nested on hover */
+  .submenu li:hover>.submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 
 
 
@@ -228,13 +228,13 @@ nav .submenu {
     <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0B1C39]">
 
     <!-- LOGO -->
-    <img src="/Temple School Project/Images/logo.png" id="preloaderLogo" class="w-32 md:w-40 opacity-0">
+    <img src="https://ik.imagekit.io/u9vfp7lad/tplogo.png?updatedAt=1777413437710" id="preloaderLogo" class="w-32 md:w-40 opacity-0">
 
   </div>
 
 
   <!-- HEADER -->
- <header class="bg-[#F8F6F1] shadow-sm relative z-50">
+  <header class="bg-[#F8F6F1] shadow-sm relative z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
       <!-- LOGO -->
@@ -359,22 +359,26 @@ nav .submenu {
 
               <!-- EARLY YEARS -->
               <li>
-                <a href="/Temple School Project/Learning Journey/Early Years/Early-years.html" class="block px-4 py-2 hover:bg-gray-100">Early Years</a>
+                <a href="/Temple School Project/Learning Journey/Early Years/Early-years.html"
+                  class="block px-4 py-2 hover:bg-gray-100">Early Years</a>
               </li>
 
               <!-- PRIMARY -->
               <li>
-                <a href="/Temple School Project/Learning Journey/Primary/Primary.html" class="block px-4 py-2 hover:bg-gray-100">Primary</a>
+                <a href="/Temple School Project/Learning Journey/Primary/Primary.html"
+                  class="block px-4 py-2 hover:bg-gray-100">Primary</a>
               </li>
 
               <!-- SECONDARY -->
               <li>
-                <a href="/Temple School Project/Learning Journey/Secondary/secondary.html" class="block px-4 py-2 hover:bg-gray-100">Secondary</a>
+                <a href="/Temple School Project/Learning Journey/Secondary/secondary.html"
+                  class="block px-4 py-2 hover:bg-gray-100">Secondary</a>
               </li>
 
               <!-- COLLEGE -->
               <li>
-                <a href="/Temple School Project/Learning Journey/College/college.html" class="block px-4 py-2 hover:bg-gray-100">College</a>
+                <a href="/Temple School Project/Learning Journey/College/college.html"
+                  class="block px-4 py-2 hover:bg-gray-100">College</a>
               </li>
 
             </ul>
@@ -418,365 +422,125 @@ nav .submenu {
 
   <section class="relative bg-[#F8F6F1] py-32 overflow-hidden">
 
-  <!-- BACKGROUND BLURS -->
-  <div class="absolute inset-0 pointer-events-none overflow-hidden">
-    <div class="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-[#004A7C]/10 blur-3xl"></div>
-    <div class="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-[#D48821]/10 blur-3xl"></div>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-6 relative z-10">
-
-    <!-- TOP HEADER -->
-    <div class="max-w-3xl mb-20">
-
-      <div class="flex items-center gap-3 mb-5">
-        <div class="w-10 h-[2px] bg-[#D4AF37]"></div>
-
-        <p class="uppercase tracking-[0.25em] text-xs font-medium text-[#D4AF37]">
-          Our Journey
-        </p>
-      </div>
-
-      <h2 class="text-4xl md:text-5xl font-semibold leading-tight text-[#0B1C39]">
-        A Legacy of Growth & Excellence
-      </h2>
-
-      <p class="mt-6 text-gray-600 text-[16px] md:text-[17px] leading-relaxed">
-        Discover the inspiring story of Temple School. From humble beginnings
-        to a thriving institution committed to nurturing future leaders through
-        innovation, excellence, and holistic development.
-      </p>
-
+    <!-- BACKGROUND BLURS -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+      <div class="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-[#004A7C]/10 blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-[#D48821]/10 blur-3xl"></div>
     </div>
 
-    <!-- MAIN GRID -->
-    <div class="grid lg:grid-cols-12 gap-16 items-start">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
 
-      <!-- LEFT CONTENT -->
-      <div class="lg:col-span-7 space-y-8">
+      <!-- TOP HEADER -->
+      <div class="max-w-3xl mb-20">
 
-        <!-- INTRO CARD -->
-        <div class="bg-white rounded-[32px] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.06)] border border-gray-100">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-[2px] bg-[#D4AF37]"></div>
 
-          <div class="flex items-start gap-5">
-
-            <div class="w-14 h-14 rounded-2xl bg-[#004A7C]/10 flex items-center justify-center flex-shrink-0">
-              <i data-lucide="graduation-cap" class="w-6 h-6 text-[#004A7C]"></i>
-            </div>
-
-            <div>
-
-              <h3 class="text-2xl font-semibold text-[#0B1C39] mb-5">
-                Our Educational Foundation
-              </h3>
-
-              <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px]">
-                Temple School is more than an institution; it is a
-                <span class="font-semibold text-[#0B1C39]">
-                  launching pad for future leaders
-                </span>
-                and a sanctuary for lifelong learners. Since 2004, we have nurtured bright minds
-                within a serene environment on the Lagos Mainland, delivering a world-class education
-                through a unique fusion of the
-                <span class="font-semibold text-[#0B1C39]">
-                  British National Curriculum
-                </span>,
-                Cambridge Curriculum, and enriched
-                <span class="font-semibold text-[#0B1C39]">
-                  Nigerian heritage
-                </span>.
-              </p>
-
-            </div>
-
-          </div>
-
+          <p class="uppercase tracking-[0.25em] text-xs font-medium text-[#D4AF37]">
+            Our Journey
+          </p>
         </div>
 
-        <!-- HISTORY CARD -->
-        <div class="bg-white rounded-[32px] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.06)] border border-gray-100">
+        <h2 class="text-4xl md:text-5xl font-semibold leading-tight text-[#0B1C39]">
+          A Legacy of Growth & Excellence
+        </h2>
 
-          <div class="flex items-start gap-5">
+        <p class="mt-6 text-gray-600 text-[16px] md:text-[17px] leading-relaxed">
+          Discover the inspiring story of Temple School. From humble beginnings
+          to a thriving institution committed to nurturing future leaders through
+          innovation, excellence, and holistic development.
+        </p>
 
-            <div class="w-14 h-14 rounded-2xl bg-[#D48821]/10 flex items-center justify-center flex-shrink-0">
-              <i data-lucide="history" class="w-6 h-6 text-[#D48821]"></i>
-            </div>
+      </div>
 
-            <div>
+      <!-- MAIN GRID -->
+      <div class="grid lg:grid-cols-12 gap-16 items-start">
 
-              <h3 class="text-2xl font-semibold text-[#0B1C39] mb-5">
-                From Humble Beginnings to a Thriving Community
-              </h3>
+        <!-- LEFT CONTENT -->
+        <div class="lg:col-span-7 space-y-8">
 
-              <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px]">
-                Our story began in 2004 with a small, dedicated cohort of just seven students.
-                Driven by an uncompromising passion for academic distinction, that initial spark
-                quickly grew. By 2006, we expanded to accommodate our rapidly growing family of learners,
-                and by 2009,
-                <span class="font-semibold text-[#0B1C39]">
-                  Temple Secondary School
-                </span>
-                opened its doors boasting dynamic curricula and forward-thinking facilities.
-              </p>
+          <!-- INTRO CARD -->
+          <div class="bg-white rounded-[32px] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.06)] border border-gray-100">
 
-              <!-- TIMELINE -->
-              <div class="grid sm:grid-cols-3 gap-4 mt-8">
+            <div class="flex items-start gap-5">
 
-                <div class="rounded-2xl bg-[#F8F6F1] p-5 border border-gray-100">
-                  <p class="text-2xl font-semibold text-[#0B1C39]">2004</p>
-                  <p class="text-sm text-gray-500 mt-1">Temple School Founded</p>
-                </div>
-
-                <div class="rounded-2xl bg-[#F8F6F1] p-5 border border-gray-100">
-                  <p class="text-2xl font-semibold text-[#0B1C39]">2006</p>
-                  <p class="text-sm text-gray-500 mt-1">School Expansion</p>
-                </div>
-
-                <div class="rounded-2xl bg-[#F8F6F1] p-5 border border-gray-100">
-                  <p class="text-2xl font-semibold text-[#0B1C39]">2009</p>
-                  <p class="text-sm text-gray-500 mt-1">Secondary School Opens</p>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- EXCELLENCE CARD -->
-        <div class="bg-white rounded-[32px] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.06)] border border-gray-100">
-
-          <div class="flex items-start gap-5">
-
-            <div class="w-14 h-14 rounded-2xl bg-[#004A7C]/10 flex items-center justify-center flex-shrink-0">
-              <i data-lucide="building-2" class="w-6 h-6 text-[#004A7C]"></i>
-            </div>
-
-            <div class="w-full">
-
-              <h3 class="text-2xl font-semibold text-[#0B1C39] mb-5">
-                Evolution of Excellence
-              </h3>
-
-              <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px] mb-8">
-                In 2015, we reached a pivotal milestone by transitioning to our
-                <span class="font-semibold text-[#0B1C39]">
-                  permanent, state-of-the-art campus in Ikeja
-                </span>.
-                Designed to inspire, our campus serves as a modern hub for holistic development, featuring:
-              </p>
-
-              <!-- FEATURES -->
-              <div class="space-y-5">
-
-                <!-- ITEM -->
-                <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6F1] border border-gray-100">
-
-                  <div class="w-12 h-12 rounded-xl bg-[#D48821]/10 flex items-center justify-center flex-shrink-0">
-                    <i data-lucide="trophy" class="w-5 h-5 text-[#D48821]"></i>
-                  </div>
-
-                  <div>
-                    <h4 class="font-semibold text-[#0B1C39] mb-2">
-                      Elite Athletics
-                    </h4>
-
-                    <p class="text-gray-600 leading-relaxed">
-                      Full-sized basketball and volleyball courts, a professional sports field,
-                      and a swimming pool.
-                    </p>
-                  </div>
-
-                </div>
-
-                <!-- ITEM -->
-                <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6F1] border border-gray-100">
-
-                  <div class="w-12 h-12 rounded-xl bg-[#004A7C]/10 flex items-center justify-center flex-shrink-0">
-                    <i data-lucide="bed-double" class="w-5 h-5 text-[#004A7C]"></i>
-                  </div>
-
-                  <div>
-                    <h4 class="font-semibold text-[#0B1C39] mb-2">
-                      Modern Boarding
-                    </h4>
-
-                    <p class="text-gray-600 leading-relaxed">
-                      Safe and comfortable residential facilities that feel like a second home.
-                    </p>
-                  </div>
-
-                </div>
-
-                <!-- ITEM -->
-                <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6F1] border border-gray-100">
-
-                  <div class="w-12 h-12 rounded-xl bg-[#D48821]/10 flex items-center justify-center flex-shrink-0">
-                    <i data-lucide="monitor-smartphone" class="w-5 h-5 text-[#D48821]"></i>
-                  </div>
-
-                  <div>
-                    <h4 class="font-semibold text-[#0B1C39] mb-2">
-                      Innovative Classrooms
-                    </h4>
-
-                    <p class="text-gray-600 leading-relaxed">
-                      Stimulating learning environments equipped with the latest educational technology.
-                    </p>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- COMMUNITY CARD -->
-        <div class="bg-[#0B1C39] rounded-[32px] p-8 md:p-10 text-white relative overflow-hidden">
-
-          <div class="absolute top-0 right-0 w-52 h-52 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
-
-          <div class="relative z-10">
-
-            <div class="flex items-start gap-5 mb-8">
-
-              <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center flex-shrink-0">
-                <i data-lucide="heart-handshake" class="w-6 h-6 text-[#D4AF37]"></i>
+              <div class="w-14 h-14 rounded-2xl bg-[#004A7C]/10 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="graduation-cap" class="w-6 h-6 text-[#004A7C]"></i>
               </div>
 
               <div>
 
-                <h3 class="text-2xl font-semibold mb-4">
-                  More Than Just Bricks and Mortar
+                <h3 class="text-2xl font-semibold text-[#0B1C39] mb-5">
+                  Our Educational Foundation
                 </h3>
 
-                <p class="text-white/80 leading-relaxed text-[16px] md:text-[17px]">
-                  At the heart of Temple School is a
-                  <span class="font-semibold text-white">
-                    safe, inclusive, and welcoming community
+                <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px]">
+                  Temple School is more than an institution; it is a
+                  <span class="font-semibold text-[#0B1C39]">
+                    launching pad for future leaders
                   </span>
-                  where every child is seen, heard, and valued. Our dedicated educators foster
-                  a nurturing atmosphere that prioritizes:
+                  and a sanctuary for lifelong learners. Since 2004, we have nurtured bright minds
+                  within a serene environment on the Lagos Mainland, delivering a world-class education
+                  through a unique fusion of the
+                  <span class="font-semibold text-[#0B1C39]">
+                    British National Curriculum
+                  </span>,
+                  Cambridge Curriculum, and enriched
+                  <span class="font-semibold text-[#0B1C39]">
+                    Nigerian heritage
+                  </span>.
                 </p>
 
               </div>
 
             </div>
 
-            <!-- PRIORITIES -->
-            <div class="space-y-5">
-
-              <div class="flex items-start gap-4">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#D4AF37] mt-1"></i>
-
-                <div>
-                  <h4 class="font-semibold text-white mb-1">
-                    Curiosity & Exploration
-                  </h4>
-
-                  <p class="text-white/70">
-                    Encouraging students to ask “why” and “how.”
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-4">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#D4AF37] mt-1"></i>
-
-                <div>
-                  <h4 class="font-semibold text-white mb-1">
-                    Academic Rigor
-                  </h4>
-
-                  <p class="text-white/70">
-                    Pushing the boundaries of excellence in every discipline.
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-4">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#D4AF37] mt-1"></i>
-
-                <div>
-                  <h4 class="font-semibold text-white mb-1">
-                    Character Development
-                  </h4>
-
-                  <p class="text-white/70">
-                    Building the ethical foundation necessary for global citizenship.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
           </div>
 
-        </div>
+          <!-- HISTORY CARD -->
+          <div class="bg-white rounded-[32px] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.06)] border border-gray-100">
 
-        <!-- VISION -->
-        <div class="border-t border-gray-200 pt-8">
+            <div class="flex items-start gap-5">
 
-          <div class="flex items-start gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-[#D48821]/10 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="history" class="w-6 h-6 text-[#D48821]"></i>
+              </div>
 
-            <div class="w-12 h-12 rounded-xl bg-[#D4AF37]/10 flex items-center justify-center flex-shrink-0">
-              <i data-lucide="sparkles" class="w-5 h-5 text-[#D4AF37]"></i>
-            </div>
+              <div>
 
-            <p class="text-[#0B1C39] text-[17px] leading-relaxed">
-              <span class="font-semibold">
-                Our Vision:
-              </span>
+                <h3 class="text-2xl font-semibold text-[#0B1C39] mb-5">
+                  From Humble Beginnings to a Thriving Community
+                </h3>
 
-              At Temple School, we provide the wings every child needs to soar,
-              ensuring they have the confidence and competence to reach their full potential.
-            </p>
+                <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px]">
+                  Our story began in 2004 with a small, dedicated cohort of just seven students.
+                  Driven by an uncompromising passion for academic distinction, that initial spark
+                  quickly grew. By 2006, we expanded to accommodate our rapidly growing family of learners,
+                  and by 2009,
+                  <span class="font-semibold text-[#0B1C39]">
+                    Temple Secondary School
+                  </span>
+                  opened its doors boasting dynamic curricula and forward-thinking facilities.
+                </p>
 
-          </div>
+                <!-- TIMELINE -->
+                <div class="grid sm:grid-cols-3 gap-4 mt-8">
 
-        </div>
+                  <div class="rounded-2xl bg-[#F8F6F1] p-5 border border-gray-100">
+                    <p class="text-2xl font-semibold text-[#0B1C39]">2004</p>
+                    <p class="text-sm text-gray-500 mt-1">Temple School Founded</p>
+                  </div>
 
-      </div>
+                  <div class="rounded-2xl bg-[#F8F6F1] p-5 border border-gray-100">
+                    <p class="text-2xl font-semibold text-[#0B1C39]">2006</p>
+                    <p class="text-sm text-gray-500 mt-1">School Expansion</p>
+                  </div>
 
-      <!-- RIGHT IMAGES -->
-      <div class="lg:col-span-5 relative lg:sticky top-24">
+                  <div class="rounded-2xl bg-[#F8F6F1] p-5 border border-gray-100">
+                    <p class="text-2xl font-semibold text-[#0B1C39]">2009</p>
+                    <p class="text-sm text-gray-500 mt-1">Secondary School Opens</p>
+                  </div>
 
-        <!-- MAIN IMAGE -->
-        <div class="relative z-10 rounded-[36px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.15)]">
-
-          <img
-            src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-14-8.jpg"
-            class="w-full h-[500px] md:h-[720px] object-cover"
-          />
-
-          <!-- DARK OVERLAY -->
-          <div class="absolute inset-0 bg-gradient-to-t from-[#0B1C39]/70 via-transparent to-transparent"></div>
-
-          <!-- FLOATING CONTENT -->
-          <div class="absolute bottom-6 left-6 right-6 z-30">
-
-            <div class="bg-black/30 backdrop-blur-xl border border-white/20 rounded-[28px] p-5">
-
-              <div class="flex items-center gap-4">
-
-                <div class="w-14 h-14 rounded-2xl bg-[#D4AF37] flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="school" class="w-6 h-6 text-[#0B1C39]"></i>
-                </div>
-
-                <div>
-                  <h4 class="text-white text-lg font-semibold">
-                    Temple School Campus
-                  </h4>
-
-                  <p class="text-white/80 text-sm leading-relaxed mt-1">
-                    Inspiring future leaders through innovation and excellence.
-                  </p>
                 </div>
 
               </div>
@@ -785,129 +549,368 @@ nav .submenu {
 
           </div>
 
+          <!-- EXCELLENCE CARD -->
+          <div class="bg-white rounded-[32px] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.06)] border border-gray-100">
+
+            <div class="flex items-start gap-5">
+
+              <div class="w-14 h-14 rounded-2xl bg-[#004A7C]/10 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="building-2" class="w-6 h-6 text-[#004A7C]"></i>
+              </div>
+
+              <div class="w-full">
+
+                <h3 class="text-2xl font-semibold text-[#0B1C39] mb-5">
+                  Evolution of Excellence
+                </h3>
+
+                <p class="text-gray-600 leading-relaxed text-[16px] md:text-[17px] mb-8">
+                  In 2015, we reached a pivotal milestone by transitioning to our
+                  <span class="font-semibold text-[#0B1C39]">
+                    permanent, state-of-the-art campus in Ikeja
+                  </span>.
+                  Designed to inspire, our campus serves as a modern hub for holistic development, featuring:
+                </p>
+
+                <!-- FEATURES -->
+                <div class="space-y-5">
+
+                  <!-- ITEM -->
+                  <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6F1] border border-gray-100">
+
+                    <div class="w-12 h-12 rounded-xl bg-[#D48821]/10 flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="trophy" class="w-5 h-5 text-[#D48821]"></i>
+                    </div>
+
+                    <div>
+                      <h4 class="font-semibold text-[#0B1C39] mb-2">
+                        Elite Athletics
+                      </h4>
+
+                      <p class="text-gray-600 leading-relaxed">
+                        Full-sized basketball and volleyball courts, a professional sports field,
+                        and a swimming pool.
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- ITEM -->
+                  <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6F1] border border-gray-100">
+
+                    <div class="w-12 h-12 rounded-xl bg-[#004A7C]/10 flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="bed-double" class="w-5 h-5 text-[#004A7C]"></i>
+                    </div>
+
+                    <div>
+                      <h4 class="font-semibold text-[#0B1C39] mb-2">
+                        Modern Boarding
+                      </h4>
+
+                      <p class="text-gray-600 leading-relaxed">
+                        Safe and comfortable residential facilities that feel like a second home.
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- ITEM -->
+                  <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6F1] border border-gray-100">
+
+                    <div class="w-12 h-12 rounded-xl bg-[#D48821]/10 flex items-center justify-center flex-shrink-0">
+                      <i data-lucide="monitor-smartphone" class="w-5 h-5 text-[#D48821]"></i>
+                    </div>
+
+                    <div>
+                      <h4 class="font-semibold text-[#0B1C39] mb-2">
+                        Innovative Classrooms
+                      </h4>
+
+                      <p class="text-gray-600 leading-relaxed">
+                        Stimulating learning environments equipped with the latest educational technology.
+                      </p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- COMMUNITY CARD -->
+          <div class="bg-[#0B1C39] rounded-[32px] p-8 md:p-10 text-white relative overflow-hidden">
+
+            <div class="absolute top-0 right-0 w-52 h-52 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
+
+            <div class="relative z-10">
+
+              <div class="flex items-start gap-5 mb-8">
+
+                <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="heart-handshake" class="w-6 h-6 text-[#D4AF37]"></i>
+                </div>
+
+                <div>
+
+                  <h3 class="text-2xl font-semibold mb-4">
+                    More Than Just Bricks and Mortar
+                  </h3>
+
+                  <p class="text-white/80 leading-relaxed text-[16px] md:text-[17px]">
+                    At the heart of Temple School is a
+                    <span class="font-semibold text-white">
+                      safe, inclusive, and welcoming community
+                    </span>
+                    where every child is seen, heard, and valued. Our dedicated educators foster
+                    a nurturing atmosphere that prioritizes:
+                  </p>
+
+                </div>
+
+              </div>
+
+              <!-- PRIORITIES -->
+              <div class="space-y-5">
+
+                <div class="flex items-start gap-4">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-[#D4AF37] mt-1"></i>
+
+                  <div>
+                    <h4 class="font-semibold text-white mb-1">
+                      Curiosity & Exploration
+                    </h4>
+
+                    <p class="text-white/70">
+                      Encouraging students to ask “why” and “how.”
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-[#D4AF37] mt-1"></i>
+
+                  <div>
+                    <h4 class="font-semibold text-white mb-1">
+                      Academic Rigor
+                    </h4>
+
+                    <p class="text-white/70">
+                      Pushing the boundaries of excellence in every discipline.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-[#D4AF37] mt-1"></i>
+
+                  <div>
+                    <h4 class="font-semibold text-white mb-1">
+                      Character Development
+                    </h4>
+
+                    <p class="text-white/70">
+                      Building the ethical foundation necessary for global citizenship.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- VISION -->
+          <div class="border-t border-gray-200 pt-8">
+
+            <div class="flex items-start gap-4">
+
+              <div class="w-12 h-12 rounded-xl bg-[#D4AF37]/10 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="sparkles" class="w-5 h-5 text-[#D4AF37]"></i>
+              </div>
+
+              <p class="text-[#0B1C39] text-[17px] leading-relaxed">
+                <span class="font-semibold">
+                  Our Vision:
+                </span>
+
+                At Temple School, we provide the wings every child needs to soar,
+                ensuring they have the confidence and competence to reach their full potential.
+              </p>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <!-- FLOATING IMAGE -->
-        <div class="absolute -bottom-10 -left-8 w-44 md:w-52 rounded-[28px] overflow-hidden border-[6px] border-white shadow-2xl z-20">
+        <!-- RIGHT IMAGES -->
+        <div class="lg:col-span-5 relative lg:sticky top-24">
 
-          <img
-            src="/Temple School Project/Images/historyimg.JPG"
-            class="w-full h-44 md:h-52 object-cover"
-          />
+          <!-- MAIN IMAGE -->
+<div class="relative z-10 rounded-[36px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.15)]">
 
-        </div>
+            <img src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Suared-14-8.jpg"
+              class="w-full h-[500px] md:h-[720px] object-cover" />
 
-        <!-- FLOATING IMAGE -->
-        <div class="absolute top-10 -right-8 w-40 md:w-48 rounded-[28px] overflow-hidden border-[6px] border-white shadow-2xl z-20">
+            <!-- DARK OVERLAY -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0B1C39]/70 via-transparent to-transparent"></div>
 
-          <img
-            src="https://www.templeschoolng.com/wp-content/uploads/2022/01/Fun-Work-2.jpeg"
-            class="w-full h-40 md:h-48 object-cover"
-          />
+            <!-- FLOATING CONTENT -->
+            <div class="absolute bottom-6 left-6 right-6 z-30">
 
+              <div class="bg-black/30 backdrop-blur-xl border border-white/20 rounded-[28px] p-5">
+
+                <div class="flex items-center gap-4">
+
+                  <div class="w-14 h-14 rounded-2xl bg-[#D4AF37] flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="school" class="w-6 h-6 text-[#0B1C39]"></i>
+                  </div>
+
+                  <div>
+                    <h4 class="text-white text-lg font-semibold">
+                      Temple School Campus
+                    </h4>
+
+                    <p class="text-white/80 text-sm leading-relaxed mt-1">
+                      Inspiring future leaders through innovation and excellence.
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- FLOATING IMAGE -->
+          <!-- BACK IMAGE 1 -->
+          <div
+            class="absolute -bottom-10 -left-10 w-44 md:w-52 rounded-[28px] overflow-hidden shadow-2xl z-0 opacity-90">
+
+            <img src="/Temple School Project/Images/historyimg.JPG" class="w-full h-44 md:h-52 object-cover" />
+
+          </div>
+
+          <!-- BACK IMAGE 2 -->
+          <div class="absolute -top-10 -right-10 w-40 md:w-48 rounded-[28px] overflow-hidden shadow-2xl z-0 opacity-90">
+
+            <img src="https://www.templeschoolng.com/wp-content/uploads/2022/01/Fun-Work-2.jpeg"
+              class="w-full h-40 md:h-48 object-cover" />
+
+          </div>
         </div>
 
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
 
 
 
   <!-- stats section -->
-<section class="relative py-16 sm:py-20 md:py-24 bg-[#F8F6F1] overflow-hidden">
+  <section class="relative py-16 sm:py-20 md:py-24 bg-[#F8F6F1] overflow-hidden">
 
-  <!-- Floating particles -->
-  <div class="absolute inset-0 pointer-events-none">
-    <div class="particle p1"></div>
-    <div class="particle p2"></div>
-    <div class="particle p3"></div>
-    <div class="particle p4"></div>
-    <div class="particle p5"></div>
-  </div>
-
-  <div class="relative max-w-7xl mx-auto px-6 sm:px-8 text-center">
-
-    <!-- Heading -->
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#0B1C39] mb-3 heading-font">
-      Our Legacy in Numbers
-    </h2>
-
-    <p class="text-sm sm:text-base md:text-lg text-gray-600 mb-10 md:mb-14 max-w-xl mx-auto leading-7">
-      Building excellence since 2004 with pride, discipline, and innovation.
-    </p>
-
-    <!-- Stats Grid -->
-    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
-
-      <!-- YEAR -->
-      <div class="stat-card bg-white/70 backdrop-blur-md rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
-        <i data-lucide="calendar" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none">
-          <span id="yearCounter">2004</span>
-        </h3>
-        <p class="text-[#004A7C] mt-3 text-xs sm:text-sm md:text-base font-medium">Established</p>
-      </div>
-
-      <!-- SCHOOLS -->
-      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
-        <i data-lucide="building-2" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none">
-          <span class="counter" data-target="5">0</span>
-        </h3>
-        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Schools</p>
-      </div>
-
-      <!-- ENROLMENT -->
-      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
-        <i data-lucide="users" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none whitespace-nowrap">
-          <span class="counter" data-target="8000">0</span><span class="text-[#D48821]">+</span>
-        </h3>
-        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Enrolment</p>
-      </div>
-
-      <!-- PASS RATE -->
-      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
-        <i data-lucide="graduation-cap" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none whitespace-nowrap">
-          <span class="counter" data-target="99">0</span><span>%</span>
-        </h3>
-        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Pass Rate</p>
-      </div>
-
-      <!-- PARENTS -->
-      <div class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
-        <i data-lucide="smile" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
-        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#D48821] leading-none whitespace-nowrap">
-          <span class="counter" data-target="100">0</span><span>%</span>
-        </h3>
-        <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Parent Satisfaction</p>
-      </div>
-
+    <!-- Floating particles -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="particle p1"></div>
+      <div class="particle p2"></div>
+      <div class="particle p3"></div>
+      <div class="particle p4"></div>
+      <div class="particle p5"></div>
     </div>
 
-    <!-- Final tagline -->
-    <div class="mt-10 md:mt-14 flex justify-center">
-      <div class="backdrop-blur-md bg-white/30 border border-white/20
+    <div class="relative max-w-7xl mx-auto px-6 sm:px-8 text-center">
+
+      <!-- Heading -->
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#0B1C39] mb-3 heading-font">
+        Our Legacy in Numbers
+      </h2>
+
+      <p class="text-sm sm:text-base md:text-lg text-gray-600 mb-10 md:mb-14 max-w-xl mx-auto leading-7">
+        Building excellence since 2004 with pride, discipline, and innovation.
+      </p>
+
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+
+        <!-- YEAR -->
+        <div
+          class="stat-card bg-white/70 backdrop-blur-md rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+          <i data-lucide="calendar" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+          <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none">
+            <span id="yearCounter">2004</span>
+          </h3>
+          <p class="text-[#004A7C] mt-3 text-xs sm:text-sm md:text-base font-medium">Established</p>
+        </div>
+
+        <!-- SCHOOLS -->
+        <div
+          class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+          <i data-lucide="building-2" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+          <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none">
+            <span class="counter" data-target="5">0</span>
+          </h3>
+          <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Schools</p>
+        </div>
+
+        <!-- ENROLMENT -->
+        <div
+          class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+          <i data-lucide="users" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+          <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none whitespace-nowrap">
+            <span class="counter" data-target="8000">0</span><span class="text-[#D48821]">+</span>
+          </h3>
+          <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Enrolment</p>
+        </div>
+
+        <!-- PASS RATE -->
+        <div
+          class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+          <i data-lucide="graduation-cap" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+          <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1C39] leading-none whitespace-nowrap">
+            <span class="counter" data-target="99">0</span><span>%</span>
+          </h3>
+          <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Pass Rate</p>
+        </div>
+
+        <!-- PARENTS -->
+        <div
+          class="stat-card bg-white/70 rounded-2xl p-5 sm:p-6 shadow-sm text-center min-h-[180px] flex flex-col justify-center">
+          <i data-lucide="smile" class="w-6 h-6 mx-auto text-[#0B1C39] mb-3"></i>
+          <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#D48821] leading-none whitespace-nowrap">
+            <span class="counter" data-target="100">0</span><span>%</span>
+          </h3>
+          <p class="text-gray-600 mt-3 text-xs sm:text-sm md:text-base">Parent Satisfaction</p>
+        </div>
+
+      </div>
+
+      <!-- Final tagline -->
+      <div class="mt-10 md:mt-14 flex justify-center">
+        <div class="backdrop-blur-md bg-white/30 border border-white/20
                   shadow-[0_8px_30px_rgba(0,0,0,0.08)]
                   px-5 py-4 rounded-2xl">
 
-        <p class="text-base sm:text-lg md:text-xl font-semibold text-[#0B1C39] leading-relaxed">
-          Excellence built over
-          <span class="text-[#D48821]">two decades</span>
-        </p>
+          <p class="text-base sm:text-lg md:text-xl font-semibold text-[#0B1C39] leading-relaxed">
+            Excellence built over
+            <span class="text-[#D48821]">two decades</span>
+          </p>
 
+        </div>
       </div>
-    </div>
 
-  </div>
-</section>
+    </div>
+  </section>
 
 
 
@@ -1060,8 +1063,8 @@ nav .submenu {
 
 
   <!-- footer -->
- 
-   <!-- footer -->
+
+  <!-- footer -->
   <footer class="relative bg-[#0B1C39] text-white overflow-hidden">
 
     <!-- BACKGROUND IMAGE OVERLAY -->
@@ -1096,7 +1099,8 @@ nav .submenu {
           <p class="text-sm text-white/80">1 Temple Drive, Off Olusoji
             Idowu St, Ilupeju, Lagos</p>
 
-          <a href="https://www.google.com/maps/place/1+Temple+Dr,+Ilupeju,+Lagos+102215,+Lagos/@6.5524427,3.3627879,17z/data=!3m1!4b1!4m6!3m5!1s0x103b8d91155fd4bb:0xd08194846eb51769!8m2!3d6.5524374!4d3.3653628!16s%2Fg%2F11dzdw8k15?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" class="footer-link">
+          <a href="https://www.google.com/maps/place/1+Temple+Dr,+Ilupeju,+Lagos+102215,+Lagos/@6.5524427,3.3627879,17z/data=!3m1!4b1!4m6!3m5!1s0x103b8d91155fd4bb:0xd08194846eb51769!8m2!3d6.5524374!4d3.3653628!16s%2Fg%2F11dzdw8k15?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+            class="footer-link">
             Directions →
           </a>
 
@@ -1113,7 +1117,8 @@ nav .submenu {
             Off Aba Johnston Street,
             Adeniyi Jones, Ikeja, Lagos</p>
 
-          <a href="https://www.google.com/maps/place/Temple+Secondary+School/@6.6160816,3.3464412,17z/data=!3m1!4b1!4m6!3m5!1s0x103b93ce1da6ce97:0x7a3253802525319c!8m2!3d6.6160763!4d3.3490161!16s%2Fg%2F11fxc1sznh?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" class="footer-link">
+          <a href="https://www.google.com/maps/place/Temple+Secondary+School/@6.6160816,3.3464412,17z/data=!3m1!4b1!4m6!3m5!1s0x103b93ce1da6ce97:0x7a3253802525319c!8m2!3d6.6160763!4d3.3490161!16s%2Fg%2F11fxc1sznh?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+            class="footer-link">
             Directions →
           </a>
 
@@ -1129,7 +1134,8 @@ nav .submenu {
           <h3 class="font-[Poppins] font-semibold text-lg mb-3">Temple College</h3>
           <p class="text-sm text-white/80">8 Oyediran Close, Opebi, Ikeja, Lagos</p>
 
-          <a href="https://www.google.com/maps/place/8+Oyediran+Cl,+Allen,+Ikeja+101233,+Lagos/@6.5971487,3.3544541,17z/data=!3m1!4b1!4m6!3m5!1s0x103b923850265f1b:0xd6ffffe8095fb69e!8m2!3d6.5971434!4d3.357029!16s%2Fg%2F11c6vfbzdy?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" class="footer-link">
+          <a href="https://www.google.com/maps/place/8+Oyediran+Cl,+Allen,+Ikeja+101233,+Lagos/@6.5971487,3.3544541,17z/data=!3m1!4b1!4m6!3m5!1s0x103b923850265f1b:0xd6ffffe8095fb69e!8m2!3d6.5971434!4d3.357029!16s%2Fg%2F11c6vfbzdy?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+            class="footer-link">
             Directions →
           </a>
 
@@ -1142,7 +1148,9 @@ nav .submenu {
         <!-- MAP -->
         <div>
           <div class="rounded-lg overflow-hidden aspect-video transition duration-500">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.247990612612!2d3.3444026703268923!3d6.616081607471191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93ce1da6ce97%3A0x7a3253802525319c!2sTemple%20Secondary%20School!5e0!3m2!1sen!2sng!4v1778324412324!5m2!1sen!2sng" class="w-full h-full border-0">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.247990612612!2d3.3444026703268923!3d6.616081607471191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93ce1da6ce97%3A0x7a3253802525319c!2sTemple%20Secondary%20School!5e0!3m2!1sen!2sng!4v1778324412324!5m2!1sen!2sng"
+              class="w-full h-full border-0">
             </iframe>
           </div>
         </div>
@@ -1163,7 +1171,7 @@ nav .submenu {
         <!-- SOCIALS -->
         <div class="flex gap-5 text-xl">
 
-          <a href="https://www.facebook.com/TempleSchool"" class="social-icon hover:text-[#D48821] transition">
+          <a href="https://www.facebook.com/TempleSchool"" class=" social-icon hover:text-[#D48821] transition">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
 
