@@ -457,20 +457,29 @@ img {
   </section>
 
 
-  <section class="bg-[#F9F8F3] py-24 px-6">
+<section class="bg-[#F8F6F1] py-20 sm:py-24 lg:py-28 overflow-hidden relative">
 
-  <div class="max-w-6xl mx-auto">
+  <!-- SOFT BACKGROUND -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#0B2C5F]/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-[#D4A017]/10 rounded-full blur-3xl"></div>
+  </div>
 
-    <!-- INTRO -->
-    <div class="text-center max-w-2xl mx-auto mb-20">
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
 
-      <h2 class="text-3xl md:text-4xl font-bold font-[Poppins] text-[#0B2C5F] mb-4 leading-tight">
-        A Safe & Nurturing First Step
+    <!-- TOP INTRO -->
+    <div class="text-center max-w-3xl mx-auto mb-20">
+
+      <p class="uppercase tracking-[0.3em] text-xs sm:text-sm text-[#D4A017] font-medium mb-4">
+        Early Years
+      </p>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-[Poppins] text-[#0B2C5F] leading-tight mb-6">
+        A Safe & Nurturing <br class="hidden sm:block">
+        First Step
       </h2>
 
-      <div class="w-14 h-[3px] bg-[#D4A017] mx-auto mb-6"></div>
-
-      <p class="text-gray-600 leading-relaxed text-[15px] md:text-base">
+      <p class="text-gray-600 leading-8 text-[15px] sm:text-base">
         Our Creche provides a warm, secure, and stimulating environment where children aged 1–2
         begin their early journey of discovery. We focus on building trust, encouraging curiosity,
         and supporting each child’s emotional and physical development through guided play and care.
@@ -479,56 +488,119 @@ img {
     </div>
 
 
-    <!-- SPLIT SECTION -->
-    <div class="grid md:grid-cols-2 gap-16 items-center mb-24">
+    <!-- MAIN GRID -->
+    <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center mb-24">
 
-      <!-- IMAGE (FIXED) -->
-      <div class="aspect-[3/3] w-full overflow-hidden rounded-2xl group">
-        <img src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Teniola-Awofisayo-scaled.jpg"
-          class="w-full h-full  transition duration-500 group-hover:scale-105">
+      <!-- IMAGE SIDE -->
+      <div class="relative group">
+
+        <!-- BACK CARD -->
+        <div class="absolute inset-0 translate-x-5 translate-y-5 border border-[#D4A017]/30 rounded-[2rem]"></div>
+
+        <!-- IMAGE -->
+        <div class="relative overflow-hidden rounded-[2rem] shadow-2xl">
+
+          <img
+            src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Teniola-Awofisayo-scaled.jpg"
+            class="w-full h-[420px] sm:h-[540px] object-cover transition duration-700 group-hover:scale-105"
+            alt="Temple School Creche">
+
+          <!-- FLOATING LABEL -->
+          <div class="absolute bottom-5 left-5 bg-white/90 backdrop-blur-md px-5 py-3 rounded-2xl shadow-lg">
+
+            <p class="text-sm font-semibold text-[#0B2C5F]">
+              Temple Creche
+            </p>
+
+            <p class="text-xs text-gray-500">
+              Safe • Warm • Supportive
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <!-- TEXT -->
-      <div class="max-w-lg">
 
-        <h3 class="text-2xl font-bold font-[Poppins] text-[#0B2C5F] mb-5">
+      <!-- CONTENT SIDE -->
+      <div>
+
+        <div class="inline-flex items-center gap-2 bg-[#D4A017]/10 px-4 py-2 rounded-full mb-6">
+          <span class="w-2 h-2 rounded-full bg-[#D4A017]"></span>
+          <p class="text-xs tracking-widest uppercase text-[#0B2C5F] font-semibold">
+            Daily Experience
+          </p>
+        </div>
+
+        <h3 class="text-2xl sm:text-3xl font-bold font-[Poppins] text-[#0B2C5F] mb-6 leading-tight">
           A Day in Our Creche
         </h3>
 
-        <p class="text-gray-600 mb-8 leading-relaxed">
-          Each day is thoughtfully structured to balance rest, play, and interaction. Children
-          participate in sensory exploration, music, storytelling, and guided activities within
-          a calm and supportive environment.
+        <p class="text-gray-600 leading-8 mb-10">
+          Each day is thoughtfully structured to balance rest, play, and interaction.
+          Children participate in sensory exploration, music, storytelling, and guided
+          activities within a calm and supportive environment.
         </p>
 
-        <!-- ICON LIST -->
+
+        <!-- FEATURE LIST -->
         <div class="space-y-5">
 
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 flex items-center justify-center bg-[#D4A017]/10 rounded-full">
+          <div class="group flex items-start gap-4 bg-white border border-gray-100 rounded-2xl p-5 hover:shadow-lg transition duration-300">
+
+            <div class="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#D4A017]/10 shrink-0">
               <i data-lucide="sun" class="w-5 h-5 text-[#D4A017]"></i>
             </div>
-            <p class="text-sm text-gray-700">
-              Gentle daily routines that build stability and comfort
-            </p>
+
+            <div>
+              <h4 class="font-semibold text-[#0B2C5F] mb-1">
+                Gentle Daily Routines
+              </h4>
+
+              <p class="text-sm text-gray-600 leading-6">
+                Stability and comfort through carefully planned activities and care.
+              </p>
+            </div>
+
           </div>
 
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 flex items-center justify-center bg-[#D4A017]/10 rounded-full">
-              <i data-lucide="music" class="w-5 h-5 text-[#D4A017]"></i>
+
+          <div class="group flex items-start gap-4 bg-white border border-gray-100 rounded-2xl p-5 hover:shadow-lg transition duration-300">
+
+            <div class="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#14B8A6]/10 shrink-0">
+              <i data-lucide="music" class="w-5 h-5 text-[#14B8A6]"></i>
             </div>
-            <p class="text-sm text-gray-700">
-              Music, rhythm, and interactive play experiences
-            </p>
+
+            <div>
+              <h4 class="font-semibold text-[#0B2C5F] mb-1">
+                Interactive Play
+              </h4>
+
+              <p class="text-sm text-gray-600 leading-6">
+                Music, rhythm, storytelling and sensory exploration experiences.
+              </p>
+            </div>
+
           </div>
 
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 flex items-center justify-center bg-[#D4A017]/10 rounded-full">
-              <i data-lucide="users" class="w-5 h-5 text-[#D4A017]"></i>
+
+          <div class="group flex items-start gap-4 bg-white border border-gray-100 rounded-2xl p-5 hover:shadow-lg transition duration-300">
+
+            <div class="w-12 h-12 flex items-center justify-center rounded-2xl bg-[#0B2C5F]/10 shrink-0">
+              <i data-lucide="users" class="w-5 h-5 text-[#0B2C5F]"></i>
             </div>
-            <p class="text-sm text-gray-700">
-              Close attention and care from experienced educators
-            </p>
+
+            <div>
+              <h4 class="font-semibold text-[#0B2C5F] mb-1">
+                Experienced Educators
+              </h4>
+
+              <p class="text-sm text-gray-600 leading-6">
+                Close attention, emotional care and nurturing support every day.
+              </p>
+            </div>
+
           </div>
 
         </div>
@@ -538,110 +610,153 @@ img {
     </div>
 
 
-    <!-- FEATURES -->
-    <div class="grid md:grid-cols-3 gap-8 mb-24">
+    <!-- FEATURE CARDS -->
+    <div class="grid md:grid-cols-3 gap-7 mb-24">
 
-      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
-        <div class="w-12 h-12 flex items-center justify-center bg-[#D4A017]/10 rounded-full mb-5">
+      <div class="bg-white rounded-[2rem] p-8 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition duration-500">
+
+        <div class="w-14 h-14 rounded-2xl bg-[#D4A017]/10 flex items-center justify-center mb-6">
           <i data-lucide="shield-check" class="w-6 h-6 text-[#D4A017]"></i>
         </div>
-        <h4 class="font-bold font-[Poppins] text-[#0B2C5F] mb-2">
+
+        <h4 class="text-xl font-semibold font-[Poppins] text-[#0B2C5F] mb-3">
           Safe Environment
         </h4>
-        <p class="text-sm text-gray-600">
-          A secure and hygienic space designed for comfort and peace of mind.
+
+        <p class="text-sm text-gray-600 leading-7">
+          A secure and hygienic environment thoughtfully designed for comfort and peace of mind.
         </p>
+
       </div>
 
-      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
-        <div class="w-12 h-12 flex items-center justify-center bg-[#D4A017]/10 rounded-full mb-5">
-          <i data-lucide="smile" class="w-6 h-6 text-[#D4A017]"></i>
+
+      <div class="bg-white rounded-[2rem] p-8 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition duration-500">
+
+        <div class="w-14 h-14 rounded-2xl bg-[#14B8A6]/10 flex items-center justify-center mb-6">
+          <i data-lucide="smile" class="w-6 h-6 text-[#14B8A6]"></i>
         </div>
-        <h4 class="font-bold font-[Poppins] text-[#0B2C5F] mb-2">
+
+        <h4 class="text-xl font-semibold font-[Poppins] text-[#0B2C5F] mb-3">
           Emotional Care
         </h4>
-        <p class="text-sm text-gray-600">
-          Building trust, confidence, and emotional security from the start.
+
+        <p class="text-sm text-gray-600 leading-7">
+          Building confidence, trust and emotional security from the very beginning.
         </p>
+
       </div>
 
-      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
-        <div class="w-12 h-12 flex items-center justify-center bg-[#D4A017]/10 rounded-full mb-5">
-          <i data-lucide="activity" class="w-6 h-6 text-[#D4A017]"></i>
+
+      <div class="bg-white rounded-[2rem] p-8 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition duration-500">
+
+        <div class="w-14 h-14 rounded-2xl bg-[#0B2C5F]/10 flex items-center justify-center mb-6">
+          <i data-lucide="activity" class="w-6 h-6 text-[#0B2C5F]"></i>
         </div>
-        <h4 class="font-bold font-[Poppins] text-[#0B2C5F] mb-2">
+
+        <h4 class="text-xl font-semibold font-[Poppins] text-[#0B2C5F] mb-3">
           Early Development
         </h4>
-        <p class="text-sm text-gray-600">
-          Supporting motor skills, communication, and sensory growth.
+
+        <p class="text-sm text-gray-600 leading-7">
+          Supporting sensory growth, communication and early developmental milestones.
         </p>
+
       </div>
 
     </div>
 
 
-    <!-- IMAGE GALLERY (FIXED) -->
+    <!-- IMAGE GALLERY -->
     <div class="grid md:grid-cols-3 gap-6 mb-24">
 
-      <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-        <img src="https://www.templeschoolng.com/wp-content/uploads/2026/04/Ahnaf-Mohammad-1-scaled.jpg"
-          class="w-full h-full  hover:scale-105 transition duration-500">
+      <div class="group overflow-hidden rounded-[2rem]">
+        <img
+          src="https://www.templeschoolng.com/wp-content/uploads/2026/04/Ahnaf-Mohammad-1-scaled.jpg"
+          class="w-full h-[260px] object-cover transition duration-700 group-hover:scale-110">
       </div>
 
-      <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-        <img src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Tamilore-Ekundayo-scaled.jpg"
-          class="w-full h-full  hover:scale-105 transition duration-500">
+      <div class="group overflow-hidden rounded-[2rem]">
+        <img
+          src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Tamilore-Ekundayo-scaled.jpg"
+          class="w-full h-[260px] object-cover transition duration-700 group-hover:scale-110">
       </div>
 
-      <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-        <img src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Toriseju-Edu-scaled.jpg"
-          class="w-full h-full  hover:scale-105 transition duration-500">
+      <div class="group overflow-hidden rounded-[2rem]">
+        <img
+          src="https://www.templeschoolng.com/wp-content/uploads/2026/05/Toriseju-Edu-scaled.jpg"
+          class="w-full h-[260px] object-cover transition duration-700 group-hover:scale-110">
       </div>
 
     </div>
 
 
     <!-- LEARNING FOCUS -->
-    <div class="bg-[#EAF2F2] p-12 rounded-2xl text-center max-w-3xl mx-auto">
+    <div class="relative overflow-hidden rounded-[2.5rem] bg-[#0B2C5F] px-8 sm:px-12 py-14 text-center max-w-5xl mx-auto">
 
-      <h3 class="text-2xl font-bold font-[Poppins] text-[#0B2C5F] mb-4">
-        Building Strong Foundations
-      </h3>
+      <div class="absolute top-0 right-0 w-72 h-72 bg-[#D4A017]/10 rounded-full blur-3xl"></div>
 
-      <p class="text-gray-600 leading-relaxed">
-        Learning at this stage is rooted in play, exploration, and interaction. We gently introduce
-        early communication, coordination, and social skills that prepare children for the next
-        stage of their educational journey.
-      </p>
+      <div class="relative z-10">
+
+        <p class="uppercase tracking-[0.25em] text-xs text-[#D4A017] mb-4">
+          Learning Focus
+        </p>
+
+        <h3 class="text-2xl sm:text-3xl font-bold font-[Poppins] text-white mb-5">
+          Building Strong Foundations
+        </h3>
+
+        <p class="text-white/80 leading-8 max-w-3xl mx-auto">
+          Learning at this stage is rooted in play, exploration, and interaction.
+          We gently introduce early communication, coordination, and social skills
+          that prepare children for the next stage of their educational journey.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <div class="flex flex-wrap justify-center gap-4 mt-20">
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Classroom/Creche.html"
+        class="px-6 py-3 rounded-full bg-[#0B2C5F] text-white text-sm font-medium shadow-lg shadow-[#0B2C5F]/20">
+        Creche
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Classroom/pre-school1.html"
+        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-[#0B2C5F] text-sm font-medium hover:border-[#D4A017] transition">
+        Pre School 1
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Classroom/pre-school2.html"
+        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-[#0B2C5F] text-sm font-medium hover:border-[#D4A017] transition">
+        Pre School 2
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Classroom/reception.html"
+        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-[#0B2C5F] text-sm font-medium hover:border-[#D4A017] transition">
+        Reception
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Admission Policy.html"
+        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-[#0B2C5F] text-sm font-medium hover:border-[#D4A017] transition">
+        Admissions
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/curriculum.html"
+        class="px-6 py-3 rounded-full bg-white border border-gray-200 text-[#0B2C5F] text-sm font-medium hover:border-[#D4A017] transition">
+        Curriculum
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Apply online.html"
+        class="px-7 py-3 rounded-full bg-[#D4A017] text-white text-sm font-medium hover:opacity-90 transition shadow-lg shadow-[#D4A017]/30">
+        Apply Online
+      </a>
 
     </div>
 
   </div>
-
-
-     <!-- NAVIGATION -->
-            <div class="flex flex-wrap justify-center gap-4 mt-20">
-
-                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/Creche.html"
-                    class="nav-btn bg-[#0B2C5F] text-white">Creche</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/pre-school1.html"
-                    class="nav-btn">Pre School 1</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/pre-school2.html"
-                    class="nav-btn">Pre School 2</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/reception.html"
-                    class="nav-btn">Reception</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/Admission Policy.html"
-                    class="nav-btn">Admissions</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/curriculum.html"
-                    class="nav-btn">Curriculum</a>
-
-
-                <a href="/Temple School Project/Learning Journey/Early Years/Apply online.html"
-                    class="px-6 py-2.5 rounded-full bg-[#D4A017] text-white hover:opacity-90 transition">
-                    Apply Online
-                </a>
-
-            </div>
 
 </section>
 

@@ -454,78 +454,150 @@
   </section>
 
   
-  <section class="bg-[#F9F8F3] py-24 px-6">
+<section class="relative overflow-hidden bg-[#F8F6F1] py-20 sm:py-24">
 
-  <div class="max-w-6xl mx-auto">
+  <!-- BACKGROUND DECOR -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 right-0 w-72 h-72 bg-[#0B2C5F]/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-[#14B8A6]/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6">
 
     <!-- INTRO -->
-    <div class="text-center max-w-2xl mx-auto mb-20">
+    <div class="text-center max-w-3xl mx-auto mb-16">
 
-      <h2 class="text-3xl md:text-4xl font-bold font-[Poppins] text-[#0B2C5F] mb-4 leading-tight">
-        Confident Learners Ready for School
+      <p class="uppercase tracking-[0.3em] text-[11px] sm:text-xs text-[#D4A017] mb-4 font-medium">
+        Early Years Foundation Stage
+      </p>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B2C5F] leading-tight font-[Poppins]">
+        Confident Learners <br class="hidden sm:block">
+        Ready For School
       </h2>
 
-      <div class="w-14 h-[3px] bg-[#D4A017] mx-auto mb-6"></div>
+      <div class="w-20 h-[3px] bg-[#D4A017] mx-auto mt-6 rounded-full"></div>
 
-      <p class="text-gray-600 leading-relaxed text-[15px] md:text-base">
-        Reception is a key stage where children consolidate their learning and develop the confidence,
-        independence, and academic skills needed for primary school. Through structured lessons and
-        engaging activities, we prepare every child for a successful transition into Year 1.
+      <p class="mt-6 text-[15px] sm:text-base leading-8 text-gray-600">
+        Reception is a vital stage where children strengthen their academic foundations,
+        independence, confidence, and readiness for primary school through engaging
+        and structured learning experiences.
       </p>
 
     </div>
 
 
-    <!-- SPLIT SECTION -->
-    <div class="grid md:grid-cols-2 gap-16 items-center mb-24">
+    <!-- HERO SECTION -->
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
 
       <!-- IMAGE -->
-      <div class="aspect-[4/3] w-full overflow-hidden rounded-2xl group">
-        <img src="https://www.templeschoolng.com/wp-content/uploads/2026/05/IMG_0512_1-scaled.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+      <div class="relative group">
+
+        <div class="absolute -bottom-5 -right-5 w-full h-full border border-[#D4A017]/20 rounded-[2rem] hidden lg:block"></div>
+
+        <div class="overflow-hidden rounded-[2rem] shadow-2xl">
+          <img
+            src="https://www.templeschoolng.com/wp-content/uploads/2026/05/IMG_0512_1-scaled.jpg"
+            class="w-full h-[420px] sm:h-[520px] object-cover transition duration-700 group-hover:scale-105"
+            alt="Temple School Reception">
+        </div>
+
+        <!-- FLOATING CARD -->
+        <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-xl border border-white/50 rounded-2xl px-5 py-4 shadow-xl max-w-[240px]">
+
+          <p class="text-xs uppercase tracking-[0.2em] text-[#D4A017] mb-2">
+            Reception Learning
+          </p>
+
+          <p class="text-sm leading-6 text-[#0B2C5F] font-medium">
+            Encouraging curiosity, confidence, and independence every day.
+          </p>
+
+        </div>
+
       </div>
+
 
       <!-- TEXT -->
-      <div class="max-w-lg">
+      <div>
 
-        <h3 class="text-2xl font-bold font-[Poppins] text-[#0B2C5F] mb-5">
-          A Day in Reception
+        <div class="inline-flex items-center gap-2 bg-[#0B2C5F]/5 border border-[#0B2C5F]/10 px-4 py-2 rounded-full mb-6">
+          <div class="w-2 h-2 rounded-full bg-[#14B8A6]"></div>
+
+          <span class="text-sm text-[#0B2C5F] font-medium">
+            Structured & Engaging Learning
+          </span>
+        </div>
+
+        <h3 class="text-2xl sm:text-3xl font-bold text-[#0B2C5F] leading-tight font-[Poppins] mb-6">
+          A Day In <span class="text-[#D4A017]">Reception</span>
         </h3>
 
-        <p class="text-gray-600 mb-8 leading-relaxed">
-          Children follow a structured daily routine that includes focused learning sessions,
-          independent activities, and collaborative work. Lessons are designed to strengthen
-          literacy, numeracy, and critical thinking while encouraging confidence and curiosity.
+        <p class="text-gray-600 leading-8 mb-10">
+          Children enjoy a balanced daily routine that combines focused lessons,
+          independent learning, collaborative activities, and creative exploration.
+          Every experience is designed to strengthen confidence and prepare pupils
+          for Year 1.
         </p>
 
-        <!-- ICON LIST -->
+
+        <!-- FEATURE LIST -->
         <div class="space-y-5">
 
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 flex items-center justify-center bg-[#D4A017]/10 rounded-full">
+          <div class="flex items-start gap-4 bg-white border border-[#0B2C5F]/5 rounded-2xl p-5 hover:shadow-lg transition duration-300">
+
+            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#D4A017]/10 shrink-0">
               <i data-lucide="book-open" class="w-5 h-5 text-[#D4A017]"></i>
             </div>
-            <p class="text-sm text-gray-700">
-              Reading fluency, comprehension, and structured writing
-            </p>
+
+            <div>
+              <h4 class="font-semibold text-[#0B2C5F] mb-1">
+                Literacy Development
+              </h4>
+
+              <p class="text-sm text-gray-600 leading-6">
+                Building reading fluency, comprehension, and structured writing skills.
+              </p>
+            </div>
+
           </div>
 
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 flex items-center justify-center bg-[#D4A017]/10 rounded-full">
-              <i data-lucide="calculator" class="w-5 h-5 text-[#D4A017]"></i>
+
+          <div class="flex items-start gap-4 bg-white border border-[#0B2C5F]/5 rounded-2xl p-5 hover:shadow-lg transition duration-300">
+
+            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#14B8A6]/10 shrink-0">
+              <i data-lucide="calculator" class="w-5 h-5 text-[#14B8A6]"></i>
             </div>
-            <p class="text-sm text-gray-700">
-              Confident number work, problem-solving, and reasoning skills
-            </p>
+
+            <div>
+              <h4 class="font-semibold text-[#0B2C5F] mb-1">
+                Numeracy & Reasoning
+              </h4>
+
+              <p class="text-sm text-gray-600 leading-6">
+                Strengthening number work, reasoning, and early problem-solving skills.
+              </p>
+            </div>
+
           </div>
 
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 flex items-center justify-center bg-[#D4A017]/10 rounded-full">
-              <i data-lucide="award" class="w-5 h-5 text-[#D4A017]"></i>
+
+          <div class="flex items-start gap-4 bg-white border border-[#0B2C5F]/5 rounded-2xl p-5 hover:shadow-lg transition duration-300">
+
+            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#0B2C5F]/10 shrink-0">
+              <i data-lucide="award" class="w-5 h-5 text-[#0B2C5F]"></i>
             </div>
-            <p class="text-sm text-gray-700">
-              Independence, responsibility, and self-confidence in learning
-            </p>
+
+            <div>
+              <h4 class="font-semibold text-[#0B2C5F] mb-1">
+                Confidence & Independence
+              </h4>
+
+              <p class="text-sm text-gray-600 leading-6">
+                Encouraging responsibility, teamwork, and confident learning habits.
+              </p>
+            </div>
+
           </div>
 
         </div>
@@ -535,109 +607,152 @@
     </div>
 
 
-    <!-- FEATURES -->
-    <div class="grid md:grid-cols-3 gap-8 mb-24">
-
-      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
-        <div class="w-12 h-12 flex items-center justify-center bg-[#D4A017]/10 rounded-full mb-5">
-          <i data-lucide="book-check" class="w-6 h-6 text-[#D4A017]"></i>
-        </div>
-        <h4 class="font-bold font-[Poppins] text-[#0B2C5F] mb-2">
-          Strong Literacy
-        </h4>
-        <p class="text-sm text-gray-600">
-          Confident reading, writing, and communication skills.
-        </p>
-      </div>
-
-      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
-        <div class="w-12 h-12 flex items-center justify-center bg-[#D4A017]/10 rounded-full mb-5">
-          <i data-lucide="brain" class="w-6 h-6 text-[#D4A017]"></i>
-        </div>
-        <h4 class="font-bold font-[Poppins] text-[#0B2C5F] mb-2">
-          Critical Thinking
-        </h4>
-        <p class="text-sm text-gray-600">
-          Encouraging reasoning, questioning, and problem-solving.
-        </p>
-      </div>
-
-      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
-        <div class="w-12 h-12 flex items-center justify-center bg-[#D4A017]/10 rounded-full mb-5">
-          <i data-lucide="users" class="w-6 h-6 text-[#D4A017]"></i>
-        </div>
-        <h4 class="font-bold font-[Poppins] text-[#0B2C5F] mb-2">
-          Social Confidence
-        </h4>
-        <p class="text-sm text-gray-600">
-          Building teamwork, leadership, and positive relationships.
-        </p>
-      </div>
-
-    </div>
-
-
-    <!-- IMAGE GALLERY -->
+    <!-- FEATURE CARDS -->
     <div class="grid md:grid-cols-3 gap-6 mb-24">
 
-      <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-        <img src="https://www.templeschoolng.com/wp-content/uploads/2026/05/IMG_7584-scaled.jpg"
-          class="w-full h-full object-cover hover:scale-105 transition duration-500">
+      <div class="bg-white rounded-[2rem] p-8 border border-[#0B2C5F]/5 hover:-translate-y-2 hover:shadow-2xl transition duration-500">
+
+        <div class="w-14 h-14 rounded-2xl bg-[#D4A017]/10 flex items-center justify-center mb-6">
+          <i data-lucide="book-check" class="w-6 h-6 text-[#D4A017]"></i>
+        </div>
+
+        <h4 class="text-xl font-semibold text-[#0B2C5F] mb-3 font-[Poppins]">
+          Strong Literacy
+        </h4>
+
+        <p class="text-sm leading-7 text-gray-600">
+          Developing confident reading, communication, and structured writing abilities.
+        </p>
+
       </div>
 
-      <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-        <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5"
-          class="w-full h-full object-cover hover:scale-105 transition duration-500">
+
+      <div class="bg-white rounded-[2rem] p-8 border border-[#0B2C5F]/5 hover:-translate-y-2 hover:shadow-2xl transition duration-500">
+
+        <div class="w-14 h-14 rounded-2xl bg-[#14B8A6]/10 flex items-center justify-center mb-6">
+          <i data-lucide="brain" class="w-6 h-6 text-[#14B8A6]"></i>
+        </div>
+
+        <h4 class="text-xl font-semibold text-[#0B2C5F] mb-3 font-[Poppins]">
+          Critical Thinking
+        </h4>
+
+        <p class="text-sm leading-7 text-gray-600">
+          Encouraging reasoning, creativity, questioning, and independent thinking.
+        </p>
+
       </div>
 
-      <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74"
-          class="w-full h-full object-cover hover:scale-105 transition duration-500">
+
+      <div class="bg-white rounded-[2rem] p-8 border border-[#0B2C5F]/5 hover:-translate-y-2 hover:shadow-2xl transition duration-500">
+
+        <div class="w-14 h-14 rounded-2xl bg-[#0B2C5F]/10 flex items-center justify-center mb-6">
+          <i data-lucide="users" class="w-6 h-6 text-[#0B2C5F]"></i>
+        </div>
+
+        <h4 class="text-xl font-semibold text-[#0B2C5F] mb-3 font-[Poppins]">
+          Social Confidence
+        </h4>
+
+        <p class="text-sm leading-7 text-gray-600">
+          Building teamwork, leadership, positive relationships, and classroom confidence.
+        </p>
+
       </div>
 
     </div>
 
 
-    <!-- LEARNING FOCUS -->
-    <div class="bg-[#EAF2F2] p-12 rounded-2xl text-center max-w-3xl mx-auto">
+    <!-- GALLERY -->
+    <div class="grid md:grid-cols-3 gap-6 mb-24">
 
-      <h3 class="text-2xl font-bold font-[Poppins] text-[#0B2C5F] mb-4">
-        Ready for Year 1
-      </h3>
+      <div class="group overflow-hidden rounded-[2rem] shadow-lg">
+        <img
+          src="https://www.templeschoolng.com/wp-content/uploads/2026/05/IMG_7584-scaled.jpg"
+          class="w-full h-[260px] object-cover transition duration-700 group-hover:scale-110">
+      </div>
 
-      <p class="text-gray-600 leading-relaxed">
-        By the end of Reception, children are confident, capable learners who are ready to begin
-        their primary school journey. They leave with strong academic foundations, independence,
-        and a love for learning that continues into the next stage.
-      </p>
+      <div class="group overflow-hidden rounded-[2rem] shadow-lg">
+        <img
+          src="https://images.unsplash.com/photo-1529390079861-591de354faf5"
+          class="w-full h-[260px] object-cover transition duration-700 group-hover:scale-110">
+      </div>
+
+      <div class="group overflow-hidden rounded-[2rem] shadow-lg">
+        <img
+          src="https://images.unsplash.com/photo-1516627145497-ae6968895b74"
+          class="w-full h-[260px] object-cover transition duration-700 group-hover:scale-110">
+      </div>
+
+    </div>
+
+
+    <!-- CTA BLOCK -->
+    <div class="relative overflow-hidden rounded-[2rem] bg-[#0B2C5F] px-8 sm:px-12 py-14 text-center text-white">
+
+      <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#14B8A6]/10 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-3xl mx-auto">
+
+        <p class="uppercase tracking-[0.25em] text-[11px] sm:text-xs text-[#D4A017] mb-4">
+          Next Step
+        </p>
+
+        <h3 class="text-2xl sm:text-3xl font-bold font-[Poppins] leading-tight mb-5">
+          Ready For Year 1
+        </h3>
+
+        <p class="text-sm sm:text-base text-white/80 leading-8">
+          By the end of Reception, children become confident and capable learners
+          with strong academic foundations, independence, and a lasting love for learning.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <div class="flex flex-wrap justify-center gap-4 mt-20">
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Classroom/Creche.html"
+        class="nav-btn">
+        Creche
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Classroom/pre-school1.html"
+        class="nav-btn">
+        Pre School 1
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Classroom/pre-school2.html"
+        class="nav-btn">
+        Pre School 2
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Classroom/reception.html"
+        class="nav-btn bg-[#0B2C5F] text-white">
+        Reception
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Admission Policy.html"
+        class="nav-btn">
+        Admissions
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/curriculum.html"
+        class="nav-btn">
+        Curriculum
+      </a>
+
+      <a href="/Temple School Project/Learning Journey/Early Years/Apply online.html"
+        class="px-7 py-3 rounded-full bg-[#D4A017] text-white font-medium hover:scale-105 hover:shadow-xl transition duration-300">
+        Apply Online
+      </a>
 
     </div>
 
   </div>
-
-     <!-- NAVIGATION -->
-            <div class="flex flex-wrap justify-center gap-4 mt-20">
-
-                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/Creche.html"
-                    class="nav-btn">Creche</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/pre-school1.html"
-                    class="nav-btn">Pre School 1</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/pre-school2.html"
-                    class="nav-btn">Pre School 2</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/Classroom/reception.html"
-                    class="nav-btn bg-[#0B2C5F] text-white">Reception</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/Admission Policy.html"
-                    class="nav-btn">Admissions</a>
-                <a href="/Temple School Project/Learning Journey/Early Years/curriculum.html"
-                    class="nav-btn">Curriculum</a>
-
-
-                <a href="/Temple School Project/Learning Journey/Early Years/Apply online.html"
-                    class="px-6 py-2.5 rounded-full bg-[#D4A017] text-white hover:opacity-90 transition">
-                    Apply Online
-                </a>
-
-            </div>
 
 </section>
 
